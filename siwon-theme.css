@@ -1,14 +1,14 @@
 /* 시원동물의료센터 테마 — 모든 페이지 공통 덮어쓰기 */
-:root{--siwon:#0e4f4a;--siwon-deep:#0b3d39;--siwon-peach:#f2a77f;--siwon-coral:#b84f2a;--siwon-cream:#faf8f4;--siwon-line:#e3ded4}
+:root{--siwon:#0e2a4f;--siwon-deep:#0b213d;--siwon-peach:#d8bf99;--siwon-coral:#98794a;--siwon-cream:#faf8f4;--siwon-line:#e3ded4}
 html{-webkit-text-size-adjust:100%}
-body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif!important;letter-spacing:-.01em;color:#1c2624;line-height:1.75}
+body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif!important;letter-spacing:-.01em;color:#1c2026;line-height:1.75}
 /* 상단바: 흰 바탕, 단정하게 */
 .topbar{background:#fff!important;border-bottom:1px solid var(--siwon-line)!important;box-shadow:none!important}
 .topbar .logo-text{color:var(--siwon)!important;font-weight:700;font-size:15px!important}
 .topbar .logo-text small{color:#5f6e6a!important;opacity:1;letter-spacing:.02em}
 .topbar .logo-mark{box-shadow:none;background:transparent;padding:0;border-radius:6px}
 .topbar .tbtn{border-radius:6px!important;font-size:13.5px!important}
-.topbar .tbtn.call{background:#fff!important;color:var(--siwon)!important;border:1px solid #b9d3cc!important}
+.topbar .tbtn.call{background:#fff!important;color:var(--siwon)!important;border:1px solid #b9c4d3!important}
 .topbar .tbtn.back{background:transparent!important;color:#4a5a56!important;border:1px solid var(--siwon-line)!important}
 /* 히어로: 그라데이션·빛 번짐 없이 단색 */
 .hero{background:var(--siwon)!important;box-shadow:none!important}
@@ -20,7 +20,7 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic 
 .kicker{color:var(--siwon-coral)!important;letter-spacing:0!important;text-transform:none!important;font-size:14px!important;font-weight:600}
 /* 버튼·칩: 알약 모양 대신 각진 모서리 */
 .pill,.ask-chip,.tab,.dtag,.dcard-tag,.sp-btn,.species-btn{border-radius:6px!important}
-.pill-primary{background:var(--siwon-peach)!important;color:#2a1a10!important;border-color:var(--siwon-peach)!important;box-shadow:none!important}
+.pill-primary{background:var(--siwon-peach)!important;color:#241e16!important;border-color:var(--siwon-peach)!important;box-shadow:none!important}
 /* 카드: 그림자 대신 얇은 선 */
 .doc-card,.hours,.qcard,.gcard,.tool,.note,.card,.dcard,.core-card,.ask-card,.qlink,.quick a,.section,.sect{border-radius:10px!important;box-shadow:none!important}
 .dcard,.tool,.core-card:not(.feat),.ask-card{border:1px solid var(--siwon-line)!important}
@@ -30,3 +30,13 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic 
 /* 본문 가독성 */
 p,li{word-break:keep-all}
 .hero{display:flow-root}
+/* 2026-11-19 새 디자인: 네이비 + 황동색, 명조 제목 */
+:root{--accent:#86683a;--siwon-coral:#86683a}
+body{background:#f8f5ef}
+.topbar .logo-mark{display:none!important}
+.topbar .logo-text{font-family:'Noto Serif KR',serif!important;font-size:18px!important;color:#0e2442!important;font-weight:700!important;line-height:1.2}
+.topbar .logo-text small{display:block;font-family:'Pretendard',sans-serif;font-size:10px!important;letter-spacing:.14em!important;color:#86683a!important;font-weight:600;margin-top:2px}
+.hero{background:#0e2442!important}
+.hero h1,.sec-title,.sect-title,h2{font-family:'Noto Serif KR',serif!important;font-weight:600!important;letter-spacing:-.02em!important}
+.topbar .tbtn.kako{border-radius:4px!important}
+.pill-primary{background:#d9c7a6!important;border-color:#d9c7a6!important;color:#1b1408!important}

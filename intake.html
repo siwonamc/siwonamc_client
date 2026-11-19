@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0e4f4a">
+<meta name="theme-color" content="#0e2a4f">
 <title>보호자 사전 문진표 · 시원동물의료센터</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -22,9 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
-  --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
+  --navy:#0e2a4f;--navy-dark:#081b33;--navy-light:#e3e8ef;--navy-xlight:#f3f5f8;
+  --accent:#a28251;--accent-light:#f4ede3;
+  --text:#1f242a;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --red:#b3261e;--red-bg:#fdf0ef;--red-border:#f0c8c4;
   --green:#166534;--green-bg:#eefaf3;
@@ -54,7 +54,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .hero-inner{max-width:680px;margin:0 auto;text-align:center}
 .hero-eyebrow{font-size:12px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.7rem}
 .hero h1{font-size:21px;font-weight:700;color:#fff;line-height:1.45;margin-bottom:.6rem}
-.hero h1 span{color:#f4b08f}
+.hero h1 span{color:#ddc7a6}
 .hero-desc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.8}
 
 /* WRAP */
@@ -111,7 +111,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
 .pnote strong{color:var(--navy);font-weight:600}
 
 /* ACTION BAR */
-.actionbar{position:fixed;left:0;right:0;bottom:0;z-index:300;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(14,79,74,.08)}
+.actionbar{position:fixed;left:0;right:0;bottom:0;z-index:300;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(14,42,79,.08)}
 .actionbar-inner{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:.5rem}
 .actions{display:flex;gap:.5rem}
 .btn{flex:1;font-family:inherit;font-size:15px;font-weight:600;border-radius:10px;padding:13px 10px;border:1.5px solid transparent;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;line-height:1.3}
@@ -126,7 +126,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
 /* TOAST */
 .toast{position:fixed;left:50%;bottom:calc(150px + env(safe-area-inset-bottom));transform:translate(-50%,14px);z-index:500;
   background:var(--navy-dark);color:#fff;font-size:14px;font-weight:500;padding:11px 18px;border-radius:999px;
-  box-shadow:0 8px 28px rgba(8,51,47,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
+  box-shadow:0 8px 28px rgba(8,27,51,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .toast.warn{background:var(--red)}
 
@@ -150,15 +150,16 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
   .btn{font-size:13.5px;padding:12px 8px}
 }
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&display=swap">
 <link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON ANIMAL MEDICAL CENTER</small></div></a>
     <div class="topbar-btns">
-      <a class="tbtn back" href="index.html">← 전체 안내</a>
+      <a class="tbtn back" href="guide.html">← 보호자 자료</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
       <a class="tbtn kako" href="#kakao">💬 카카오톡</a>
     </div>
@@ -169,7 +170,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
   <div class="hero-inner">
     <div class="hero-eyebrow">시원동물의료센터 · 보호자 사전 문진</div>
     <h1>오시기 전에 미리 적어 두면<br><span>진료가 빨라져요</span></h1>
-    <p class="hero-desc">기다리는 동안 편하게 적어 주세요.<br>마지막에 <b style="color:#f4b08f;font-weight:600">문진 내용 한 번에 복사</b> 버튼을 누르면<br>접수처에서 바로 확인할 수 있습니다.</p>
+    <p class="hero-desc">기다리는 동안 편하게 적어 주세요.<br>마지막에 <b style="color:#ddc7a6;font-weight:600">문진 내용 한 번에 복사</b> 버튼을 누르면<br>접수처에서 바로 확인할 수 있습니다.</p>
   </div>
 </div>
 
@@ -251,6 +252,19 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
         <label><input type="radio" name="neut" value="수컷 중성화"><span>수컷 중성화</span></label>
         <label><input type="radio" name="neut" value="암컷 중성화"><span>암컷 중성화</span></label>
       </div>
+    </div>
+
+    <div class="field">
+      <label for="source">저희 병원을 어떻게 알고 오셨나요? <span style="color:var(--text-muted);font-weight:400">(선택)</span></label>
+      <select id="source">
+        <option value="">선택</option>
+        <option>네이버 검색·지도</option>
+        <option>블로그</option>
+        <option>지인 소개</option>
+        <option>다른 병원 안내</option>
+        <option>지나가다 간판</option>
+        <option>기타</option>
+      </select>
     </div>
   </div>
 
@@ -436,7 +450,8 @@ function collect(){
     meds: val('meds'),
     allergy: val('allergy'),
     otherHosp: radioVal('otherHosp'),
-    otherHospDetail: val('otherHospDetail')
+    otherHospDetail: val('otherHospDetail'),
+    source: val('source')
   };
 }
 function save(){
@@ -515,6 +530,7 @@ function buildChart(){
   L.push(' - 약물 알레르기 : ' + (d.allergy ? d.allergy : '없음'));
   if (d.otherHosp === '있음') L.push(' - 최근 타 병원 검사 : ' + (d.otherHospDetail || '있음(상세 미기재)'));
   else L.push(' - 최근 타 병원 검사 : 없음');
+  if (d.source) { L.push(''); L.push('■ 알게 된 경로 : ' + d.source); }
   return L.join('\n');
 }
 

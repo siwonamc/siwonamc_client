@@ -20,9 +20,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
-  --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
+  --navy:#0e2a4f;--navy-dark:#081b33;--navy-light:#e3e8ef;--navy-xlight:#f3f5f8;
+  --accent:#a28251;--accent-light:#f4ede3;
+  --text:#1f242a;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
@@ -53,7 +53,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .hero-inner{max-width:760px;margin:0 auto}
 .hero-eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
-.hero h1 span{color:#f4b08f}
+.hero h1 span{color:#ddc7a6}
 .hero-desc{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75}
 
 .main{max-width:760px;margin:0 auto;padding:2rem 1.5rem 3rem}
@@ -69,7 +69,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 .callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:14px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
-.callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
+.callout.info{background:var(--accent-light);color:#16345c;border:1px solid #a8bdd8}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
 .callout.danger{background:var(--danger-bg);color:var(--danger-text);border:1px solid var(--danger-border)}
 .callout.neutral{background:var(--navy-xlight);color:var(--text-mid);border:1px solid var(--border)}
@@ -90,7 +90,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 .fast-card.ok{background:rgba(46,204,113,.12);border:1px solid rgba(46,204,113,.3)}
 .fast-icon{font-size:28px;margin-bottom:.4rem}
 .fast-time{font-size:22px;font-weight:700;margin-bottom:.2rem}
-.fast-card.no .fast-time{color:#f0a090}
+.fast-card.no .fast-time{color:#dac5a6}
 .fast-card.ok .fast-time{color:#7ed8a0}
 .fast-label{font-size:13.5px;font-weight:600;margin-bottom:.3rem}
 .fast-card.no .fast-label{color:#ffb3b3}
@@ -127,7 +127,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 .risk-wrap{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem}
 table.risk{width:100%;border-collapse:collapse;font-size:14px;background:var(--white)}
 table.risk th{text-align:left;padding:9px 12px;font-size:12.5px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border)}
-table.risk td{padding:9px 12px;border-bottom:1px solid #edf4f1;color:var(--text-mid);vertical-align:middle}
+table.risk td{padding:9px 12px;border-bottom:1px solid #edf0f4;color:var(--text-mid);vertical-align:middle}
 table.risk tr:last-child td{border-bottom:none}
 .rb{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:999px;font-weight:600}
 .rb.low{background:var(--ok-bg);color:#1a6a1a;border:1px solid var(--ok-border)}
@@ -147,11 +147,11 @@ table.risk tr:last-child td{border-bottom:none}
 .freq-rare{background:var(--danger-bg);color:#8a1010;border:1px solid var(--danger-border)}
 
 /* BRACHY BOX */
-.brachy-box{background:#fff8f0;border:2px solid #e8a060;border-radius:14px;padding:1.75rem;margin-bottom:1rem}
-.brachy-title{font-size:16px;font-weight:700;color:#8a3a00;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
-.brachy-desc{font-size:13.5px;color:#6a3a10;line-height:1.8;margin-bottom:1rem}
+.brachy-box{background:#fff8f0;border:2px solid #c9ab7f;border-radius:14px;padding:1.75rem;margin-bottom:1rem}
+.brachy-title{font-size:16px;font-weight:700;color:#6b4d1f;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.brachy-desc{font-size:13.5px;color:#564224;line-height:1.8;margin-bottom:1rem}
 .brachy-breeds{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
-.breed-tag{font-size:13.5px;padding:4px 10px;border-radius:999px;background:#fde8d0;border:1px solid #e8a060;color:#7a3a00;font-weight:500}
+.breed-tag{font-size:13.5px;padding:4px 10px;border-radius:999px;background:#fde8d0;border:1px solid #c9ab7f;color:#5f441b;font-weight:500}
 .brachy-risks{display:flex;flex-direction:column;gap:.4rem}
 .brachy-risk{background:#fdf0f0;border:1px solid #e8aaaa;border-radius:8px;padding:.6rem .875rem;font-size:13.5px;color:#6a1010;display:flex;gap:.5rem;align-items:flex-start;line-height:1.6}
 
@@ -206,15 +206,16 @@ table.risk tr:last-child td{border-bottom:none}
   .fast-grid{grid-template-columns:1fr 1fr}
 }
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&display=swap">
 <link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON ANIMAL MEDICAL CENTER</small></div></a>
     <div class="topbar-btns">
-      <a class="tbtn back" href="index.html">← 전체 안내</a>
+      <a class="tbtn back" href="guide.html">← 보호자 자료</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
       <a class="tbtn kako" href="#kakao" target="_blank">💬 카카오톡</a>
     </div>
@@ -395,17 +396,17 @@ table.risk tr:last-child td{border-bottom:none}
     <div class="exam-grid">
       <div class="exam-card" style="border-color:#e8d48a;background:#fffbf0">
         <div class="exam-icon">🫁</div>
-        <div class="exam-name">흉부 X-ray <span style="font-size:11.5px;color:#b45309;font-weight:600;margin-left:4px">추가</span></div>
+        <div class="exam-name">흉부 X-ray <span style="font-size:11.5px;color:#8e682f;font-weight:600;margin-left:4px">추가</span></div>
         <div class="exam-desc">폐와 심장 크기, 가슴 안 이상을 확인합니다. 나이 든 아이나 호흡기 증상이 있는 아이에게 권합니다</div>
       </div>
       <div class="exam-card" style="border-color:#e8d48a;background:#fffbf0">
         <div class="exam-icon">🫀</div>
-        <div class="exam-name">심초음파 <span style="font-size:11.5px;color:#b45309;font-weight:600;margin-left:4px">추가</span></div>
+        <div class="exam-name">심초음파 <span style="font-size:11.5px;color:#8e682f;font-weight:600;margin-left:4px">추가</span></div>
         <div class="exam-desc">심장 구조, 판막, 수축하는 힘을 확인합니다. 심잡음이 있거나 심장약을 먹는 아이는 마취 전에 꼭 권합니다</div>
       </div>
       <div class="exam-card" style="border-color:#e8d48a;background:#fffbf0">
         <div class="exam-icon">🔊</div>
-        <div class="exam-name">복부 초음파 <span style="font-size:11.5px;color:#b45309;font-weight:600;margin-left:4px">추가</span></div>
+        <div class="exam-name">복부 초음파 <span style="font-size:11.5px;color:#8e682f;font-weight:600;margin-left:4px">추가</span></div>
         <div class="exam-desc">배 속 장기 모양과 이상을 확인합니다. 지병이 있거나 위험도가 높은 아이에게 권합니다</div>
       </div>
     </div>

@@ -26,6 +26,11 @@
     5: ['09:00', '21:00'],
     6: ['09:00', '21:00']
   };
+  /* 개원 전에는 '개원 예정'으로 표시 (KST 2027-03-02 00:00) */
+  var OPEN_DATE_UTC = Date.UTC(2027, 2, 1, 15, 0, 0);
+  var OPEN_LABEL = '2027년 3월 2일 개원 예정';
+  /* 점심·저녁 휴진 표시 여부 — false로 바꾸면 09–21시 연속 진료로 표시 */
+  var HAS_BREAKS = true;
   var LUNCH_START = 13 * 60;
   var LUNCH_END = 14 * 60;
   var DINNER_START = 18 * 60;
@@ -64,6 +69,9 @@
   }
 
   function statusFor(now) {
+    if (!now && Date.now() < OPEN_DATE_UTC) {
+      return { state: 'soon', main: OPEN_LABEL, sub: '개원 후 매일 09:00–21:00 진료' };
+    }
     now = now || kstNow();
     var sch = SCHEDULE[now.dow];
     var t = now.min;
@@ -84,10 +92,10 @@
     if (t < open) {
       return { state: 'soon', main: '진료 시작 전', sub: '오늘 ' + sch[0] + ' 시작' };
     }
-    if (t >= LUNCH_START && t < LUNCH_END) {
+    if (HAS_BREAKS && t >= LUNCH_START && t < LUNCH_END) {
       return { state: 'break', main: '점심시간', sub: '14:00 진료 재개' };
     }
-    if (t >= DINNER_START && t < DINNER_END) {
+    if (HAS_BREAKS && t >= DINNER_START && t < DINNER_END) {
       return { state: 'break', main: '저녁시간', sub: '19:00 진료 재개' };
     }
     if (t < close) {
@@ -104,26 +112,27 @@
   function emojiFor(state) {
     if (state === 'open') return '🟢';
     if (state === 'break') return '🟡';
+    if (state === 'soon' && Date.now() < OPEN_DATE_UTC) return '🗓️';
     return '⚪';
   }
 
   var CSS = [
-    '.wc-status{background:#eef6f3;border-bottom:1px solid #d9e8e3;color:#2b4f49;font-family:\'Pretendard\',sans-serif;-webkit-font-smoothing:antialiased}',
+    '.wc-status{background:#eef1f6;border-bottom:1px solid #d9e0e8;color:#2b3b4f;font-family:\'Pretendard\',sans-serif;-webkit-font-smoothing:antialiased}',
     '.wc-status-in{max-width:var(--max,860px);margin:0 auto;padding:.4rem 1.35rem;display:flex;align-items:center;gap:.5rem;line-height:1.5;word-break:keep-all}',
     '.wc-status-main{font-size:13.5px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}',
     '.wc-status[data-state="open"] .wc-status-main{color:#156f3d}',
     '.wc-status[data-state="break"] .wc-status-main{color:#8a6100}',
     '.wc-status[data-state="soon"] .wc-status-main,.wc-status[data-state="closed"] .wc-status-main{color:#4a5a56}',
     '.wc-status-sub{font-size:12.5px;color:#5f6e6a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
-    '.wc-status-link{margin-left:auto;font-size:12.5px;font-weight:500;color:#c4572f;text-decoration:none;white-space:nowrap}',
+    '.wc-status-link{margin-left:auto;font-size:12.5px;font-weight:500;color:#a28251;text-decoration:none;white-space:nowrap}',
     '.wc-status-link:hover{text-decoration:underline}',
     '.wc-bar{display:none}',
     '.wc-spacer{display:none}',
     '@media(max-width:820px){',
-    '.wc-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:400;background:rgba(255,255,255,.97);border-top:1px solid #dfe8e4;box-shadow:0 -6px 20px -12px rgba(14,79,74,.45);padding-bottom:env(safe-area-inset-bottom,0px);font-family:\'Pretendard\',sans-serif}',
-    '.wc-bar-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:58px;padding:.45rem .15rem;text-decoration:none;color:#0e4f4a;font-size:13px;font-weight:700;line-height:1.25;border-right:1px solid #eaf0f7;-webkit-tap-highlight-color:transparent}',
+    '.wc-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:400;background:rgba(255,255,255,.97);border-top:1px solid #dfe3e8;box-shadow:0 -6px 20px -12px rgba(14,42,79,.45);padding-bottom:env(safe-area-inset-bottom,0px);font-family:\'Pretendard\',sans-serif}',
+    '.wc-bar-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:58px;padding:.45rem .15rem;text-decoration:none;color:#0e2a4f;font-size:13px;font-weight:700;line-height:1.25;border-right:1px solid #eaf0f7;-webkit-tap-highlight-color:transparent}',
     '.wc-bar-btn:last-child{border-right:0}',
-    '.wc-bar-btn:active{background:#f3f8f6}',
+    '.wc-bar-btn:active{background:#f3f5f8}',
     '.wc-bar-btn.kako{background:#fffbdd}',
     '.wc-bar-ico{font-size:17px;line-height:1}',
     '.wc-bar-num{font-size:11px;font-weight:500;color:#5f6e6a;letter-spacing:.02em}',

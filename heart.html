@@ -20,9 +20,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#0e4f4a;--navy-dark:#08332f;--navy-mid:#1a6b62;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
-  --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
+  --navy:#0e2a4f;--navy-dark:#081b33;--navy-mid:#1a3d6b;--navy-light:#e3e8ef;--navy-xlight:#f3f5f8;
+  --accent:#a28251;--accent-light:#f4ede3;
+  --text:#1f242a;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
@@ -53,8 +53,8 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 /* DOCTOR SECTION */
 .doctor{background:var(--navy-dark);padding:2rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .doctor-inner{max-width:760px;margin:0 auto}
-.doctor-quote{font-size:16px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
-.doctor-quote em{font-style:normal;color:#f4b08f}
+.doctor-quote{font-size:16px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #ddc7a6}
+.doctor-quote em{font-style:normal;color:#ddc7a6}
 .doctor-bio{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.85;margin-bottom:1.25rem}
 .doctor-bio strong{color:rgba(255,255,255,.8);font-weight:500}
 .doctor-tags{display:flex;flex-wrap:wrap;gap:.4rem}
@@ -65,7 +65,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .hero-inner{max-width:760px;margin:0 auto}
 .hero-eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
-.hero h1 span{color:#f4b08f}
+.hero h1 span{color:#ddc7a6}
 .hero-desc{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75;margin-bottom:2rem}
 
 /* SELECTOR */
@@ -88,7 +88,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .bb-title{font-size:16px;font-weight:700;color:#fff}
 .bb-title small{display:block;font-size:12.5px;font-weight:400;color:rgba(255,255,255,.88);letter-spacing:.06em;margin-top:2px}
 .bb-number{display:flex;align-items:baseline;gap:.4rem;margin-bottom:1rem}
-.bb-num{font-size:52px;font-weight:700;color:#f4b08f;line-height:1}
+.bb-num{font-size:52px;font-weight:700;color:#ddc7a6;line-height:1}
 .bb-unit{font-size:15px;color:rgba(255,255,255,.88)}
 .bb-desc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.75;margin-bottom:1rem}
 .bb-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem}
@@ -114,11 +114,11 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .stage-wrap{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem}
 table.st{width:100%;border-collapse:collapse;font-size:14px;background:var(--white)}
 table.st th{text-align:left;padding:9px 12px;font-size:12.5px;font-weight:600;letter-spacing:.06em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border)}
-table.st td{padding:9px 12px;border-bottom:1px solid #edf4f1;color:var(--text-mid);vertical-align:top}
+table.st td{padding:9px 12px;border-bottom:1px solid #edf0f4;color:var(--text-mid);vertical-align:top}
 table.st tr:last-child td{border-bottom:none}
 .stage-badge{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:32px;text-align:center}
 .sb-a{background:#f0f8f0;color:#1a6a1a;border:1px solid #aad8aa}
-.sb-b1{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
+.sb-b1{background:#e6ecf4;color:#1a3d6b;border:1px solid #a8bdd8}
 .sb-b2{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
 .sb-c{background:#fdf0f0;color:#8a1010;border:1px solid #e8aaaa}
 .sb-d{background:#2a0a0a;color:#ffaaaa;border:1px solid #8a2020}
@@ -136,7 +136,7 @@ table.st tr:last-child td{border-bottom:none}
 /* CALLOUT */
 .callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:14px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
-.callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
+.callout.info{background:var(--accent-light);color:#16345c;border:1px solid #a8bdd8}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
 .callout.danger{background:var(--danger-bg);color:var(--danger-text);border:1px solid var(--danger-border)}
 .callout strong{font-weight:600}
@@ -184,6 +184,7 @@ ul.gl strong{color:var(--text);font-weight:600}
   .topbar-btns .tbtn.call span{display:none}
 }
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&display=swap">
 <link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
@@ -191,9 +192,9 @@ ul.gl strong{color:var(--text);font-weight:600}
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON ANIMAL MEDICAL CENTER</small></div></a>
     <div class="topbar-btns">
-      <a class="tbtn back" href="index.html">← 전체 안내</a>
+      <a class="tbtn back" href="guide.html">← 보호자 자료</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
       <a class="tbtn kako" href="#kakao" target="_blank">💬 카카오톡</a>
     </div>
@@ -208,14 +209,14 @@ ul.gl strong{color:var(--text);font-weight:600}
       <em>그것이 시원의 첫 번째 진료 원칙입니다.</em>
     </div>
     <p class="doctor-bio">
-      시원동물의료센터는 <strong>김시원 · 이애린 두 원장이 함께 진료하는</strong> 해운대 센텀의 동물병원입니다. 심장·신장 질환과 만성 내과 질환을 중심으로, 검사 결과를 보호자님과 함께 보며 지금의 상태와 다음 단계를 차근차근 설명드립니다.<br><br>
+      시원동물의료센터는 <strong>김시원 · 이애린 두 대표원장이 함께 진료하는</strong> 해운대 센텀의 동물병원입니다. 내과를 바탕으로 심장 진료와 줄기세포 치료에 힘을 쏟으며, 검사 결과를 보호자님과 함께 보며 지금의 상태와 다음 단계를 차근차근 설명드립니다.<br><br>
       한 아이의 상태를 두 원장이 함께 검토하고, 병원 밖에서도 관리가 이어지도록 보호자님 눈높이에 맞춘 안내 자료를 직접 정리해 두었습니다.
     </p>
     <div class="doctor-tags">
       <span class="dtag">내과 진료</span>
-      <span class="dtag">심장·신장 관리</span>
-      <span class="dtag">만성질환 홈케어</span>
-      <span class="dtag">예방의학</span>
+      <span class="dtag">심장 진료</span>
+      <span class="dtag">줄기세포</span>
+      <span class="dtag">소화기 · 내시경</span>
     </div>
   </div>
 </div>

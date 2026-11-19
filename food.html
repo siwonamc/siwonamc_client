@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0e4f4a">
+<meta name="theme-color" content="#0e2a4f">
 <meta name="description" content="강아지·고양이 금지·주의·급여 가능 음식 빠른 검색 · 포도, 양파, 초콜릿, 자일리톨, 마카다미아, 백합, 사람약까지 위험도와 먹었을 때 대처를 바로 확인하세요. 시원동물의료센터.">
 <title>우리 아이 이거 먹어도 되나요? · 시원동물의료센터</title>
 <link rel="icon" type="image/png" href="favicon.png">
@@ -23,9 +23,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
-  --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
+  --navy:#0e2a4f;--navy-dark:#081b33;--navy-light:#e3e8ef;--navy-xlight:#f3f5f8;
+  --accent:#a28251;--accent-light:#f4ede3;
+  --text:#1f242a;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --red:#b3261e;--red-bg:#fdf0ef;--red-border:#f0c8c4;
   --amber:#9a6207;--amber-bg:#fff8e6;--amber-border:#f0dcae;
@@ -53,14 +53,14 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .hero-inner{max-width:760px;margin:0 auto;text-align:center}
 .hero-eyebrow{font-size:11.5px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.55rem}
 .hero h1{font-size:21px;font-weight:700;color:#fff;line-height:1.45;margin-bottom:.5rem;letter-spacing:-.01em}
-.hero h1 span{color:#f4b08f}
+.hero h1 span{color:#ddc7a6}
 .hero-desc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.8}
 
 /* ── SEARCH / CONTROLS ─────────────────── */
-.controls{position:sticky;top:56px;z-index:150;background:var(--bg);border-bottom:1px solid var(--border);box-shadow:0 8px 18px -18px rgba(14,79,74,.8)}
+.controls{position:sticky;top:56px;z-index:150;background:var(--bg);border-bottom:1px solid var(--border);box-shadow:0 8px 18px -18px rgba(14,42,79,.8)}
 .controls-inner{max-width:760px;margin:0 auto;padding:.75rem 1.25rem .6rem}
 .sbox{display:flex;align-items:center;gap:.5rem;background:var(--white);border:1.5px solid var(--border);border-radius:999px;padding:.6rem .95rem;transition:border-color .15s,box-shadow .15s}
-.sbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(196,87,47,.12)}
+.sbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(162,130,81,.12)}
 .sbox .sic{font-size:16px;line-height:1;flex-shrink:0;opacity:.55}
 .sbox input{flex:1;-webkit-appearance:none;appearance:none;min-width:0;border:none;outline:none;background:transparent;font-family:inherit;font-size:15.5px;color:var(--text);font-weight:500}
 .sbox input::placeholder{color:var(--text-muted);font-weight:400;font-size:14.5px}
@@ -74,7 +74,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
 .sep{width:1px;height:18px;background:var(--border);flex-shrink:0;margin:0 .1rem}
 .chip{flex-shrink:0;border:1px solid var(--border);background:var(--white);color:var(--text-mid);font-family:inherit;font-size:13px;font-weight:500;padding:5px 11px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s,border-color .15s}
-.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 8px 16px -12px rgba(14,79,74,.9)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 8px 16px -12px rgba(14,42,79,.9)}
 .chip:focus-visible,.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* ── MAIN ─────────────────────────────── */
@@ -87,7 +87,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .qt{border:1px dashed var(--border);background:var(--white);color:var(--text-mid);font-family:inherit;font-size:13px;padding:4px 10px;border-radius:999px;cursor:pointer}
 .qt:active{background:var(--navy-light)}
 
-.alertcard{background:var(--white);border:1px solid var(--red-border);border-radius:14px;padding:1.05rem 1.1rem 1.15rem;margin-bottom:1.1rem;box-shadow:0 10px 26px -24px rgba(14,79,74,.9)}
+.alertcard{background:var(--white);border:1px solid var(--red-border);border-radius:14px;padding:1.05rem 1.1rem 1.15rem;margin-bottom:1.1rem;box-shadow:0 10px 26px -24px rgba(14,42,79,.9)}
 .alertcard h2{font-size:14.5px;font-weight:700;color:var(--red);letter-spacing:-.01em;display:flex;align-items:center;gap:.4rem;margin-bottom:.2rem}
 .alertcard .asub{font-size:13px;color:var(--text-muted);margin-bottom:.7rem}
 .alertcard ol{list-style:none;counter-reset:al;display:grid;gap:.45rem}
@@ -100,7 +100,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 /* ── CARD ─────────────────────────────── */
 .list{display:grid;gap:.7rem}
-.card{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--text-muted);border-radius:14px;padding:.95rem 1rem 1rem;box-shadow:0 1px 2px rgba(14,79,74,.04)}
+.card{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--text-muted);border-radius:14px;padding:.95rem 1rem 1rem;box-shadow:0 1px 2px rgba(14,42,79,.04)}
 .card.lv-ban{border-left-color:var(--red)}
 .card.lv-care{border-left-color:#d99a2b}
 .card.lv-ok{border-left-color:#2f9e63}
@@ -166,15 +166,16 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
   .card{break-inside:avoid}
 }
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&display=swap">
 <link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON ANIMAL MEDICAL CENTER</small></div></a>
     <div class="topbar-btns">
-      <a class="tbtn back" href="index.html">← 전체 안내</a>
+      <a class="tbtn back" href="guide.html">← 보호자 자료</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
       <a class="tbtn kako" href="#kakao">💬 카카오톡</a>
     </div>

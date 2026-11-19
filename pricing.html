@@ -2,472 +2,73 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>진료비용 안내 · 시원동물의료센터</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="canonical" href="pricing.html">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="시원동물의료센터">
-<meta property="og:title" content="진료비용 안내 · 시원동물의료센터">
-<meta property="og:description" content="시원동물의료센터 진료비용 게시 — 진찰료·접종·검사비용과 체중별 입원비·기생충 예방약·건강검진·중성화 비용 (수의사법 제13조의2)">
-<meta property="og:url" content="pricing.html">
-<meta property="og:locale" content="ko_KR">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>진료비 안내 · 시원동물의료센터</title>
+<meta name="description" content="시원동물의료센터 진료비 게시와 사전 견적 안내.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="진료비 안내 · 시원동물의료센터">
+<meta property="og:description" content="시원동물의료센터 진료비 게시와 사전 견적 안내.">
 <meta property="og:image" content="og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="og-image.png">
-<meta name="description" content="시원동물의료센터 진료비용 게시 — 진찰료·접종·검사비용과 체중별 입원비·기생충 예방약·건강검진·중성화 비용 (수의사법 제13조의2)">
-<meta name="theme-color" content="#0e4f4a">
+<meta name="theme-color" content="#0e2442">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<style>
-:root{
-  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
-  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
-  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;word-break:keep-all}
-
-.topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
-.topbar-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-.logo-text{color:#fff;font-size:14px;font-weight:500;line-height:1.3}
-.logo-group{display:flex;align-items:center;gap:.5rem;min-width:0;text-decoration:none}
-.logo-mark{width:28px;height:28px;border-radius:8px;background:#fff;object-fit:contain;flex-shrink:0;padding:2px;box-shadow:0 1px 3px rgba(0,0,0,.28)}
-@media(max-width:520px){.logo-mark{width:26px;height:26px;padding:1px;border-radius:7px}}
-@media(max-width:420px){.logo-text{display:none}.logo-mark,.logo-mark img{width:24px;height:24px}.logo-group{gap:0}}
-.logo-text small{display:block;font-size:11.5px;font-weight:300;opacity:.7;letter-spacing:.08em}
-.topbar-btns{display:flex;gap:.5rem;flex-shrink:0}
-.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:13.5px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
-.tbtn.call{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
-.tbtn.call:hover{background:rgba(255,255,255,.22)}
-.tbtn.kako{background:#FEE500;color:#1a1a1a;border:1px solid #FEE500}
-.tbtn.kako:hover{background:#f0d800}
-.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.15);font-size:12.5px}
-
-.hero{background:var(--navy);padding:2.5rem 1.5rem 2rem;text-align:center}
-.hero-inner{max-width:900px;margin:0 auto}
-.hero-eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.75rem}
-.hero h1{font-size:24px;font-weight:700;color:#fff;margin-bottom:.6rem}
-.hero-desc{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75}
-
-.notice-bar{background:var(--navy-xlight);border-bottom:1px solid var(--border);padding:.875rem 1.5rem;text-align:center;font-size:13.5px;color:var(--text-mid)}
-.notice-bar strong{color:var(--navy);font-weight:600}
-
-.main{max-width:900px;margin:0 auto;padding:2rem 1.5rem 3rem}
-
-/* GRID LAYOUT */
-.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.25rem}
-.price-grid.single{grid-template-columns:1fr}
-
-/* PRICE CARD */
-.pcard{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden}
-.pcard-head{background:var(--navy);color:#fff;padding:.75rem 1.25rem;font-size:14px;font-weight:700;letter-spacing:.04em;text-align:center}
-.pcard-body{padding:.25rem 0}
-
-/* PRICE ROW */
-.prow{display:flex;align-items:center;justify-content:space-between;padding:.55rem 1.25rem;border-bottom:1px solid var(--navy-xlight);font-size:14px}
-.prow:last-child{border-bottom:none}
-.prow:hover{background:var(--navy-xlight)}
-.prow-label{color:var(--text-mid);flex:1}
-.prow-sub{font-size:12.5px;color:var(--text-muted);margin-left:.5rem}
-.prow-price{font-weight:600;color:var(--navy);white-space:nowrap;margin-left:1rem}
-.prow-range{font-weight:600;color:var(--navy);white-space:nowrap;margin-left:1rem;font-size:13.5px}
-
-/* SECTION DIVIDER inside card */
-.psec{padding:.5rem 1.25rem .25rem;font-size:12.5px;font-weight:700;letter-spacing:.08em;color:var(--text-muted);text-transform:uppercase;border-bottom:1px solid var(--border);background:var(--navy-xlight)}
-
-/* NOTE */
-.pnote{font-size:12.5px;color:var(--text-muted);padding:.5rem 1.25rem .6rem;text-align:right;font-style:italic}
-.pcard-body.two-col{column-count:2;column-gap:0}
-.pcard-body.two-col .prow,.pcard-body.two-col .pnote{break-inside:avoid}
-@media(max-width:700px){.pcard-body.two-col{column-count:1}}
-
-/* PARASITE TABLE - 3 column */
-.para-table{width:100%;border-collapse:collapse;font-size:13.5px}
-.para-table th{text-align:left;padding:7px 10px;font-size:12.5px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border)}
-.para-table td{padding:6px 10px;border-bottom:1px solid var(--navy-xlight);color:var(--text-mid)}
-.para-table tr:last-child td{border-bottom:none}
-.para-table tr:hover td{background:var(--navy-xlight)}
-.para-table td:last-child{font-weight:600;color:var(--navy);text-align:right}
-.para-name{font-weight:600;color:var(--text)}
-
-/* CALCULATOR */
-.calc-intro{font-size:14px;color:var(--text-mid);line-height:1.75;margin-bottom:1.2rem}
-.calc-intro span{display:block;font-size:13.5px;color:var(--text-muted);margin-top:2px}
-.calc-weight{display:flex;align-items:center;gap:.75rem;margin-bottom:1.4rem;flex-wrap:wrap}
-.calc-weight > label{font-size:14px;font-weight:600;color:var(--navy);white-space:nowrap}
-.calc-input-wrap{display:flex;align-items:center;gap:.5rem}
-.calc-input{width:110px;padding:9px 12px;border:1.5px solid var(--border);border-radius:9px;font-size:15px;font-family:inherit;color:var(--navy);outline:none;transition:border-color .15s}
-.calc-input:focus{border-color:var(--navy)}
-.calc-unit{font-size:14px;color:var(--text-mid)}
-.calc-badge{font-size:12.5px;padding:4px 10px;border-radius:999px;font-weight:600;white-space:nowrap}
-.calc-badge.base{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
-.calc-badge.over{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
-.calc-sheet{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white)}
-@media(min-width:760px){
-  .calc-sheet{column-count:2;column-gap:0}
-  .calc-group{break-inside:avoid;page-break-inside:avoid}
-}
-.calc-sheet .psec{background:var(--navy-xlight)}
-.calc-sheet .prow{font-size:13.5px;padding:.5rem 1rem}
-.calc-sheet .prow-price{font-size:14px}
-.surcharge{margin-top:.875rem;background:#fff8e0;border:1px solid #e8d48a;border-radius:8px;padding:.75rem 1rem;font-size:13.5px;color:#5a3e00;line-height:1.7}
-.calc-note{font-size:12.5px;color:var(--text-muted);margin-top:.75rem;text-align:center}
-
-/* COLLAPSIBLE FULL TABLE */
-.fold{margin-top:1.5rem}
-.fold summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:.95rem 1.2rem;font-size:14px;font-weight:600;color:var(--navy);box-shadow:0 1px 2px rgba(14,79,74,.04);transition:background .15s,border-color .15s}
-.fold summary::-webkit-details-marker{display:none}
-.fold summary:hover{background:var(--navy-xlight);border-color:#a8d8cf}
-.fold summary .chev{font-size:11.5px;color:var(--accent);transition:transform .2s}
-.fold[open] summary{border-radius:12px 12px 0 0;border-color:var(--border);background:var(--navy-xlight)}
-.fold[open] summary .chev{transform:rotate(180deg)}
-.fold-body{padding-top:1.25rem;display:grid;gap:1.25rem}
-.fold-body .price-grid{margin-bottom:0}
-
-.foot{background:var(--navy);padding:2rem 1.5rem;margin-top:1rem}
-.foot-inner{max-width:900px;margin:0 auto}
-.foot-disc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.9;margin-bottom:1.25rem}
-.foot-disc strong{color:rgba(255,255,255,.88);font-weight:500}
-.foot-btns{display:flex;gap:.6rem;flex-wrap:wrap}
-
-@media(max-width:600px){
-  .price-grid{grid-template-columns:1fr}
-  .hero h1{font-size:20px}
-  .topbar-btns .tbtn.call span{display:none}
-  .logo-text{white-space:nowrap;font-size:13.5px}
-  .logo-text small{display:none}
-  .tbtn.back{padding:6px 9px;font-size:12px}
-}
-</style>
-<link rel="stylesheet" href="siwon-theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-
-<div class="topbar">
-  <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
-    <div class="topbar-btns">
-      <a class="tbtn back" href="index.html">← 전체 안내</a>
-      <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
-      <a class="tbtn kako" href="#kakao">💬 카카오톡</a>
-    </div>
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html"><b>시원동물의료센터</b><small>SIWON ANIMAL MEDICAL CENTER</small></a>
+    <nav class="gnav" aria-label="주요 메뉴"><a href="index.html#care">진료 분야</a><a href="doctors.html">의료진</a><a href="report.html">보호자 리포트</a><a href="hospital.html">입원 안내</a><a href="visit.html">오시는 길</a><a href="guide.html">보호자 자료</a></nav>
+    <a class="head-call" href="tel:000-0000-0000">전화<span class="hc-num"> 000-0000-0000</span></a>
   </div>
-</div>
+</header>
+<main id="main">
+<section class="phead"><div class="wrap">
+  <div class="crumb"><a href="index.html">처음으로</a> · 진료비 안내</div>
+  <h1>진료비 안내</h1>
+  <p class="lead">진료비표는 개원 전에 확정해 이곳과 병원 안에 게시합니다.</p>
+</div></section>
 
-<div class="hero">
-  <div class="hero-inner">
-    <div class="hero-eyebrow">시원동물의료센터 · 진료비용 안내</div>
-    <h1>시원동물의료센터 진료비 안내</h1>
-    <p class="hero-desc">수의사법 제13조의2에 따라 주요 진료 항목의 비용을 안내합니다.<br>모든 금액은 부가세가 포함된 금액이며, 아이 상태에 따라 달라질 수 있습니다.</p>
+<section class="sec">
+  <div class="wrap grid g2">
+    <div class="card"><h3>게시 예정</h3><p>법으로 게시하도록 정해진 진찰·접종·검사 등 주요 항목의 비용을 개원 전에 이 페이지와 원내에 올려 드립니다. <span class="pending">준비 중</span></p></div>
+    <div class="card"><h3>미리 알려 드리는 견적</h3><p>검사·수술·입원처럼 비용이 큰 진료는 시작하기 전에 예상 비용을 서면으로 안내하고, 보호자분이 동의하신 뒤에 진행합니다.</p></div>
+    <div class="card"><h3>진행 중 달라질 때</h3><p>진료 중에 계획이 바뀌어 비용이 늘어날 때는 먼저 연락드려 이유를 설명하고 다시 동의를 받습니다.</p></div>
+    <div class="card"><h3>궁금하실 때</h3><p>전화나 이메일(siwonamc@naver.com)로 문의해 주시면 대략적인 범위를 안내해 드립니다. 정확한 비용은 진찰 후에 말씀드릴 수 있습니다.</p></div>
   </div>
-</div>
-
-<div class="notice-bar">
-  <strong>※ 참고</strong> · 표시된 금액은 <strong>체중 7kg 이하 기준</strong>이고, 몸무게와 상태에 따라 달라질 수 있습니다. 정확한 비용은 진료 상담 때 말씀드립니다.
-</div>
-
-<div class="main">
-
-  <!-- CALCULATOR -->
-  <div class="price-grid single" style="margin-bottom:1.25rem">
-    <div class="pcard">
-      <div class="pcard-head">💊 체중별 비용 계산기</div>
-      <div class="pcard-body" style="padding:1.25rem">
-        <p class="calc-intro">아이 몸무게를 넣으면 항목별 예상 비용을 바로 계산해 드립니다.<br>
-        <span>아래 금액은 입력 전까지 <strong>7kg 이하 기준</strong>입니다. · 중성화·스케일링·건강검진 항목은 7kg 초과 시 kg당 10,000원이 추가됩니다.</span></p>
-
-        <div class="calc-weight">
-          <label for="weightInput">체중 입력</label>
-          <div class="calc-input-wrap">
-            <input type="number" id="weightInput" class="calc-input" min="0.1" max="80" step="0.1" placeholder="예: 5.2" oninput="calcAll()">
-            <span class="calc-unit">kg</span>
-            <span id="weight-badge" class="calc-badge base">7kg 이하 기준</span>
-          </div>
-        </div>
-
-        <div id="calc-results">
-          <div class="calc-sheet">
-            <div class="calc-group">
-              <div class="psec">중성화 수술</div>
-              <div class="prow"><span class="prow-label">암컷 중성화</span><span class="prow-price" id="c-female">399,000원</span></div>
-              <div class="prow"><span class="prow-label">수컷 중성화</span><span class="prow-price" id="c-male">240,000원</span></div>
-              <div class="prow"><span class="prow-label">스케일링</span><span class="prow-price" id="c-scaling">340,000원</span></div>
-            </div>
-
-            <div class="calc-group">
-              <div class="psec">건강검진</div>
-              <div class="prow"><span class="prow-label">강아지 0~4세</span><span class="prow-price" id="c-dog-young">220,000원</span></div>
-              <div class="prow"><span class="prow-label">강아지 5세↑</span><span class="prow-price" id="c-dog-old">340,000원</span></div>
-              <div class="prow"><span class="prow-label">고양이 0~4세</span><span class="prow-price" id="c-cat-young">220,000원</span></div>
-              <div class="prow"><span class="prow-label">고양이 5~9세</span><span class="prow-price" id="c-cat-mid">340,000원</span></div>
-              <div class="prow"><span class="prow-label">고양이 10세↑</span><span class="prow-price" id="c-cat-old">440,000원</span></div>
-            </div>
-
-            <div class="calc-group">
-              <div class="psec">입원비 (ICU 주간 당일)</div>
-              <div class="prow"><span class="prow-label" id="c-icu-label">7kg 이하</span><span class="prow-price" id="c-icu">55,000원</span></div>
-            </div>
-
-            <div class="calc-group">
-              <div class="psec">기생충 예방약</div>
-              <div class="prow"><span class="prow-label">프론트라인</span><span class="prow-price" id="c-frontline">16,000원</span></div>
-              <div class="prow"><span class="prow-label">하트가드</span><span class="prow-price" id="c-heartgard">10,000원</span></div>
-              <div class="prow"><span class="prow-label">넥스가드</span><span class="prow-price" id="c-nexgard">23,000원</span></div>
-              <div class="prow"><span class="prow-label">레볼루션</span><span class="prow-price" id="c-revolution">19,000원</span></div>
-            </div>
-          </div>
-
-          <!-- 추가요금 안내 -->
-          <div id="surcharge-note" class="surcharge" style="display:none">
-            ⚠️ <strong>7kg 초과 추가요금 적용</strong> —
-            중성화·스케일링·건강검진 항목에 <strong id="surcharge-amt"></strong>이 추가되었습니다.
-            (7kg 초과 <span id="surcharge-kg"></span>kg × 10,000원)
-          </div>
-
-          <p class="calc-note">위 금액은 예상 금액이며, 실제 비용은 진료 후 알려 드립니다.</p>
-        </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">시원동물의료센터</div>
+        내과 · 심장 · 줄기세포<br>
+        대표원장 김시원 · 이애린<br>
+        부산광역시 해운대구 센텀동로 25, 상가동 2층 214호<br>(우동, 대우월드마크센텀)
+      </div>
+      <div>
+        <b>진료시간</b><br>
+        매일 09:00 – 21:00<br>점심 13:00 – 14:00 · 저녁 18:00 – 19:00<br>
+        수술·내시경·정밀검사는 예약제<br>
+        2027년 3월 2일 개원 예정
+      </div>
+      <div>
+        <b>연락</b><br>
+        전화 000-0000-0000 <span style="opacity:.7">(개통 예정)</span><br>
+        이메일 <a href="mailto:siwonamc@naver.com">siwonamc@naver.com</a><br>
+        주차 건물 주차장 무료<br>
+        <a href="guide.html">보호자 자료 모음 →</a>
       </div>
     </div>
+    <small>이 사이트의 건강 정보는 보호자분의 이해를 돕기 위한 일반 안내이며, 아이별 진단과 치료는 진료를 통해 결정합니다.</small>
   </div>
-
-  <!-- 기본 항목: 진찰료 + 접종 -->
-  <div class="price-grid">
-
-    <div class="pcard">
-      <div class="pcard-head">진찰료</div>
-      <div class="pcard-body">
-        <div class="prow"><span class="prow-label">초진 진찰료</span><span class="prow-price">11,000원</span></div>
-        <div class="prow"><span class="prow-label">재진 진찰료</span><span class="prow-price">8,800원</span></div>
-        <div class="prow"><span class="prow-label">진료 상담비</span><span class="prow-price">8,800원</span></div>
-        <div class="prow"><span class="prow-label">타 병원 관련 상담<span class="prow-sub">7kg 이하 기준</span></span><span class="prow-range">20,000~50,000원</span></div>
-      </div>
-    </div>
-
-    <div class="pcard">
-      <div class="pcard-head">접종</div>
-      <div class="pcard-body">
-        <div class="prow"><span class="prow-label">강아지 종합접종</span><span class="prow-price">30,000원</span></div>
-        <div class="prow"><span class="prow-label">강아지 코로나 장염</span><span class="prow-price">25,000원</span></div>
-        <div class="prow"><span class="prow-label">강아지 전염성 기관지염</span><span class="prow-price">25,000원</span></div>
-        <div class="prow"><span class="prow-label">강아지 신종플루</span><span class="prow-price">35,000원</span></div>
-        <div class="prow"><span class="prow-label">강아지 광견병</span><span class="prow-price">25,000원</span></div>
-        <div class="prow"><span class="prow-label">고양이 종합접종</span><span class="prow-price">45,000원</span></div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- 기본 항목: 검사비용 -->
-  <div class="price-grid single">
-    <div class="pcard">
-      <div class="pcard-head">검사비용</div>
-      <div class="pcard-body two-col">
-        <div class="prow"><span class="prow-label">전혈구검사</span><span class="prow-price">44,000원</span></div>
-        <div class="prow"><span class="prow-label">혈액검사 10종</span><span class="prow-price">75,000원</span></div>
-        <div class="prow"><span class="prow-label">혈액검사 17종</span><span class="prow-price">143,000원</span></div>
-        <div class="prow"><span class="prow-label">전해질 검사<span class="prow-sub">나트륨·칼륨·염소</span></span><span class="prow-price">36,300원</span></div>
-        <div class="prow"><span class="prow-label">SDMA <span class="prow-sub">신부전 조기검사</span></span><span class="prow-price">66,000원</span></div>
-        <div class="prow"><span class="prow-label">갑상선 호르몬검사</span><span class="prow-price">66,000원</span></div>
-        <div class="prow"><span class="prow-label">소변검사 <span class="prow-sub">스틱·비중</span></span><span class="prow-price">22,000원</span></div>
-        <div class="prow"><span class="prow-label">단백뇨검사</span><span class="prow-price">38,000원</span></div>
-        <div class="prow"><span class="prow-label">췌장염 검사</span><span class="prow-price">66,000원</span></div>
-        <div class="prow"><span class="prow-label">CRP 검사</span><span class="prow-price">41,000원</span></div>
-        <div class="prow"><span class="prow-label">엑스레이 <span class="prow-sub">1 cut 기준</span></span><span class="prow-price">27,500원</span></div>
-        <div class="prow"><span class="prow-label">복부초음파</span><span class="prow-price">99,000원</span></div>
-        <div class="prow"><span class="prow-label">심장초음파 <span class="prow-sub">초진 기준</span></span><span class="prow-price">195,000원</span></div>
-        <div class="pnote">* 영상 촬영 검사는 10kg 이하 기준</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 체중별 전체 기준표 (접힘) -->
-  <details class="fold">
-    <summary>📋 체중별 전체 기준표 보기 <span class="chev" aria-hidden="true">▼</span></summary>
-    <div class="fold-body">
-
-      <!-- 입원비용 -->
-      <div class="price-grid single">
-        <div class="pcard">
-          <div class="pcard-head">입원비용</div>
-          <div class="pcard-body">
-            <div class="psec">ICU 주간 (당일)</div>
-            <div class="prow"><span class="prow-label">7kg 이하</span><span class="prow-price">55,000원</span></div>
-            <div class="prow"><span class="prow-label">7kg ~ 14kg</span><span class="prow-price">66,000원</span></div>
-            <div class="prow"><span class="prow-label">14kg ~ 21kg</span><span class="prow-price">77,000원</span></div>
-            <div class="pnote">* 21kg 초과는 별도 문의</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 심장사상충 및 외부기생충 -->
-      <div class="price-grid single">
-        <div class="pcard">
-          <div class="pcard-head">심장사상충 및 외부기생충</div>
-          <div class="pcard-body" style="padding:.5rem 1.25rem .75rem">
-            <table class="para-table">
-              <tr>
-                <th style="width:120px">제품명</th>
-                <th>체중</th>
-                <th style="text-align:right">가격</th>
-              </tr>
-              <tr><td class="para-name" rowspan="3">프론트라인</td><td>10kg 이하</td><td>16,000원</td></tr>
-              <tr><td>10~20kg</td><td>22,000원</td></tr>
-              <tr><td>20~40kg</td><td>25,000원</td></tr>
-              <tr><td class="para-name" rowspan="3">하트가드</td><td>11kg 이하</td><td>10,000원</td></tr>
-              <tr><td>12~22kg</td><td>14,000원</td></tr>
-              <tr><td>23~45kg</td><td>17,000원</td></tr>
-              <tr><td class="para-name" rowspan="5">넥스가드</td><td>1.6~3.5kg</td><td>21,000원</td></tr>
-              <tr><td>3.5~7kg</td><td>23,000원</td></tr>
-              <tr><td>7.5~15kg</td><td>26,000원</td></tr>
-              <tr><td>15~30kg</td><td>32,000원</td></tr>
-              <tr><td>30~60kg</td><td>42,000원</td></tr>
-              <tr><td class="para-name">구충제</td><td>-</td><td>3,000원</td></tr>
-              <tr><td class="para-name" rowspan="5">레볼루션</td><td>2.5kg 이하</td><td>15,000원</td></tr>
-              <tr><td>2.5~5kg</td><td>17,000원</td></tr>
-              <tr><td>5~10kg</td><td>19,000원</td></tr>
-              <tr><td>10~20kg</td><td>24,000원</td></tr>
-              <tr><td>20~40kg</td><td>34,000원</td></tr>
-              <tr><td class="para-name">레볼루션 캣</td><td>2.5~7.5kg</td><td>17,000원</td></tr>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <!-- 건강검진 및 중성화 -->
-      <div class="price-grid single">
-        <div class="pcard">
-          <div class="pcard-head">건강검진 및 중성화비용</div>
-          <div class="pcard-body">
-            <div class="psec">중성화 수술</div>
-            <div class="prow"><span class="prow-label">암컷 중성화 <span class="prow-sub">혈액검사·수액·마취 포함</span></span><span class="prow-price">399,000원</span></div>
-            <div class="prow"><span class="prow-label">수컷 중성화 <span class="prow-sub">혈액검사·수액·마취 포함</span></span><span class="prow-price">240,000원</span></div>
-            <div class="prow"><span class="prow-label">스케일링 <span class="prow-sub">치과방사선 포함</span></span><span class="prow-price">340,000원</span></div>
-            <div class="psec">강아지 건강검진</div>
-            <div class="prow"><span class="prow-label">0~4세</span><span class="prow-price">220,000원</span></div>
-            <div class="prow"><span class="prow-label">5세 이상</span><span class="prow-price">340,000원</span></div>
-            <div class="psec">고양이 건강검진</div>
-            <div class="prow"><span class="prow-label">0~4세</span><span class="prow-price">220,000원</span></div>
-            <div class="prow"><span class="prow-label">5~9세</span><span class="prow-price">340,000원</span></div>
-            <div class="prow"><span class="prow-label">10세 이상</span><span class="prow-price">440,000원</span></div>
-            <div class="pnote">* 7kg 이하 기준</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </details>
-
-</div>
-
-<div class="foot">
-  <div class="foot-inner">
-    <p class="foot-disc">
-      이 비용 안내는 수의사법 제13조의2의 진료비 게시 의무에 따라 작성했습니다.<br> 모든 금액은 <strong>부가세 포함</strong>이며, 아이의 몸무게, 상태, 진행하는 항목에 따라 실제 비용은 달라질 수 있습니다.<br> 자세한 비용은 진료 전에 먼저 안내해 드립니다.<br> 궁금한 점은 언제든 편하게 물어봐 주세요.<br> 진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
-    </p>
-    <div class="foot-btns">
-      <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>
-      <a class="tbtn kako" href="#kakao">💬 카카오톡 문의</a>
-    </div>
-  </div>
-</div>
-
-<script>
-const DEFAULT_W = 7;
-
-function fmt(n){return n.toLocaleString()+'원'}
-
-function surcharge(base, weight){
-  if(weight <= 7) return base;
-  return base + Math.ceil(weight - 7) * 10000;
-}
-
-function calcAll(){
-  const input = document.getElementById('weightInput');
-  const raw = (input.value || '').trim();
-  const entered = raw !== '' && !isNaN(parseFloat(raw)) && parseFloat(raw) > 0;
-  const w = entered ? Math.min(parseFloat(raw), 120) : DEFAULT_W;
-
-  // 체중 배지
-  const badge = document.getElementById('weight-badge');
-  badge.textContent = entered ? (w + 'kg') : '7kg 이하 기준';
-  badge.className = 'calc-badge ' + (w > 7 ? 'over' : 'base');
-
-  // 7kg 초과 추가요금 안내
-  const extra = w > 7 ? Math.ceil(w - 7) * 10000 : 0;
-  const surNote = document.getElementById('surcharge-note');
-  if(extra > 0){
-    surNote.style.display = 'block';
-    document.getElementById('surcharge-amt').textContent = fmt(extra);
-    document.getElementById('surcharge-kg').textContent = (w - 7).toFixed(1);
-  } else {
-    surNote.style.display = 'none';
-  }
-
-  // 중성화
-  document.getElementById('c-female').textContent = fmt(surcharge(399000, w));
-  document.getElementById('c-male').textContent = fmt(surcharge(240000, w));
-  document.getElementById('c-scaling').textContent = fmt(surcharge(340000, w));
-
-  // 건강검진
-  document.getElementById('c-dog-young').textContent = fmt(surcharge(220000, w));
-  document.getElementById('c-dog-old').textContent = fmt(surcharge(340000, w));
-  document.getElementById('c-cat-young').textContent = fmt(surcharge(220000, w));
-  document.getElementById('c-cat-mid').textContent = fmt(surcharge(340000, w));
-  document.getElementById('c-cat-old').textContent = fmt(surcharge(440000, w));
-
-  // 입원비 (체중 구간별, 추가요금 없음)
-  let icu, icuLabel;
-  if(w <= 7){ icu = 55000; icuLabel = '7kg 이하'; }
-  else if(w <= 14){ icu = 66000; icuLabel = '7~14kg'; }
-  else { icu = 77000; icuLabel = w <= 21 ? '14~21kg' : '21kg 초과 (별도 문의)'; }
-  document.getElementById('c-icu').textContent = fmt(icu);
-  document.getElementById('c-icu-label').textContent = icuLabel;
-
-  // 프론트라인
-  let fl;
-  if(w <= 10) fl = fmt(16000);
-  else if(w <= 20) fl = fmt(22000);
-  else if(w <= 40) fl = fmt(25000);
-  else fl = '범위 초과';
-  document.getElementById('c-frontline').textContent = fl;
-
-  // 하트가드
-  let hg;
-  if(w <= 11) hg = fmt(10000);
-  else if(w <= 22) hg = fmt(14000);
-  else if(w <= 45) hg = fmt(17000);
-  else hg = '범위 초과';
-  document.getElementById('c-heartgard').textContent = hg;
-
-  // 넥스가드
-  let ng;
-  if(w >= 1.6 && w <= 3.5) ng = fmt(21000);
-  else if(w <= 7) ng = fmt(23000);
-  else if(w <= 15) ng = fmt(26000);
-  else if(w <= 30) ng = fmt(32000);
-  else if(w <= 60) ng = fmt(42000);
-  else ng = '범위 초과';
-  document.getElementById('c-nexgard').textContent = ng;
-
-  // 레볼루션
-  let rv;
-  if(w <= 2.5) rv = fmt(15000);
-  else if(w <= 5) rv = fmt(17000);
-  else if(w <= 10) rv = fmt(19000);
-  else if(w <= 20) rv = fmt(24000);
-  else if(w <= 40) rv = fmt(34000);
-  else rv = '범위 초과';
-  document.getElementById('c-revolution').textContent = rv;
-}
-
-// 첫 화면부터 7kg 이하 기준 금액을 보여줍니다
-calcAll();
-</script>
-
+</footer>
 <script src="siwon-ui.js" defer></script>
 </body>
 </html>
