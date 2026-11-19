@@ -22,7 +22,7 @@
 :root{
   --navy:#0e4f4a;--navy-dark:#08332f;--navy-mid:#1a6b62;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
   --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
@@ -30,47 +30,47 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;word-break:keep-all}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-.logo-text{color:#fff;font-size:13px;font-weight:500;line-height:1.3}
+.logo-text{color:#fff;font-size:14px;font-weight:500;line-height:1.3}
 .logo-group{display:flex;align-items:center;gap:.5rem;min-width:0;text-decoration:none}
 .logo-mark{width:28px;height:28px;border-radius:8px;background:#fff;object-fit:contain;flex-shrink:0;padding:2px;box-shadow:0 1px 3px rgba(0,0,0,.28)}
 @media(max-width:520px){.logo-mark{width:26px;height:26px;padding:1px;border-radius:7px}}
 @media(max-width:420px){.logo-text{display:none}.logo-mark,.logo-mark img{width:24px;height:24px}.logo-group{gap:0}}
-.logo-text small{display:block;font-size:10px;font-weight:300;opacity:.7;letter-spacing:.08em}
+.logo-text small{display:block;font-size:11.5px;font-weight:300;opacity:.7;letter-spacing:.08em}
 .topbar-btns{display:flex;gap:.5rem;flex-shrink:0}
-.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
+.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:13.5px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
 .tbtn.call{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
 .tbtn.call:hover{background:rgba(255,255,255,.22)}
 .tbtn.kako{background:#FEE500;color:#1a1a1a;border:1px solid #FEE500}
 .tbtn.kako:hover{background:#f0d800}
-.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15);font-size:11px}
+.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.15);font-size:12.5px}
 .tbtn.back:hover{background:rgba(255,255,255,.15)}
 
 .doctor{background:var(--navy-dark);padding:2rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .doctor-inner{max-width:760px;margin:0 auto}
-.doctor-quote{font-size:15px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
+.doctor-quote{font-size:16px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
 .doctor-quote em{font-style:normal;color:#f4b08f}
-.doctor-bio{font-size:12px;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:1.25rem}
+.doctor-bio{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.85;margin-bottom:1.25rem}
 .doctor-bio strong{color:rgba(255,255,255,.8);font-weight:500}
 .doctor-tags{display:flex;flex-wrap:wrap;gap:.4rem}
-.dtag{font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);background:rgba(255,255,255,.06)}
+.dtag{font-size:12.5px;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.88);background:rgba(255,255,255,.06)}
 
 .hero{background:var(--navy);padding:2.25rem 1.5rem 0}
 .hero-inner{max-width:760px;margin:0 auto}
-.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
+.hero-eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
 .hero h1 span{color:#f4b08f}
-.hero-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:2rem}
+.hero-desc{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75;margin-bottom:2rem}
 
 .sel-bar{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,.1);padding:1.25rem 1.5rem}
 .sel-inner{max-width:760px;margin:0 auto}
 .sel-row{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
-.sel-lbl{font-size:11px;font-weight:500;letter-spacing:.1em;color:rgba(255,255,255,.4);text-transform:uppercase;min-width:56px;flex-shrink:0}
+.sel-lbl{font-size:12.5px;font-weight:500;letter-spacing:.1em;color:rgba(255,255,255,.88);text-transform:uppercase;min-width:56px;flex-shrink:0}
 .pill-group{display:flex;gap:.4rem;flex-wrap:wrap}
-.pill{padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:12px;font-weight:500;cursor:pointer;background:transparent;color:rgba(255,255,255,.6);transition:all .15s}
+.pill{padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:13.5px;font-weight:500;cursor:pointer;background:transparent;color:rgba(255,255,255,.88);transition:all .15s}
 .pill:hover{border-color:rgba(255,255,255,.5);color:#fff}
 .pill.active{background:#fff;border-color:#fff;color:var(--navy)}
 
@@ -78,31 +78,31 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 .sec{margin-bottom:2.5rem}
 .sec-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1.1rem;padding-bottom:.75rem;border-bottom:2px solid var(--navy-light)}
-.sec-num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.sec-num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
 .sec-title{font-size:16px;font-weight:700;color:var(--navy)}
-.sec-tag{margin-left:auto;font-size:10px;letter-spacing:.12em;color:var(--text-muted);font-weight:500;text-transform:uppercase}
+.sec-tag{margin-left:auto;font-size:11.5px;letter-spacing:.12em;color:var(--text-muted);font-weight:500;text-transform:uppercase}
 
-.ov-text{font-size:13px;line-height:1.85;color:var(--text-mid);margin-bottom:1rem;padding:1rem 1.1rem;background:var(--navy-xlight);border-left:3px solid var(--navy);border-radius:0 8px 8px 0}
+.ov-text{font-size:14px;line-height:1.85;color:var(--text-mid);margin-bottom:1rem;padding:1rem 1.1rem;background:var(--navy-xlight);border-left:3px solid var(--navy);border-radius:0 8px 8px 0}
 .ov-text strong{color:var(--navy);font-weight:600}
 
 .disease-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin-bottom:1rem}
 .dc{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem}
-.dc-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-bottom:.5rem;background:var(--navy-light);color:var(--navy)}
-.dc-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.3rem}
-.dc-desc{font-size:12px;color:var(--text-muted);line-height:1.6}
+.dc-badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-bottom:.5rem;background:var(--navy-light);color:var(--navy)}
+.dc-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+.dc-desc{font-size:13.5px;color:var(--text-muted);line-height:1.6}
 
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin-bottom:1rem}
 .stat-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem}
-.stat-card .s-lbl{font-size:11px;color:var(--text-muted);font-weight:500;margin-bottom:.3rem}
-.stat-card .s-val{font-size:13px;font-weight:700;color:var(--navy);line-height:1.5}
+.stat-card .s-lbl{font-size:12.5px;color:var(--text-muted);font-weight:500;margin-bottom:.3rem}
+.stat-card .s-val{font-size:14px;font-weight:700;color:var(--navy);line-height:1.5}
 
 /* TABLE */
 .tbl-wrap{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem;overflow-x:auto}
-table.tb{width:100%;border-collapse:collapse;font-size:12px;background:var(--white)}
-table.tb th{text-align:left;padding:8px 10px;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border);white-space:nowrap}
+table.tb{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--white)}
+table.tb th{text-align:left;padding:8px 10px;font-size:12.5px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border);white-space:nowrap}
 table.tb td{padding:8px 10px;border-bottom:1px solid #edf4f1;color:var(--text-mid);vertical-align:middle;line-height:1.6}
 table.tb tr:last-child td{border-bottom:none}
-.tb-badge{display:inline-block;font-size:11px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:28px;text-align:center;white-space:nowrap}
+.tb-badge{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:28px;text-align:center;white-space:nowrap}
 .b1{background:#f0f8f0;color:#1a6a1a;border:1px solid #aad8aa}
 .b2{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
 .b3{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
@@ -115,15 +115,15 @@ table.tb tr:last-child td{border-bottom:none}
 .prog-card.s2{background:#e6f4f1;border-color:#a8d8cf}
 .prog-card.s3{background:#fff8e0;border-color:#e8d48a}
 .prog-card.s4{background:#fdf0f0;border-color:#e8aaaa}
-.prog-stage{font-size:11px;font-weight:700;letter-spacing:.06em;margin-bottom:.3rem}
+.prog-stage{font-size:12.5px;font-weight:700;letter-spacing:.06em;margin-bottom:.3rem}
 .prog-card.s1 .prog-stage{color:#1a6a1a}
 .prog-card.s2 .prog-stage{color:#1a6b62}
 .prog-card.s3 .prog-stage{color:#7a5500}
 .prog-card.s4 .prog-stage{color:#8a1010}
-.prog-survival{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.25rem;line-height:1.35}
-.prog-desc{font-size:11px;color:var(--text-muted);line-height:1.55}
+.prog-survival{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.25rem;line-height:1.35}
+.prog-desc{font-size:12.5px;color:var(--text-muted);line-height:1.55}
 
-.callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:13px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
+.callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:14px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
 .callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
@@ -131,7 +131,7 @@ table.tb tr:last-child td{border-bottom:none}
 .callout.neutral{background:var(--navy-xlight);color:var(--text-mid);border:1px solid var(--border)}
 .callout strong{font-weight:600}
 
-ul.gl{list-style:none;padding:0;font-size:13px;line-height:1.85;color:var(--text-mid)}
+ul.gl{list-style:none;padding:0;font-size:14px;line-height:1.85;color:var(--text-mid)}
 ul.gl li{padding:.3rem 0 .3rem 1.2rem;position:relative;border-bottom:1px solid var(--navy-xlight)}
 ul.gl li:last-child{border-bottom:none}
 ul.gl li::before{content:'';position:absolute;left:0;top:.75rem;width:5px;height:5px;border-radius:50%;background:var(--navy);opacity:.35}
@@ -140,29 +140,29 @@ ul.gl strong{color:var(--text);font-weight:600}
 .symptom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-bottom:1rem}
 .sym-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem;display:flex;align-items:flex-start;gap:.6rem}
 .sym-icon{font-size:20px;flex-shrink:0}
-.sym-name{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:.2rem}
-.sym-desc{font-size:12px;color:var(--text-muted);line-height:1.55}
+.sym-name{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:.2rem}
+.sym-desc{font-size:13.5px;color:var(--text-muted);line-height:1.55}
 
 /* DARK HIGHLIGHT BOX */
 .hl-box{background:var(--navy);border-radius:14px;padding:1.75rem;margin-bottom:1rem;color:#fff}
 .fb-top{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
 .fb-icon{font-size:28px}
 .fb-title{font-size:16px;font-weight:700;color:#fff}
-.fb-title small{display:block;font-size:11px;font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.06em;margin-top:2px}
-.fb-lead{font-size:12px;color:rgba(255,255,255,.62);margin-bottom:1rem;line-height:1.75}
+.fb-title small{display:block;font-size:12.5px;font-weight:400;color:rgba(255,255,255,.88);letter-spacing:.06em;margin-top:2px}
+.fb-lead{font-size:13.5px;color:rgba(255,255,255,.88);margin-bottom:1rem;line-height:1.75}
 .hl-num{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.9rem}
 .hl-num .n{font-size:46px;font-weight:700;color:#f4b08f;line-height:1}
-.hl-num .u{font-size:13px;color:rgba(255,255,255,.6)}
+.hl-num .u{font-size:14px;color:rgba(255,255,255,.88)}
 .fb-when{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-bottom:1rem}
-.fb-when-card{background:rgba(255,255,255,.08);border-radius:8px;padding:.7rem .875rem;font-size:12px;color:rgba(255,255,255,.75);line-height:1.55}
-.fb-when-card strong{color:#fff;display:block;margin-bottom:2px;font-size:11px;letter-spacing:.04em}
-.fb-caution{background:rgba(231,76,60,.15);border:1px solid rgba(231,76,60,.4);border-radius:8px;padding:.7rem 1rem;font-size:12px;color:#ffb3b3;margin-top:.875rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.65}
+.fb-when-card{background:rgba(255,255,255,.08);border-radius:8px;padding:.7rem .875rem;font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.55}
+.fb-when-card strong{color:#fff;display:block;margin-bottom:2px;font-size:12.5px;letter-spacing:.04em}
+.fb-caution{background:rgba(231,76,60,.15);border:1px solid rgba(231,76,60,.4);border-radius:8px;padding:.7rem 1rem;font-size:13.5px;color:#ffb3b3;margin-top:.875rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.65}
 
 .drug-cards{display:flex;flex-direction:column;gap:.6rem}
 .drug-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem}
-.drug-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.4rem}
-.drug-desc{font-size:12px;color:var(--text-mid);line-height:1.7}
-.drug-note{display:inline-flex;align-items:center;gap:4px;font-size:11px;margin-top:.4rem;padding:3px 9px;border-radius:999px;font-weight:500}
+.drug-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.drug-desc{font-size:13.5px;color:var(--text-mid);line-height:1.7}
+.drug-note{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;margin-top:.4rem;padding:3px 9px;border-radius:999px;font-weight:500}
 .drug-note.ok{color:var(--ok-text);background:var(--ok-bg);border:1px solid var(--ok-border)}
 .drug-note.opt{color:#7a5500;background:#fff8e0;border:1px solid #e8d48a}
 .drug-note.no{color:#8a1010;background:var(--danger-bg);border:1px solid var(--danger-border)}
@@ -170,15 +170,15 @@ ul.gl strong{color:var(--text);font-weight:600}
 .emerg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.6rem}
 .emerg-card{background:var(--danger-bg);border:1px solid var(--danger-border);border-radius:10px;padding:.875rem 1rem;display:flex;align-items:flex-start;gap:.6rem}
 .emerg-icon{font-size:20px;flex-shrink:0}
-.emerg-name{font-size:13px;font-weight:600;color:var(--danger-text);margin-bottom:.2rem}
-.emerg-desc{font-size:12px;color:#8a3030;line-height:1.5}
+.emerg-name{font-size:14px;font-weight:600;color:var(--danger-text);margin-bottom:.2rem}
+.emerg-desc{font-size:13.5px;color:#8a3030;line-height:1.5}
 
 .foot{background:var(--navy);padding:2.5rem 1.5rem}
 .foot-inner{max-width:760px;margin:0 auto}
-.foot-disc{font-size:12px;color:rgba(255,255,255,.5);line-height:1.9;margin-bottom:1.25rem}
+.foot-disc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.9;margin-bottom:1.25rem}
 .foot-disc strong{color:rgba(255,255,255,.8);font-weight:500}
 .foot-btns{display:flex;gap:.6rem;flex-wrap:wrap}
-.foot-ref{margin-top:1.25rem;font-size:11px;color:rgba(255,255,255,.25);line-height:1.7}
+.foot-ref{margin-top:1.25rem;font-size:12.5px;color:rgba(255,255,255,.88);line-height:1.7}
 
 .hidden{display:none!important}
 @media(max-width:480px){
@@ -195,7 +195,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원 동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
     <div class="topbar-btns">
       <a class="tbtn back" href="index.html">← 전체 안내</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
@@ -228,7 +228,7 @@ ul.gl strong{color:var(--text);font-weight:600}
   <div class="hero-inner">
     <div class="hero-eyebrow">시원동물의료센터 · 노령견·노령묘 보호자 안내</div>
     <h1>나이 든 우리 아이,<br><span>더 자주 더 세심하게</span></h1>
-    <p class="hero-desc">노령기는 질환이 겹쳐 오는 시기입니다. 검진 주기와 집에서의 관절·인지 관리가 남은 시간의 질을 바꿉니다.<br>아래에서 아이의 종을 선택하시면 맞춤 정보를 보여드립니다.</p>
+    <p class="hero-desc">나이가 들면 여러 병이 한꺼번에 찾아오기 쉽습니다. 검진을 언제 받는지, 집에서 관절과 인지 기능을 어떻게 돌보는지가 남은 시간을 더 편안하게 만듭니다.<br>아래에서 강아지 또는 고양이를 고르면 해당 내용만 볼 수 있어요.</p>
   </div>
 </div>
 
@@ -251,23 +251,23 @@ ul.gl strong{color:var(--text);font-weight:600}
     <div class="sec-head"><span class="sec-num">1</span><span class="sec-title">우리 아이는 노령일까요?</span><span class="sec-tag">Overview</span></div>
 
     <div id="ov-dog">
-      <div class="ov-text">강아지의 노령 시작은 <strong>체중(크기)에 따라 다릅니다.</strong> 대형견은 작은 개보다 빨리 늙습니다. 노령기에 들어서면 <strong>한 가지 질환이 다른 질환을 부르는 경우</strong>가 많아, 증상이 없어도 정기 검진이 필요합니다.</div>
+      <div class="ov-text">강아지가 언제부터 노령기인지는 <strong>몸집(체중)에 따라 다릅니다.</strong> 큰 개는 작은 개보다 더 빨리 나이가 듭니다. 노령기에는 <strong>한 가지 병이 다른 병으로 이어지는 일</strong>이 많아, 아픈 데가 없어 보여도 정기 검진이 필요합니다.</div>
       <div class="stat-grid">
         <div class="stat-card"><div class="s-lbl">소형견 (10kg 미만)</div><div class="s-val">약 8세부터 노령</div></div>
         <div class="stat-card"><div class="s-lbl">중형견 (10~25kg)</div><div class="s-val">약 7세부터 노령</div></div>
         <div class="stat-card"><div class="s-lbl">대형견 (25kg 이상)</div><div class="s-val">약 6세부터 노령</div></div>
       </div>
-      <div class="callout info"><span class="ci">🐕</span><span>노령견에서 흔한 것은 <strong>심장질환·신장질환·관절염·치주질환·종양·내분비 질환</strong>입니다. 이 중 상당수는 초기에 증상이 거의 없어 검진에서 먼저 발견됩니다.</span></div>
+      <div class="callout info"><span class="ci">🐕</span><span>나이 든 강아지에게 흔한 병은 <strong>심장병, 신장병, 관절염, 잇몸병, 종양, 호르몬 질환</strong>입니다. 이 가운데 상당수는 초기에 거의 티가 나지 않아 검진에서 먼저 발견됩니다.</span></div>
     </div>
 
     <div id="ov-cat" class="hidden">
-      <div class="ov-text">고양이는 <strong>7세부터 '성숙 성묘', 11세부터 '시니어', 15세 이상을 '게리어트릭'</strong>으로 구분합니다. 고양이는 아픈 것을 숨기는 동물이라 <strong>증상이 보일 때는 이미 진행된 경우</strong>가 많습니다.</div>
+      <div class="ov-text">고양이는 <strong>7살부터 '중년', 11살부터 '노령', 15살 이상은 '고령'</strong>으로 나눕니다. 고양이는 아픈 것을 숨기는 동물이라 <strong>증상이 눈에 보일 때는 이미 병이 꽤 진행된 경우</strong>가 많습니다.</div>
       <div class="stat-grid">
         <div class="stat-card"><div class="s-lbl">7~10세</div><div class="s-val">성숙 성묘 (Mature)</div></div>
         <div class="stat-card"><div class="s-lbl">11~14세</div><div class="s-val">시니어 (Senior)</div></div>
         <div class="stat-card"><div class="s-lbl">15세 이상</div><div class="s-val">게리어트릭 (Geriatric)</div></div>
       </div>
-      <div class="callout info"><span class="ci">🐈</span><span>노령묘에서 흔한 것은 <strong>만성 신장질환·갑상선기능항진·관절염·치과질환·고혈압·림프종</strong>입니다. 갑상선기능항진은 신장질환을 가려서 보이게 할 수 있어 함께 평가해야 합니다.</span></div>
+      <div class="callout info"><span class="ci">🐈</span><span>나이 든 고양이에게 흔한 병은 <strong>만성 신장병, 갑상선기능항진증, 관절염, 치과 질환, 고혈압, 림프종</strong>입니다. 갑상선기능항진증은 신장병을 가려 덜 나빠 보이게 만들 수 있어 두 가지를 함께 확인해야 합니다.</span></div>
     </div>
   </div>
 
@@ -278,25 +278,25 @@ ul.gl strong{color:var(--text);font-weight:600}
       <div class="prog-card s1">
         <div class="prog-stage">건강한 성견·성묘</div>
         <div class="prog-survival">1년에 1회</div>
-        <div class="prog-desc">기본 신체검사와 예방접종·구충 확인. 7세가 가까워지면 검사 항목을 늘립니다.</div>
+        <div class="prog-desc">기본 신체검사와 예방접종·구충 여부를 확인합니다. 7살이 가까워지면 검사 항목을 늘려 갑니다.</div>
       </div>
       <div class="prog-card s2">
         <div class="prog-stage">노령 시작 (7세 전후)</div>
         <div class="prog-survival">6개월에 1회</div>
-        <div class="prog-desc">혈액·소변 검사와 혈압, 필요 시 흉부 X-ray·복부초음파를 함께 봅니다.</div>
+        <div class="prog-desc">혈액·소변 검사와 혈압을 재고, 필요하면 가슴 방사선과 복부 초음파도 함께 봅니다.</div>
       </div>
       <div class="prog-card s3">
         <div class="prog-stage">시니어 · 게리어트릭</div>
         <div class="prog-survival">4~6개월에 1회</div>
-        <div class="prog-desc">갑상선·심장·신장·관절·인지 평가를 포함해 전반적으로 확인합니다.</div>
+        <div class="prog-desc">갑상선, 심장, 신장, 관절, 인지 기능까지 전체적으로 확인합니다.</div>
       </div>
       <div class="prog-card s4">
         <div class="prog-stage">만성질환 관리 중</div>
         <div class="prog-survival">2~3개월에 1회</div>
-        <div class="prog-desc">약물 조절과 수치 추적이 필요합니다. 담당 수의사가 정한 주기를 따르세요.</div>
+        <div class="prog-desc">약을 조절하고 수치 변화를 계속 확인해야 합니다. 담당 수의사가 정해 준 간격을 지켜 주세요.</div>
       </div>
     </div>
-    <div class="callout warn"><span class="ci">⏰</span><span><strong>사람의 1년은 노령 아이에게 4~7년에 해당합니다.</strong> 1년에 한 번 검진은 노령기에는 "너무 늦은 주기"일 수 있습니다.</span></div>
+    <div class="callout warn"><span class="ci">⏰</span><span><strong>사람의 1년은 나이 든 아이에게 4~7년과 비슷합니다.</strong> 노령기에는 1년에 한 번 검진이 "너무 긴 간격"일 수 있습니다.</span></div>
   </div>
 
   <!-- ③ 검진 항목 -->
@@ -305,69 +305,69 @@ ul.gl strong{color:var(--text);font-weight:600}
     <div class="tbl-wrap">
       <table class="tb">
         <tbody><tr><th>검사</th><th>발견할 수 있는 것</th><th>주기</th></tr>
-        <tr><td style="font-weight:600;color:var(--text)">문진 · 체중 · 체형(BCS)</td><td>식욕·음수·배뇨·활동·수면 변화, 체중 감소</td><td>매 방문</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">문진 · 체중 · 체형(BCS)</td><td>식욕, 물 마시는 양, 소변, 활동량, 잠의 변화, 몸무게 감소</td><td>매 방문</td></tr>
         <tr><td style="font-weight:600;color:var(--text)">혈액검사 (CBC·생화학)</td><td>빈혈, 간·신장 수치, 전해질, 혈당, 단백질</td><td>6~12개월</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">소변검사 · SDMA · UPC</td><td>신장질환 초기 신호, 단백뇨, 요로감염</td><td>6~12개월</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">갑상선 (T4 · TSH)</td><td>고양이 갑상선기능항진, 개 갑상선기능저하</td><td>6~12개월</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">혈압 측정</td><td>고혈압(신장·갑상선·심장 질환과 연관)</td><td>6~12개월</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">흉부 X-ray · 심장초음파</td><td>심잡음, 심장 비대, 폐수종, 종양</td><td>연 1회 또는 심잡음 있을 때</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">복부초음파</td><td>간·담낭·비장·신장·방광·부신 종괴</td><td>연 1회 또는 이상 소견 시</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">구강 · 관절 · 안과 검사</td><td>치주질환, 관절염, 백내장, 망막 변화</td><td>매 방문</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">소변검사 · SDMA · UPC</td><td>신장병 초기 신호, 소변 속 단백질, 요로감염</td><td>6~12개월</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">갑상선 (T4 · TSH)</td><td>고양이 갑상선기능항진증, 강아지 갑상선기능저하증</td><td>6~12개월</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">혈압 측정</td><td>고혈압(신장·갑상선·심장 질환과 관련)</td><td>6~12개월</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">흉부 X-ray · 심장초음파</td><td>심잡음, 심장 커짐, 폐에 물 참, 종양</td><td>연 1회 또는 심잡음 있을 때</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">복부초음파</td><td>간, 담낭, 비장, 신장, 방광, 부신의 혹</td><td>연 1회 또는 이상 소견 시</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">구강 · 관절 · 안과 검사</td><td>잇몸병, 관절염, 백내장, 망막 변화</td><td>매 방문</td></tr>
       </tbody></table>
     </div>
-    <div class="callout neutral"><span class="ci">📋</span><span>모든 검사를 매번 할 필요는 없습니다. <strong>아이의 상태와 이전 결과에 맞춰</strong> 담당 수의사가 필요한 항목을 정합니다.</span></div>
+    <div class="callout neutral"><span class="ci">📋</span><span>모든 검사를 매번 할 필요는 없습니다. <strong>아이의 상태와 지난 검사 결과를 보고</strong> 담당 수의사가 필요한 항목을 골라 드립니다.</span></div>
   </div>
 
   <!-- ④ 흔한 질환 조기 발견 -->
   <div class="sec">
-    <div class="sec-head"><span class="sec-num">4</span><span class="sec-title">흔한 노령 질환 · 조기 발견 포인트</span><span class="sec-tag">Early Signs</span></div>
+    <div class="sec-head"><span class="sec-num">4</span><span class="sec-title">나이 들면 흔한 병 · 일찍 알아채는 방법</span><span class="sec-tag">Early Signs</span></div>
     <div class="disease-grid">
       <div class="dc">
         <div class="dc-badge">심장</div>
         <div class="dc-name">심장 질환</div>
-        <div class="dc-desc">기침, 운동 불내성, 밤에 숨이 빨라짐. <strong>자는 동안 호흡수를 세는 것</strong>이 가장 빠른 신호입니다. <a href="heart.html" style="color:var(--accent);font-weight:600">심장 안내 →</a></div>
+        <div class="dc-desc">기침, 조금만 움직여도 지침, 밤에 숨이 빨라짐. <strong>잠잘 때 호흡수를 세는 것</strong>이 가장 빨리 알 수 있는 방법입니다. <a href="heart.html" style="color:var(--accent);font-weight:600">심장 안내 →</a></div>
       </div>
       <div class="dc">
         <div class="dc-badge">신장</div>
         <div class="dc-name">만성 신장질환</div>
-        <div class="dc-desc">물을 많이 마시고 소변량이 늘며 체중이 빠집니다. <strong>SDMA·소변 비중</strong>으로 초기 발견이 가능합니다. <a href="kidney.html" style="color:var(--accent);font-weight:600">신장 안내 →</a></div>
+        <div class="dc-desc">물을 많이 마시고 소변이 늘며 살이 빠집니다. <strong>SDMA와 소변 농도(요비중)</strong> 검사로 일찍 찾을 수 있습니다. <a href="kidney.html" style="color:var(--accent);font-weight:600">신장 안내 →</a></div>
       </div>
       <div class="dc">
         <div class="dc-badge">관절</div>
         <div class="dc-name">관절염</div>
-        <div class="dc-desc">계단·소파를 꺼리고, 일어설 때 머뭇거리며, 산책을 짧게 원합니다. 통증은 생각보다 흔합니다.</div>
+        <div class="dc-desc">계단이나 소파를 피하고, 일어날 때 머뭇거리고, 산책을 짧게 하려 합니다. 생각보다 많은 아이가 관절 통증을 갖고 있습니다.</div>
       </div>
       <div class="dc">
         <div class="dc-badge">뇌</div>
         <div class="dc-name">인지기능장애</div>
-        <div class="dc-desc">밤에 헤매고, 멍하니 벽을 보고, 배변 실수가 늘어납니다. "나이 탓"으로 넘기지 마세요.</div>
+        <div class="dc-desc">밤에 헤매고, 멍하니 벽을 바라보고, 배변 실수가 늘어납니다. "나이 들어서 그렇겠지" 하고 넘기지 마세요.</div>
       </div>
       <div class="dc">
         <div class="dc-badge">내분비</div>
         <div class="dc-name">갑상선 · 쿠싱 · 당뇨</div>
-        <div class="dc-desc">체중·식욕·음수량의 변화로 시작합니다. <a href="diabetes.html" style="color:var(--accent);font-weight:600">당뇨·내분비 안내 →</a></div>
+        <div class="dc-desc">몸무게, 식욕, 물 마시는 양의 변화로 시작됩니다. <a href="diabetes.html" style="color:var(--accent);font-weight:600">당뇨·내분비 안내 →</a></div>
       </div>
       <div class="dc">
         <div class="dc-badge">구강</div>
         <div class="dc-name">치주질환</div>
-        <div class="dc-desc">구취, 씹기 불편, 흘림. 통증이 심해지면 전신 상태까지 떨어집니다. <a href="dental.html" style="color:var(--accent);font-weight:600">치과 안내 →</a></div>
+        <div class="dc-desc">입 냄새, 씹기 불편함, 음식 흘림. 통증이 심해지면 몸 전체 컨디션까지 떨어집니다. <a href="dental.html" style="color:var(--accent);font-weight:600">치과 안내 →</a></div>
       </div>
       <div class="dc">
         <div class="dc-badge">종양</div>
         <div class="dc-name">종양 · 림프종</div>
-        <div class="dc-desc">피부 덩어리, 림프절 종대, 반복되는 구토·체중 감소. 발견이 빠를수록 선택지가 많습니다. <a href="cancer.html" style="color:var(--accent);font-weight:600">항암 안내 →</a></div>
+        <div class="dc-desc">피부에 만져지는 혹, 커진 림프절, 반복되는 구토와 체중 감소. 빨리 찾을수록 치료 방법이 많아집니다. <a href="cancer.html" style="color:var(--accent);font-weight:600">항암 안내 →</a></div>
       </div>
       <div class="dc">
         <div class="dc-badge">감각</div>
         <div class="dc-name">시력 · 청력 저하</div>
-        <div class="dc-desc">백내장, 야맹, 부르면 반응이 둔해짐. 갑작스러운 부딪힘이 늘면 확인이 필요합니다.</div>
+        <div class="dc-desc">백내장, 밤에 잘 못 봄, 불러도 반응이 느림. 갑자기 여기저기 부딪히는 일이 늘면 확인이 필요합니다.</div>
       </div>
     </div>
     <div class="symptom-grid" style="margin-top:1rem">
-      <div class="sym-card"><span class="sym-icon">💧</span><div><div class="sym-name">음수량이 늘었다</div><div class="sym-desc">신장·갑상선·당뇨·쿠싱에서 가장 먼저 나타나는 신호</div></div></div>
-      <div class="sym-card"><span class="sym-icon">⚖️</span><div><div class="sym-name">체중이 줄었다</div><div class="sym-desc">3개월에 5% 이상 감소는 반드시 검사가 필요합니다</div></div></div>
+      <div class="sym-card"><span class="sym-icon">💧</span><div><div class="sym-name">음수량이 늘었다</div><div class="sym-desc">신장병, 갑상선 질환, 당뇨, 쿠싱에서 가장 먼저 보이는 신호</div></div></div>
+      <div class="sym-card"><span class="sym-icon">⚖️</span><div><div class="sym-name">체중이 줄었다</div><div class="sym-desc">3개월 사이 몸무게가 5% 넘게 줄면 꼭 검사가 필요합니다</div></div></div>
       <div class="sym-card"><span class="sym-icon">🪜</span><div><div class="sym-name">계단을 피한다</div><div class="sym-desc">관절 통증의 초기 신호일 수 있습니다</div></div></div>
-      <div class="sym-card"><span class="sym-icon">🌙</span><div><div class="sym-name">밤에 서성인다</div><div class="sym-desc">인지기능장애나 통증·불안의 신호</div></div></div>
+      <div class="sym-card"><span class="sym-icon">🌙</span><div><div class="sym-name">밤에 서성인다</div><div class="sym-desc">인지기능장애이거나 통증·불안 때문일 수 있습니다</div></div></div>
     </div>
   </div>
 
@@ -381,87 +381,87 @@ ul.gl strong{color:var(--text);font-weight:600}
           <div class="fb-title">가장 효과가 큰 것은 "체중"<small>WEIGHT FIRST</small></div>
         </div>
       </div>
-      <p class="fb-lead">관절 통증 관리에서 <strong style="color:#fff">체중을 줄이는 것이 어떤 보조제보다 효과적</strong>입니다. 노령이라도 체중 관리는 늦지 않습니다.</p>
+      <p class="fb-lead">관절 통증을 줄이는 데는 <strong style="color:#fff">어떤 영양제보다 체중 감량이 더 효과적</strong>입니다. 나이가 많아도 체중 관리를 시작하기에 늦지 않습니다.</p>
       <div class="fb-when">
-        <div class="fb-when-card"><strong>① 체중</strong>5~10%만 줄여도 통증과 활동성이 좋아집니다. 감량은 천천히, 단백질은 충분히 유지합니다.</div>
-        <div class="fb-when-card"><strong>② 환경</strong>미끄럼 방지 매트, 낮은 계단·스텝, 소파 경사로를 만들어 줍니다. 미끄러진 한 번이 통증을 키웁니다.</div>
-        <div class="fb-when-card"><strong>③ 운동</strong>짧게 자주 산책합니다. 주말 몰아서 하는 활동은 오히려 부담입니다.</div>
-        <div class="fb-when-card"><strong>④ 보조</strong>오메가3(EPA·DHA)는 도움이 보고됩니다. 관절 보조제는 근거가 제한적이며, 효과 판단은 개별적으로 합니다.</div>
+        <div class="fb-when-card"><strong>① 체중</strong>5~10%만 빼도 통증이 줄고 더 잘 움직입니다. 살은 천천히 빼고, 단백질은 충분히 먹여 주세요.</div>
+        <div class="fb-when-card"><strong>② 집 환경</strong>미끄럼 방지 매트, 낮은 계단, 소파용 경사로를 놓아 주세요. 한 번 미끄러지는 것만으로도 통증이 커질 수 있습니다.</div>
+        <div class="fb-when-card"><strong>③ 운동</strong>짧게 자주 산책해 주세요. 주말에 몰아서 많이 움직이면 오히려 부담이 됩니다.</div>
+        <div class="fb-when-card"><strong>④ 영양제</strong>오메가3(EPA·DHA)는 도움이 된다는 보고가 있습니다. 관절 영양제는 근거가 많지 않아 효과는 아이마다 따로 판단합니다.</div>
       </div>
-      <div class="fb-caution">🚨 <span><strong>사람용 진통제는 절대 금지입니다.</strong> 아세트아미노펜·이부프로펜·아스피린·나프록센은 위장 출혈·신장 손상으로 치명적일 수 있습니다.</span></div>
+      <div class="fb-caution">🚨 <span><strong>사람 진통제는 절대 먹이지 마세요.</strong> 아세트아미노펜, 이부프로펜, 아스피린, 나프록센은 위장 출혈이나 신장 손상을 일으켜 생명이 위험할 수 있습니다.</span></div>
     </div>
     <ul class="gl">
-      <li><strong>진통제는 정기 검사와 함께</strong> 사용합니다. NSAIDs는 신장·간 수치를 주기적으로 확인하며 용량을 조절합니다.</li>
-      <li><strong>재활·물리치료</strong>가 통증 완화와 근육 유지에 도움이 됩니다. <a href="iliopsoas.html" style="color:var(--accent);font-weight:600">장요근 재활 안내</a>처럼 집에서 할 수 있는 동작도 있습니다.</li>
-      <li><strong>발톱과 발바닥 털을 정리</strong>해 주면 미끄러짐이 줄어듭니다.</li>
-      <li><strong>잠자리는 따뜻하고 푹신하게</strong>, 바닥보다는 낮은 침대를 사용하세요. 기상 시 통증이 덜합니다.</li>
-      <li><strong>그루밍 도움</strong>이 필요해집니다. 손이 닿지 않는 부위를 부드러운 브러시로 닦아주세요.</li>
+      <li><strong>진통제는 정기 검사와 함께</strong> 씁니다. 소염진통제(NSAIDs)를 먹는 동안에는 신장과 간 수치를 주기적으로 확인하며 양을 조절합니다.</li>
+      <li><strong>재활·물리치료</strong>는 통증을 줄이고 근육을 지키는 데 도움이 됩니다. <a href="iliopsoas.html" style="color:var(--accent);font-weight:600">장요근 재활 안내</a>처럼 집에서 할 수 있는 동작도 있습니다.</li>
+      <li><strong>발톱과 발바닥 털을 다듬어</strong> 주면 덜 미끄러집니다.</li>
+      <li><strong>잠자리는 따뜻하고 폭신하게</strong> 해 주시고, 바닥보다는 낮은 침대를 써 주세요. 아침에 일어날 때 덜 아파합니다.</li>
+      <li><strong>몸단장을 도와줘야</strong> 할 때가 옵니다. 스스로 닿지 않는 곳은 부드러운 빗으로 살살 정리해 주세요.</li>
     </ul>
   </div>
 
   <!-- ⑥ 인지기능장애 -->
   <div class="sec">
-    <div class="sec-head"><span class="sec-num">6</span><span class="sec-title">인지기능장애 (노령성 인지장애)</span><span class="sec-tag">Cognitive</span></div>
-    <div class="ov-text">노령견·노령묘의 인지기능 변화는 <strong>DISHA</strong> 다섯 가지로 정리됩니다. 하나라도 뚜렷해졌다면 <strong>다른 질환(통증·시력·청력·내과 질환)을 먼저 배제</strong>한 뒤 인지기능장애로 판단합니다.</div>
+    <div class="sec-head"><span class="sec-num">6</span><span class="sec-title">인지기능장애 (나이 들어 생기는 치매 증상)</span><span class="sec-tag">Cognitive</span></div>
+    <div class="ov-text">나이 든 강아지·고양이의 인지 기능 변화는 <strong>DISHA</strong> 다섯 가지로 나눠 봅니다. 이 중 하나라도 뚜렷하다면 <strong>통증, 시력·청력 저하, 다른 내과 질환이 아닌지 먼저 확인</strong>한 뒤에 인지기능장애로 판단합니다.</div>
     <div class="tbl-wrap">
       <table class="tb">
         <tbody><tr><th>항목</th><th>보이는 변화</th></tr>
-        <tr><td><span class="tb-badge b2">D</span> 방향감각</td><td>익숙한 집에서 헤매고, 벽이나 가구에 부딪히며, 문 앞에서 멈춥니다</td></tr>
-        <tr><td><span class="tb-badge b2">I</span> 상호작용</td><td>이름을 불러도 반응이 줄고, 쓰다듬는 것을 피하거나 반대로 과하게 매달립니다</td></tr>
-        <tr><td><span class="tb-badge b3">S</span> 수면</td><td>낮에 자고 밤에 서성이며 짖거나 울고, 수면 주기가 뒤집힙니다</td></tr>
-        <tr><td><span class="tb-badge b3">H</span> 배변</td><td>집 안에서 실수가 늘고, 배변 장소를 잊어버립니다</td></tr>
-        <tr><td><span class="tb-badge b4">A</span> 활동</td><td>목적 없이 걷고, 같은 곳을 맴돌고, 관심 있던 놀이를 하지 않습니다</td></tr>
+        <tr><td><span class="tb-badge b2">D</span> 방향감각</td><td>익숙한 집 안에서 길을 잃고, 벽이나 가구에 부딪히고, 문 앞에서 멈춰 서 있어요</td></tr>
+        <tr><td><span class="tb-badge b2">I</span> 상호작용</td><td>이름을 불러도 반응이 줄고, 만지는 것을 피하거나 반대로 지나치게 붙어 있으려 해요</td></tr>
+        <tr><td><span class="tb-badge b3">S</span> 수면</td><td>낮에 자고 밤에 돌아다니며 짖거나 울고, 낮과 밤이 바뀌어요</td></tr>
+        <tr><td><span class="tb-badge b3">H</span> 배변</td><td>집 안에서 실수가 늘고 화장실 위치를 잊어버려요</td></tr>
+        <tr><td><span class="tb-badge b4">A</span> 활동</td><td>목적 없이 걷거나 같은 자리를 빙빙 돌고, 좋아하던 놀이도 하지 않아요</td></tr>
       </tbody></table>
     </div>
     <ul class="gl">
-      <li><strong>루틴과 환경을 일정하게</strong> 유지해 주세요. 가구 이동·이사·새 가족은 혼란을 키웁니다.</li>
-      <li><strong>밤에는 작은 조명</strong>을 켜고, 잠자리를 출입구에서 멀지 않게 두세요.</li>
-      <li><strong>짧은 놀이와 산책으로 인지 자극</strong>을 꾸준히 줍니다. 냄새 맡기만으로도 충분합니다.</li>
-      <li><strong>영양(중쇄중성지방·항산화 성분)과 약물(세레길린 등), 보조제</strong>는 담당 수의사와 상의해 시작합니다. 효과에는 개체차가 있습니다.</li>
-      <li><strong>밤에 불안해하거나 서성임이 심하면</strong> 통증·시력 저하·갑상선 이상이 숨어 있을 수 있어 검사가 필요합니다.</li>
+      <li><strong>하루 일과와 집 구조를 일정하게</strong> 유지해 주세요. 가구 옮기기, 이사, 새 가족은 혼란을 키울 수 있습니다.</li>
+      <li><strong>밤에는 작은 불을 켜 두고</strong>, 잠자리는 드나들기 쉬운 곳 가까이에 두세요.</li>
+      <li><strong>짧은 놀이와 산책으로 꾸준히 자극</strong>을 주세요. 냄새 맡게 해 주는 것만으로도 충분합니다.</li>
+      <li><strong>영양(중쇄지방산·항산화 성분), 약(셀레길린 등), 영양제</strong>는 담당 수의사와 상의해 시작해 주세요. 효과는 아이마다 다릅니다.</li>
+      <li><strong>밤에 불안해하거나 많이 돌아다닌다면</strong> 통증, 시력 저하, 갑상선 이상이 숨어 있을 수 있어 검사가 필요합니다.</li>
     </ul>
   </div>
 
   <!-- ⑦ 식이·생활 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-num">7</span><span class="sec-title">노령기 식이·생활 관리</span><span class="sec-tag">Daily Care</span></div>
-    <div class="callout info"><span class="ci">🥣</span><span>노령기 식사의 핵심은 <strong>"적게"가 아니라 "충분한 단백질 + 적정 열량 + 수분"</strong>입니다. 무조건 단백질을 줄이면 근육이 빠집니다.</span></div>
+    <div class="callout info"><span class="ci">🥣</span><span>나이 든 아이 식사의 핵심은 <strong>"적게 먹이기"가 아니라 "충분한 단백질, 알맞은 열량, 넉넉한 수분"</strong>입니다. 단백질을 무조건 줄이면 근육이 빠집니다.</span></div>
     <ul class="gl">
-      <li><strong>단백질은 충분히 주세요.</strong> 신장질환이 없다면 노령견·노령묘도 단백질 요구량이 높습니다. 근육량 유지가 활동성과 예후에 직결됩니다.</li>
-      <li><strong>수분 섭취를 늘려주세요.</strong> 습식 혼합, 분수형 급수기, 물그릇 여러 개를 활용합니다.</li>
-      <li><strong>소화가 편한 사료로</strong> 바꾸는 것을 고려하세요. 한 번에 많이 먹기 어려우면 소량 다회로 나눕니다.</li>
-      <li><strong>체중과 근육량(BCS·MCS)을 매달 기록</strong>하세요. 체중 감소는 질환의 첫 신호인 경우가 많습니다.</li>
-      <li><strong>구강 관리는 계속</strong>해야 합니다. 치통은 식욕과 전신 상태를 빠르게 떨어뜨립니다.</li>
-      <li><strong>스트레스와 소음을 줄이고</strong>, 산책은 아이의 속도에 맞춥니다. 짧게 자주가 좋습니다.</li>
-      <li><strong>체온 조절에 취약</strong>합니다. 겨울철 보온, 여름철 통풍과 수분에 신경 써 주세요.</li>
+      <li><strong>단백질은 넉넉히 주세요.</strong> 신장병이 없다면 나이 든 강아지·고양이도 단백질이 많이 필요합니다. 근육을 지키는 것이 활동성과 건강에 바로 이어집니다.</li>
+      <li><strong>물을 더 먹게 해 주세요.</strong> 습식 섞어 주기, 흐르는 물 급수기, 여러 곳에 둔 물그릇이 도움이 됩니다.</li>
+      <li><strong>소화가 잘 되는 사료로</strong> 바꾸는 것도 생각해 보세요. 한 번에 많이 못 먹으면 조금씩 여러 번 나눠 주세요.</li>
+      <li><strong>몸무게와 근육량(BCS·MCS)을 한 달에 한 번 기록</strong>해 주세요. 몸무게가 줄어드는 것이 병의 첫 신호인 경우가 많습니다.</li>
+      <li><strong>입안 관리도 계속</strong> 해 주세요. 이가 아프면 식욕과 몸 상태가 빠르게 나빠집니다.</li>
+      <li><strong>스트레스와 소음을 줄이고</strong>, 산책은 아이 속도에 맞춰 주세요. 짧게 자주 나가는 것이 좋습니다.</li>
+      <li><strong>더위와 추위에 약해집니다.</strong> 겨울에는 따뜻하게, 여름에는 바람이 잘 통하고 물을 충분히 마시게 해 주세요.</li>
     </ul>
-    <div class="callout neutral"><span class="ci">🏠</span><span>집안 환경을 <strong>"실수해도 다치지 않는 집"</strong>으로 바꿔주세요. 계단 난간, 미끄럼 방지, 낮은 침대, 손 닿는 물그릇이 큰 차이를 만듭니다.</span></div>
+    <div class="callout neutral"><span class="ci">🏠</span><span>집을 <strong>"실수해도 다치지 않는 집"</strong>으로 바꿔 주세요. 계단 난간, 미끄럼 방지, 낮은 침대, 가까이 둔 물그릇이 큰 차이를 만듭니다.</span></div>
   </div>
 
   <!-- ⑧ 응급 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-num">8</span><span class="sec-title">병원에 바로 오셔야 할 신호</span><span class="sec-tag">Emergency</span></div>
     <div class="emerg-grid">
-      <div class="emerg-card"><span class="emerg-icon">🦵</span><div><div class="emerg-name">갑자기 일어나지 못함</div><div class="emerg-desc">뒷다리 마비·탈구·척추 문제일 수 있습니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🫁</span><div><div class="emerg-name">호흡 곤란</div><div class="emerg-desc">입 벌리고 숨쉬거나 배를 써서 숨쉬면 응급입니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🍽️</span><div><div class="emerg-name">24시간 이상 절식</div><div class="emerg-desc">노령묘는 특히 간지질증 위험이 커집니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🚽</span><div><div class="emerg-name">소변이 나오지 않음</div><div class="emerg-desc">12시간 이상 소변을 못 보면 즉시 내원하세요</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🧠</span><div><div class="emerg-name">발작·의식 저하</div><div class="emerg-desc">경련, 혼수, 반응 없음은 즉시 치료가 필요합니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🤢</span><div><div class="emerg-name">구토·설사가 심함</div><div class="emerg-desc">탈수로 빠르게 악화될 수 있습니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🥶</span><div><div class="emerg-name">체온이 낮음</div><div class="emerg-desc">몸이 차갑고 움츠러들면 응급 상태일 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🦵</span><div><div class="emerg-name">갑자기 일어나지 못함</div><div class="emerg-desc">뒷다리 마비, 관절 빠짐, 척추 문제일 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🫁</span><div><div class="emerg-name">호흡 곤란</div><div class="emerg-desc">입을 벌리고 숨 쉬거나 배로 힘들게 숨 쉬면 응급입니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🍽️</span><div><div class="emerg-name">24시간 이상 절식</div><div class="emerg-desc">나이 든 고양이는 지방간(간지질증) 위험이 특히 큽니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🚽</span><div><div class="emerg-name">소변이 나오지 않음</div><div class="emerg-desc">12시간 넘게 소변을 보지 못하면 바로 내원해 주세요</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🧠</span><div><div class="emerg-name">발작·의식 저하</div><div class="emerg-desc">경련, 깨어나지 않음, 반응 없음은 바로 치료가 필요합니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🤢</span><div><div class="emerg-name">구토·설사가 심함</div><div class="emerg-desc">탈수로 상태가 빠르게 나빠질 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🥶</span><div><div class="emerg-name">체온이 낮음</div><div class="emerg-desc">몸이 차갑고 웅크리고 있다면 응급 상태일 수 있습니다</div></div></div>
       <div class="emerg-card"><span class="emerg-icon">😵</span><div><div class="emerg-name">갑작스러운 허탈</div><div class="emerg-desc">쓰러지거나 걷지 못하면 바로 연락 주세요</div></div></div>
     </div>
-    <div class="callout danger" style="margin-top:1rem"><span class="ci">🚨</span><span>위 증상 중 하나라도 보인다면 <strong>지체 없이 연락 주세요.</strong> 노령 아이는 상태 변화가 빠르고, 회복 여력이 적습니다.</span></div>
+    <div class="callout danger" style="margin-top:1rem"><span class="ci">🚨</span><span>이 중 하나라도 보이면 <strong>기다리지 말고 바로 연락 주세요.</strong> 나이 든 아이는 상태가 빨리 변하고 회복할 힘이 적습니다.</span></div>
   </div>
 
 </div>
 <div class="foot">
   <div class="foot-inner">
     <p class="foot-disc">
-      이 자료는 일반적인 보호자 교육을 위해 제작된 안내문으로, 개별 환자의 진단과 치료를 대신하지 않습니다.<br>
-      약물 조절이나 식이 변경은 반드시 <strong>담당 수의사와 상의</strong> 후 진행해 주세요.<br>
-      <strong>갑작스러운 마비, 호흡 곤란, 24시간 이상 절식</strong>이 보이면 즉시 병원으로 연락 주세요.<br>
-      문의사항이 있으시면 언제든지 연락 주세요.<br>
+      보호자님의 이해를 돕기 위해 정리한 일반 안내로, 아이별 진단과 치료를 대신하지는 않습니다.<br>
+      약이나 식단을 바꿀 때는 꼭 <strong>담당 수의사와 먼저 상의</strong>해 주세요.<br>
+      <strong>갑작스러운 마비, 호흡 곤란, 24시간 이상 절식</strong> 증상이 보이면 바로 병원에 연락 주세요.<br>
+      궁금한 점은 언제든 편하게 물어봐 주세요.<br>
       진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">

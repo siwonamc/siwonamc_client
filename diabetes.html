@@ -22,7 +22,7 @@
 :root{
   --navy:#0e4f4a;--navy-dark:#08332f;--navy-mid:#1a6b62;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
   --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
@@ -30,47 +30,47 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;word-break:keep-all}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-.logo-text{color:#fff;font-size:13px;font-weight:500;line-height:1.3}
+.logo-text{color:#fff;font-size:14px;font-weight:500;line-height:1.3}
 .logo-group{display:flex;align-items:center;gap:.5rem;min-width:0;text-decoration:none}
 .logo-mark{width:28px;height:28px;border-radius:8px;background:#fff;object-fit:contain;flex-shrink:0;padding:2px;box-shadow:0 1px 3px rgba(0,0,0,.28)}
 @media(max-width:520px){.logo-mark{width:26px;height:26px;padding:1px;border-radius:7px}}
 @media(max-width:420px){.logo-text{display:none}.logo-mark,.logo-mark img{width:24px;height:24px}.logo-group{gap:0}}
-.logo-text small{display:block;font-size:10px;font-weight:300;opacity:.7;letter-spacing:.08em}
+.logo-text small{display:block;font-size:11.5px;font-weight:300;opacity:.7;letter-spacing:.08em}
 .topbar-btns{display:flex;gap:.5rem;flex-shrink:0}
-.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
+.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:13.5px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
 .tbtn.call{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
 .tbtn.call:hover{background:rgba(255,255,255,.22)}
 .tbtn.kako{background:#FEE500;color:#1a1a1a;border:1px solid #FEE500}
 .tbtn.kako:hover{background:#f0d800}
-.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15);font-size:11px}
+.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.15);font-size:12.5px}
 .tbtn.back:hover{background:rgba(255,255,255,.15)}
 
 .doctor{background:var(--navy-dark);padding:2rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .doctor-inner{max-width:760px;margin:0 auto}
-.doctor-quote{font-size:15px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
+.doctor-quote{font-size:16px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
 .doctor-quote em{font-style:normal;color:#f4b08f}
-.doctor-bio{font-size:12px;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:1.25rem}
+.doctor-bio{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.85;margin-bottom:1.25rem}
 .doctor-bio strong{color:rgba(255,255,255,.8);font-weight:500}
 .doctor-tags{display:flex;flex-wrap:wrap;gap:.4rem}
-.dtag{font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);background:rgba(255,255,255,.06)}
+.dtag{font-size:12.5px;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.88);background:rgba(255,255,255,.06)}
 
 .hero{background:var(--navy);padding:2.25rem 1.5rem 0}
 .hero-inner{max-width:760px;margin:0 auto}
-.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
+.hero-eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
 .hero h1 span{color:#f4b08f}
-.hero-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:2rem}
+.hero-desc{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75;margin-bottom:2rem}
 
 .sel-bar{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,.1);padding:1.25rem 1.5rem}
 .sel-inner{max-width:760px;margin:0 auto}
 .sel-row{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
-.sel-lbl{font-size:11px;font-weight:500;letter-spacing:.1em;color:rgba(255,255,255,.4);text-transform:uppercase;min-width:56px;flex-shrink:0}
+.sel-lbl{font-size:12.5px;font-weight:500;letter-spacing:.1em;color:rgba(255,255,255,.88);text-transform:uppercase;min-width:56px;flex-shrink:0}
 .pill-group{display:flex;gap:.4rem;flex-wrap:wrap}
-.pill{padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:12px;font-weight:500;cursor:pointer;background:transparent;color:rgba(255,255,255,.6);transition:all .15s}
+.pill{padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:13.5px;font-weight:500;cursor:pointer;background:transparent;color:rgba(255,255,255,.88);transition:all .15s}
 .pill:hover{border-color:rgba(255,255,255,.5);color:#fff}
 .pill.active{background:#fff;border-color:#fff;color:var(--navy)}
 
@@ -78,31 +78,31 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 .sec{margin-bottom:2.5rem}
 .sec-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1.1rem;padding-bottom:.75rem;border-bottom:2px solid var(--navy-light)}
-.sec-num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.sec-num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
 .sec-title{font-size:16px;font-weight:700;color:var(--navy)}
-.sec-tag{margin-left:auto;font-size:10px;letter-spacing:.12em;color:var(--text-muted);font-weight:500;text-transform:uppercase}
+.sec-tag{margin-left:auto;font-size:11.5px;letter-spacing:.12em;color:var(--text-muted);font-weight:500;text-transform:uppercase}
 
-.ov-text{font-size:13px;line-height:1.85;color:var(--text-mid);margin-bottom:1rem;padding:1rem 1.1rem;background:var(--navy-xlight);border-left:3px solid var(--navy);border-radius:0 8px 8px 0}
+.ov-text{font-size:14px;line-height:1.85;color:var(--text-mid);margin-bottom:1rem;padding:1rem 1.1rem;background:var(--navy-xlight);border-left:3px solid var(--navy);border-radius:0 8px 8px 0}
 .ov-text strong{color:var(--navy);font-weight:600}
 
 .disease-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin-bottom:1rem}
 .dc{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem}
-.dc-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-bottom:.5rem;background:var(--navy-light);color:var(--navy)}
-.dc-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.3rem}
-.dc-desc{font-size:12px;color:var(--text-muted);line-height:1.6}
+.dc-badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-bottom:.5rem;background:var(--navy-light);color:var(--navy)}
+.dc-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+.dc-desc{font-size:13.5px;color:var(--text-muted);line-height:1.6}
 
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin-bottom:1rem}
 .stat-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem}
-.stat-card .s-lbl{font-size:11px;color:var(--text-muted);font-weight:500;margin-bottom:.3rem}
-.stat-card .s-val{font-size:13px;font-weight:700;color:var(--navy);line-height:1.5}
+.stat-card .s-lbl{font-size:12.5px;color:var(--text-muted);font-weight:500;margin-bottom:.3rem}
+.stat-card .s-val{font-size:14px;font-weight:700;color:var(--navy);line-height:1.5}
 
 /* TABLE */
 .tbl-wrap{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem;overflow-x:auto}
-table.tb{width:100%;border-collapse:collapse;font-size:12px;background:var(--white)}
-table.tb th{text-align:left;padding:8px 10px;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border);white-space:nowrap}
+table.tb{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--white)}
+table.tb th{text-align:left;padding:8px 10px;font-size:12.5px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border);white-space:nowrap}
 table.tb td{padding:8px 10px;border-bottom:1px solid #edf4f1;color:var(--text-mid);vertical-align:middle;line-height:1.6}
 table.tb tr:last-child td{border-bottom:none}
-.tb-badge{display:inline-block;font-size:11px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:28px;text-align:center;white-space:nowrap}
+.tb-badge{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:28px;text-align:center;white-space:nowrap}
 .b1{background:#f0f8f0;color:#1a6a1a;border:1px solid #aad8aa}
 .b2{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
 .b3{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
@@ -115,15 +115,15 @@ table.tb tr:last-child td{border-bottom:none}
 .prog-card.s2{background:#e6f4f1;border-color:#a8d8cf}
 .prog-card.s3{background:#fff8e0;border-color:#e8d48a}
 .prog-card.s4{background:#fdf0f0;border-color:#e8aaaa}
-.prog-stage{font-size:11px;font-weight:700;letter-spacing:.06em;margin-bottom:.3rem}
+.prog-stage{font-size:12.5px;font-weight:700;letter-spacing:.06em;margin-bottom:.3rem}
 .prog-card.s1 .prog-stage{color:#1a6a1a}
 .prog-card.s2 .prog-stage{color:#1a6b62}
 .prog-card.s3 .prog-stage{color:#7a5500}
 .prog-card.s4 .prog-stage{color:#8a1010}
-.prog-survival{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.25rem;line-height:1.35}
-.prog-desc{font-size:11px;color:var(--text-muted);line-height:1.55}
+.prog-survival{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.25rem;line-height:1.35}
+.prog-desc{font-size:12.5px;color:var(--text-muted);line-height:1.55}
 
-.callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:13px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
+.callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:14px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
 .callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
@@ -131,7 +131,7 @@ table.tb tr:last-child td{border-bottom:none}
 .callout.neutral{background:var(--navy-xlight);color:var(--text-mid);border:1px solid var(--border)}
 .callout strong{font-weight:600}
 
-ul.gl{list-style:none;padding:0;font-size:13px;line-height:1.85;color:var(--text-mid)}
+ul.gl{list-style:none;padding:0;font-size:14px;line-height:1.85;color:var(--text-mid)}
 ul.gl li{padding:.3rem 0 .3rem 1.2rem;position:relative;border-bottom:1px solid var(--navy-xlight)}
 ul.gl li:last-child{border-bottom:none}
 ul.gl li::before{content:'';position:absolute;left:0;top:.75rem;width:5px;height:5px;border-radius:50%;background:var(--navy);opacity:.35}
@@ -140,29 +140,29 @@ ul.gl strong{color:var(--text);font-weight:600}
 .symptom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-bottom:1rem}
 .sym-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem;display:flex;align-items:flex-start;gap:.6rem}
 .sym-icon{font-size:20px;flex-shrink:0}
-.sym-name{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:.2rem}
-.sym-desc{font-size:12px;color:var(--text-muted);line-height:1.55}
+.sym-name{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:.2rem}
+.sym-desc{font-size:13.5px;color:var(--text-muted);line-height:1.55}
 
 /* DARK HIGHLIGHT BOX */
 .hl-box{background:var(--navy);border-radius:14px;padding:1.75rem;margin-bottom:1rem;color:#fff}
 .fb-top{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
 .fb-icon{font-size:28px}
 .fb-title{font-size:16px;font-weight:700;color:#fff}
-.fb-title small{display:block;font-size:11px;font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.06em;margin-top:2px}
-.fb-lead{font-size:12px;color:rgba(255,255,255,.62);margin-bottom:1rem;line-height:1.75}
+.fb-title small{display:block;font-size:12.5px;font-weight:400;color:rgba(255,255,255,.88);letter-spacing:.06em;margin-top:2px}
+.fb-lead{font-size:13.5px;color:rgba(255,255,255,.88);margin-bottom:1rem;line-height:1.75}
 .hl-num{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.9rem}
 .hl-num .n{font-size:46px;font-weight:700;color:#f4b08f;line-height:1}
-.hl-num .u{font-size:13px;color:rgba(255,255,255,.6)}
+.hl-num .u{font-size:14px;color:rgba(255,255,255,.88)}
 .fb-when{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-bottom:1rem}
-.fb-when-card{background:rgba(255,255,255,.08);border-radius:8px;padding:.7rem .875rem;font-size:12px;color:rgba(255,255,255,.75);line-height:1.55}
-.fb-when-card strong{color:#fff;display:block;margin-bottom:2px;font-size:11px;letter-spacing:.04em}
-.fb-caution{background:rgba(231,76,60,.15);border:1px solid rgba(231,76,60,.4);border-radius:8px;padding:.7rem 1rem;font-size:12px;color:#ffb3b3;margin-top:.875rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.65}
+.fb-when-card{background:rgba(255,255,255,.08);border-radius:8px;padding:.7rem .875rem;font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.55}
+.fb-when-card strong{color:#fff;display:block;margin-bottom:2px;font-size:12.5px;letter-spacing:.04em}
+.fb-caution{background:rgba(231,76,60,.15);border:1px solid rgba(231,76,60,.4);border-radius:8px;padding:.7rem 1rem;font-size:13.5px;color:#ffb3b3;margin-top:.875rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.65}
 
 .drug-cards{display:flex;flex-direction:column;gap:.6rem}
 .drug-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem}
-.drug-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.4rem}
-.drug-desc{font-size:12px;color:var(--text-mid);line-height:1.7}
-.drug-note{display:inline-flex;align-items:center;gap:4px;font-size:11px;margin-top:.4rem;padding:3px 9px;border-radius:999px;font-weight:500}
+.drug-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.drug-desc{font-size:13.5px;color:var(--text-mid);line-height:1.7}
+.drug-note{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;margin-top:.4rem;padding:3px 9px;border-radius:999px;font-weight:500}
 .drug-note.ok{color:var(--ok-text);background:var(--ok-bg);border:1px solid var(--ok-border)}
 .drug-note.opt{color:#7a5500;background:#fff8e0;border:1px solid #e8d48a}
 .drug-note.no{color:#8a1010;background:var(--danger-bg);border:1px solid var(--danger-border)}
@@ -170,15 +170,15 @@ ul.gl strong{color:var(--text);font-weight:600}
 .emerg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.6rem}
 .emerg-card{background:var(--danger-bg);border:1px solid var(--danger-border);border-radius:10px;padding:.875rem 1rem;display:flex;align-items:flex-start;gap:.6rem}
 .emerg-icon{font-size:20px;flex-shrink:0}
-.emerg-name{font-size:13px;font-weight:600;color:var(--danger-text);margin-bottom:.2rem}
-.emerg-desc{font-size:12px;color:#8a3030;line-height:1.5}
+.emerg-name{font-size:14px;font-weight:600;color:var(--danger-text);margin-bottom:.2rem}
+.emerg-desc{font-size:13.5px;color:#8a3030;line-height:1.5}
 
 .foot{background:var(--navy);padding:2.5rem 1.5rem}
 .foot-inner{max-width:760px;margin:0 auto}
-.foot-disc{font-size:12px;color:rgba(255,255,255,.5);line-height:1.9;margin-bottom:1.25rem}
+.foot-disc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.9;margin-bottom:1.25rem}
 .foot-disc strong{color:rgba(255,255,255,.8);font-weight:500}
 .foot-btns{display:flex;gap:.6rem;flex-wrap:wrap}
-.foot-ref{margin-top:1.25rem;font-size:11px;color:rgba(255,255,255,.25);line-height:1.7}
+.foot-ref{margin-top:1.25rem;font-size:12.5px;color:rgba(255,255,255,.88);line-height:1.7}
 
 .hidden{display:none!important}
 @media(max-width:480px){
@@ -195,7 +195,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원 동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
     <div class="topbar-btns">
       <a class="tbtn back" href="index.html">← 전체 안내</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
@@ -228,7 +228,7 @@ ul.gl strong{color:var(--text);font-weight:600}
   <div class="hero-inner">
     <div class="hero-eyebrow">시원동물의료센터 · 당뇨·내분비 질환 보호자 안내</div>
     <h1>잘 먹는데 살이 빠지고<br><span>물을 자꾸 찾는다면</span></h1>
-    <p class="hero-desc">당뇨는 초기 신호를 알아채면 훨씬 안정적으로 관리할 수 있습니다. 인슐린 투여와 저혈당 대처가 핵심입니다.<br>아래에서 아이의 종을 선택하시면 맞춤 정보를 보여드립니다.</p>
+    <p class="hero-desc">당뇨는 초기 신호를 일찍 알아챌수록 안정적으로 관리하기 쉬워집니다. 핵심은 인슐린을 정확히 놓는 것과 저혈당에 대비하는 것입니다.<br>아래에서 강아지 또는 고양이를 고르면 해당 내용만 볼 수 있어요.</p>
   </div>
 </div>
 
@@ -251,23 +251,23 @@ ul.gl strong{color:var(--text);font-weight:600}
     <div class="sec-head"><span class="sec-num">1</span><span class="sec-title">당뇨병이란?</span><span class="sec-tag">Overview</span></div>
 
     <div id="ov-dog">
-      <div class="ov-text">당뇨병은 <strong>인슐린이 충분히 만들어지지 않거나 제대로 작용하지 못해</strong> 혈당이 높은 상태가 지속되는 질환입니다. 강아지는 대부분 인슐린이 절대적으로 부족한 형태라 <strong>평생 인슐린 주사가 필요</strong>한 경우가 많습니다.</div>
+      <div class="ov-text">당뇨병은 <strong>인슐린이 부족하거나, 있어도 제 역할을 못해서</strong> 혈당이 계속 높게 유지되는 병입니다. 강아지는 대부분 인슐린 자체가 거의 만들어지지 않는 형태라 <strong>평생 인슐린 주사를 맞아야 하는</strong> 경우가 많습니다.</div>
       <div class="stat-grid">
         <div class="stat-card"><div class="s-lbl">호발 대상</div><div class="s-val">중년~노령, 비만견</div></div>
         <div class="stat-card"><div class="s-lbl">치료 원칙</div><div class="s-val">인슐린 + 일정한 식사</div></div>
         <div class="stat-card"><div class="s-lbl">가장 흔한 합병증</div><div class="s-val">백내장, 케톤산증, 요로감염</div></div>
       </div>
-      <div class="callout info"><span class="ci">🐕</span><span><strong>쿠싱(부신피질기능항진)·췌장염·갑상선기능저하</strong>가 동반되면 혈당이 좀처럼 잡히지 않습니다. 당뇨가 잘 조절되지 않으면 이런 질환을 함께 확인합니다.</span></div>
+      <div class="callout info"><span class="ci">🐕</span><span><strong>쿠싱(부신피질기능항진증), 췌장염, 갑상선기능저하증</strong>이 함께 있으면 혈당이 잘 잡히지 않습니다. 당뇨 조절이 어렵다면 이런 병이 함께 있는지 확인합니다.</span></div>
     </div>
 
     <div id="ov-cat" class="hidden">
-      <div class="ov-text">고양이 당뇨는 대부분 <strong>인슐린 저항성 + 췌장 베타세포 기능 저하</strong> 형태입니다. 잘 관리하면 <strong>인슐린을 끊을 수 있는 관해(remission)</strong>에 들어가는 경우도 있어, 조기 발견과 초기 집중 관리가 특히 중요합니다.</div>
+      <div class="ov-text">고양이 당뇨는 대개 <strong>인슐린이 잘 듣지 않는 상태(저항성)와 인슐린을 만드는 췌장 세포의 기능 저하</strong>가 함께 있는 형태입니다. 관리를 잘하면 <strong>인슐린 없이도 혈당이 유지되는 관해(remission)</strong>에 이르기도 해서, 일찍 발견하고 초기에 집중적으로 관리하는 것이 특히 중요합니다.</div>
       <div class="stat-grid">
         <div class="stat-card"><div class="s-lbl">호발 대상</div><div class="s-val">비만·중성화·실내 생활·노령</div></div>
         <div class="stat-card"><div class="s-lbl">치료 원칙</div><div class="s-val">인슐린 + 고단백 저탄수 식이</div></div>
         <div class="stat-card"><div class="s-lbl">기대할 수 있는 것</div><div class="s-val">조기 관리 시 관해 가능성</div></div>
       </div>
-      <div class="callout info"><span class="ci">🐈</span><span>고양이는 <strong>병원 스트레스만으로도 혈당이 오르기 때문에</strong> 한 번의 혈당 수치만으로 진단하지 않습니다. 과당아민 검사나 연속혈당측정으로 함께 확인합니다.</span></div>
+      <div class="callout info"><span class="ci">🐈</span><span>고양이는 <strong>병원에 오는 스트레스만으로도 혈당이 올라가기 때문에</strong> 혈당 한 번만 재서 진단하지 않습니다. 과당아민 검사나 연속혈당측정으로 함께 확인합니다.</span></div>
     </div>
   </div>
 
@@ -275,15 +275,15 @@ ul.gl strong{color:var(--text);font-weight:600}
   <div class="sec">
     <div class="sec-head"><span class="sec-num">2</span><span class="sec-title">초기 신호와 합병증</span><span class="sec-tag">Symptoms</span></div>
     <div class="symptom-grid">
-      <div class="sym-card"><span class="sym-icon">💧</span><div><div class="sym-name">다음(물을 많이 마심)</div><div class="sym-desc">물그릇을 비우는 횟수가 눈에 띄게 늘고, 밤에도 물을 찾습니다</div></div></div>
-      <div class="sym-card"><span class="sym-icon">🚽</span><div><div class="sym-name">다뇨(소변량 증가)</div><div class="sym-desc">소변 볼 때 양이 많아지고, 모래가 금세 젖거나 실수를 합니다</div></div></div>
-      <div class="sym-card"><span class="sym-icon">🍚</span><div><div class="sym-name">다식</div><div class="sym-desc">잘 먹는데도 배고파 합니다. 식사량이 늘었는데 체중은 줄어요</div></div></div>
-      <div class="sym-card"><span class="sym-icon">⚖️</span><div><div class="sym-name">체중 감소</div><div class="sym-desc">근육이 빠지고 등뼈·엉덩이가 두드러집니다</div></div></div>
-      <div class="sym-card"><span class="sym-icon">😴</span><div><div class="sym-name">무기력</div><div class="sym-desc">잠만 자고 놀이에 반응이 줄어듭니다</div></div></div>
-      <div class="sym-card"><span class="sym-icon">🐾</span><div><div class="sym-name">뒷다리 이상</div><div class="sym-desc">고양이가 발끝이 아니라 발목을 대고 걷는다면 신경병증 신호입니다</div></div></div>
+      <div class="sym-card"><span class="sym-icon">💧</span><div><div class="sym-name">다음(물을 많이 마심)</div><div class="sym-desc">물그릇이 비는 일이 눈에 띄게 잦아지고, 밤에도 물을 찾아요</div></div></div>
+      <div class="sym-card"><span class="sym-icon">🚽</span><div><div class="sym-name">다뇨(소변량 증가)</div><div class="sym-desc">소변 양이 많아지고, 모래가 금방 젖거나 실수를 해요</div></div></div>
+      <div class="sym-card"><span class="sym-icon">🍚</span><div><div class="sym-name">다식</div><div class="sym-desc">잘 먹는데도 계속 배고파하고, 먹는 양은 늘었는데 몸무게는 줄어요</div></div></div>
+      <div class="sym-card"><span class="sym-icon">⚖️</span><div><div class="sym-name">체중 감소</div><div class="sym-desc">근육이 빠져서 등뼈와 엉덩이뼈가 도드라져요</div></div></div>
+      <div class="sym-card"><span class="sym-icon">😴</span><div><div class="sym-name">무기력</div><div class="sym-desc">잠만 자고 놀아 줘도 반응이 줄어요</div></div></div>
+      <div class="sym-card"><span class="sym-icon">🐾</span><div><div class="sym-name">뒷다리 이상</div><div class="sym-desc">고양이가 발끝이 아니라 발목(뒤꿈치)을 바닥에 대고 걸으면 신경 손상 신호예요</div></div></div>
     </div>
-    <div class="callout warn"><span class="ci">⚠️</span><span>조절되지 않은 당뇨는 <strong>백내장(개), 요로감염, 케톤산증(DKA), 고삼투압성 혼수</strong>로 이어질 수 있습니다. 특히 케톤산증은 생명을 위협하는 응급 상황입니다.</span></div>
-    <div class="callout neutral"><span class="ci">📈</span><span>음수량·소변량·식욕·체중은 혈당 조절 상태를 보여주는 가장 좋은 기록입니다. <a href="homecare.html" style="color:var(--accent);font-weight:600">만성질환 홈 케어 기록지</a>에 매일 남기고 내원 시 보여주세요.</span></div>
+    <div class="callout warn"><span class="ci">⚠️</span><span>당뇨가 잘 조절되지 않으면 <strong>백내장(강아지), 방광염 같은 요로감염, 케톤산증(DKA), 고삼투압성 혼수</strong>가 생길 수 있습니다. 특히 케톤산증은 생명이 위험한 응급 상황입니다.</span></div>
+    <div class="callout neutral"><span class="ci">📈</span><span>물 마시는 양, 소변 양, 식욕, 몸무게는 혈당이 잘 조절되는지 보여주는 가장 좋은 기록입니다. <a href="homecare.html" style="color:var(--accent);font-weight:600">만성질환 홈 케어 기록지</a>에 매일 남기고 내원 시 보여주세요.</span></div>
   </div>
 
   <!-- ③ 진단 -->
@@ -295,31 +295,31 @@ ul.gl strong{color:var(--text);font-weight:600}
         <tr>
           <td><span class="tb-badge b1">BG</span> 혈당</td>
           <td>현재 혈당 수치</td>
-          <td>식후·스트레스로도 오릅니다. 한 번의 수치로 진단을 확정하지 않습니다.</td>
+          <td>밥을 먹은 뒤나 스트레스를 받아도 올라갑니다. 한 번 잰 수치만으로 진단하지 않습니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b2">FA</span> 과당아민</td>
           <td>최근 1~3주 평균 혈당</td>
-          <td>병원 스트레스에 흔들리지 않아 진단과 조절 평가에 유용합니다.</td>
+          <td>병원 스트레스의 영향을 덜 받아 진단과 조절 상태 확인에 도움이 됩니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b2">UA</span> 소변검사</td>
           <td>요당, 케톤, 요로감염</td>
-          <td>요당만으로는 진단이 어렵습니다. 케톤이 나오면 즉시 치료가 필요합니다.</td>
+          <td>소변의 당만으로는 진단이 어렵습니다. 케톤이 나오면 바로 치료가 필요합니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b3">CBC</span> 혈액·생화학</td>
           <td>간·신장·전해질, 췌장, 염증</td>
-          <td>치료 방향과 동반 질환을 함께 판단하는 기본 검사입니다.</td>
+          <td>치료 방향을 정하고 함께 있는 병을 확인하기 위한 기본 검사입니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b4">ENDO</span> 내분비 검사</td>
           <td>쿠싱 · 갑상선 · 말단비대증</td>
-          <td>조절이 안 되는 당뇨에서 반드시 확인합니다.</td>
+          <td>당뇨가 잘 조절되지 않을 때 꼭 확인합니다.</td>
         </tr>
       </tbody></table>
     </div>
-    <div class="callout info"><span class="ci">💉</span><span>진단 후에는 <strong>12시간 혈당 곡선(커브)</strong>을 그려 인슐린 종류·용량을 정합니다. 입원해서 재거나, 집에서 측정한 값을 가져오셔도 됩니다.</span></div>
+    <div class="callout info"><span class="ci">💉</span><span>진단 뒤에는 <strong>12시간 동안 혈당을 여러 번 재서 곡선(커브)</strong>을 만들고, 이를 보고 인슐린 종류와 용량을 정합니다. 입원해서 재기도 하고, 집에서 잰 값을 가져오셔도 됩니다.</span></div>
   </div>
 
   <!-- ④ 인슐린 투여 -->
@@ -329,41 +329,41 @@ ul.gl strong{color:var(--text);font-weight:600}
       <div class="fb-top">
         <span class="fb-icon">💉</span>
         <div>
-          <div class="fb-title">매일 같은 시간, 같은 양, 같은 방법<small>INSULIN BASICS</small></div>
+          <div class="fb-title">매일 같은 시간, 같은 양, 같은 방법으로<small>INSULIN BASICS</small></div>
         </div>
       </div>
-      <p class="fb-lead">인슐린은 <strong style="color:#fff">용량·시간·보관</strong> 세 가지가 조금만 어긋나도 혈당이 크게 흔들립니다. 아래 네 가지만 지켜주세요.</p>
+      <p class="fb-lead">인슐린은 <strong style="color:#fff">용량, 시간, 보관</strong> 중 하나만 조금 틀어져도 혈당이 크게 흔들립니다. 아래 네 가지를 꼭 지켜 주세요.</p>
       <div class="fb-when">
-        <div class="fb-when-card"><strong>① 시간</strong>보통 12시간 간격으로 하루 2회. 출근·취침 시간에 맞춰 정하고, 30분 이상 차이가 나지 않게 합니다.</div>
-        <div class="fb-when-card"><strong>② 식사</strong>인슐린 전에 밥을 먹이는 것이 아니라, <strong>밥을 다 먹은 것을 확인한 뒤</strong> 주사합니다. 절식이면 주사하지 말고 상의하세요.</div>
-        <div class="fb-when-card"><strong>③ 주사기</strong>인슐린 농도(U-40·U-100)와 <strong>주사기 눈금 단위를 반드시 일치</strong>시킵니다. 섞으면 치명적 과량이 될 수 있습니다.</div>
-        <div class="fb-when-card"><strong>④ 기록</strong>주사 시간·용량·식사량·물·소변을 적어두면 용량 조절이 훨씬 정확해집니다.</div>
+        <div class="fb-when-card"><strong>① 시간</strong>보통 12시간 간격으로 하루 두 번 놓습니다. 출근·잠자는 시간에 맞춰 정하고, 매일 30분 넘게 어긋나지 않게 해 주세요.</div>
+        <div class="fb-when-card"><strong>② 식사</strong>주사를 먼저 놓는 것이 아니라 <strong>밥을 다 먹은 것을 확인한 다음</strong> 놓습니다. 밥을 먹지 않았다면 주사하지 말고 먼저 연락 주세요.</div>
+        <div class="fb-when-card"><strong>③ 주사기</strong>인슐린 농도(U-40, U-100)와 <strong>주사기 눈금 단위가 꼭 같아야</strong> 합니다. 섞어 쓰면 위험할 만큼 많은 양이 들어갈 수 있습니다.</div>
+        <div class="fb-when-card"><strong>④ 기록</strong>주사 시간, 용량, 먹은 양, 물과 소변 양을 적어 두면 용량을 훨씬 정확하게 조절할 수 있습니다.</div>
       </div>
-      <div class="fb-caution">🚨 <span><strong>U-40 인슐린에 U-100 주사기를 쓰면 실제로는 2.5배가 들어갑니다.</strong> 처방받은 주사기를 그대로 쓰고, 약국에서 바꿀 때는 반드시 병원에 확인하세요.</span></div>
+      <div class="fb-caution">🚨 <span><strong>U-40 인슐린을 U-100 주사기로 놓으면 실제로는 2.5배가 들어갑니다.</strong> 처방받은 주사기를 그대로 쓰시고, 약국에서 다른 주사기를 사야 할 때는 꼭 병원에 먼저 물어봐 주세요.</span></div>
     </div>
 
     <div class="drug-cards">
       <div class="drug-card">
         <div class="drug-name">인슐린 보관</div>
         <div class="drug-desc">
-          <strong>미개봉</strong>은 냉장(2~8℃) 보관, <strong>사용 중인 바이알</strong>은 제품 지침에 따라 실온 또는 냉장 보관합니다. 냉동은 절대 금지, 냉장고 문 쪽처럼 온도가 오르내리는 곳은 피하세요. <strong>세게 흔들지 말고</strong> 손바닥 사이에서 부드럽게 굴려 섞습니다(탁한 인슐린). 개봉 후 사용 기간(보통 28~42일)을 지키고, 변색·입자·탁도 변화가 있으면 새것으로 바꿔주세요.
+          <strong>뜯지 않은 인슐린</strong>은 냉장(2~8℃)에 보관하고, <strong>쓰고 있는 병</strong>은 제품 설명서에 따라 실온 또는 냉장 보관합니다. 얼리면 절대 안 되고, 냉장고 문 쪽처럼 온도가 자주 바뀌는 곳도 피해 주세요. 뿌연 인슐린은 <strong>세게 흔들지 말고</strong> 두 손바닥 사이에서 살살 굴려 섞습니다. 개봉 후 사용 기간(보통 28~42일)을 지키고, 색이 변하거나 알갱이가 보이거나 탁해졌다면 새것으로 바꿔 주세요.
         </div>
         <span class="drug-note ok">✓ 직사광선·고온·냉동 금지</span>
       </div>
       <div class="drug-card">
         <div class="drug-name">주사 방법</div>
-        <div class="drug-desc">목덜미와 어깨 사이 <strong>피부 아래(피하)</strong>에 짧은 인슐린 바늘로 주사합니다. 피부를 살짝 들어 올려 넣고, <strong>주사 부위는 매번 조금씩 옮겨</strong> 딱딱한 덩어리가 생기지 않게 합니다. 바늘은 매번 새것을 사용하세요.</div>
+        <div class="drug-desc">목덜미와 어깨 사이의 <strong>피부 밑(피하)</strong>에 짧은 인슐린 바늘로 놓습니다. 피부를 살짝 집어 올려 찌르고, <strong>놓는 자리는 매번 조금씩 바꿔야</strong> 딱딱하게 뭉치지 않습니다. 바늘은 매번 새것을 써 주세요.</div>
         <span class="drug-note ok">✓ 부위 순환 · 1회용 바늘</span>
       </div>
       <div class="drug-card hidden" id="insulin-cat">
         <div class="drug-name">고양이는 관해를 노립니다</div>
-        <div class="drug-desc">고양이는 <strong>글라진(랜투스) 등 지속형 인슐린 + 고단백 저탄수 습식</strong> 조합으로 관해를 시도하는 경우가 많습니다. 관해가 오면 인슐린을 줄이거나 끊게 되므로, <strong>저혈당 위험을 감시</strong>하며 용량을 조정합니다. 임의로 끊지 마세요.</div>
+        <div class="drug-desc">고양이는 <strong>글라진(란투스) 같은 오래 가는 인슐린과 단백질이 많고 탄수화물이 적은 습식</strong>을 함께 써서 관해를 노리는 경우가 많습니다. 관해에 들어가면 인슐린을 줄이거나 끊게 되므로 <strong>저혈당이 오지 않는지 지켜보며</strong> 용량을 맞춥니다. 마음대로 끊지 마세요.</div>
         <span class="drug-note opt">△ 수의사 판단 하에 감량</span>
       </div>
       <div class="drug-card">
         <div class="drug-name">⛔ 절대 하지 말 것</div>
         <div class="drug-desc">
-          <strong>혈당이 높다고 인슐린을 추가로 놓지 마세요.</strong> 겹친 인슐린은 몇 시간 뒤 치명적인 저혈당을 만듭니다. <strong>보호자 판단으로 용량을 바꾸지 말고</strong>, 같은 시간대에 두 번 놓았거나 용량이 기억나지 않으면 즉시 병원에 연락해 주세요.
+          <strong>혈당이 높게 나왔다고 인슐린을 더 놓지 마세요.</strong> 겹쳐 놓은 인슐린은 몇 시간 뒤 생명이 위험한 저혈당을 일으킵니다. <strong>용량은 보호자님이 바꾸지 마시고</strong>, 같은 시간에 두 번 놓았거나 몇 단위를 놓았는지 기억나지 않으면 바로 병원에 연락해 주세요.
         </div>
         <span class="drug-note no">✕ 추가 투여 금지</span>
       </div>
@@ -373,44 +373,44 @@ ul.gl strong{color:var(--text);font-weight:600}
   <!-- ⑤ 저혈당 응급 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-num">5</span><span class="sec-title">저혈당 응급 대처</span><span class="sec-tag">Hypoglycemia</span></div>
-    <div class="ov-text">인슐린이 조금만 과해도 혈당이 뚝 떨어질 수 있습니다. <strong>저혈당은 몇 분 안에 대처해야 하는 응급 상황</strong>입니다. 평소에 꿀이나 시럽을 손 닿는 곳에 두세요.</div>
+    <div class="ov-text">인슐린이 조금만 많아도 혈당이 갑자기 떨어질 수 있습니다. <strong>저혈당은 몇 분 안에 대처해야 하는 응급 상황</strong>입니다. 꿀이나 시럽을 늘 손이 닿는 곳에 두세요.</div>
     <div class="prog-grid">
       <div class="prog-card s3">
         <div class="prog-stage">STEP 1 · 알아채기</div>
         <div class="prog-survival">떨림·비틀거림</div>
-        <div class="prog-desc">몸을 떨거나 걷지 못하고, 갑자기 배고파하며 사료를 찾습니다. 구역질·혼동도 흔합니다.</div>
+        <div class="prog-desc">몸을 떨거나 비틀거리고, 갑자기 배고파하며 사료를 찾습니다. 헛구역질을 하거나 멍해 보이는 경우도 많습니다.</div>
       </div>
       <div class="prog-card s2">
         <div class="prog-stage">STEP 2 · 의식이 있을 때</div>
         <div class="prog-survival">당류를 입에</div>
-        <div class="prog-desc">꿀·설탕물·시럽을 잇몸에 발라줍니다. 10~15분 뒤 혈당을 재고, 좋아지면 소량 사료를 급여합니다.</div>
+        <div class="prog-desc">꿀, 설탕물, 시럽을 잇몸에 발라 줍니다. 10~15분 뒤 혈당을 다시 재고, 나아지면 사료를 조금 먹입니다.</div>
       </div>
       <div class="prog-card s4">
         <div class="prog-stage">STEP 3 · 의식이 없을 때</div>
         <div class="prog-survival">즉시 내원</div>
-        <div class="prog-desc">입에 아무것도 넣지 마세요. 기도로 흡인될 수 있습니다. 바로 병원으로 가거나 연락합니다.</div>
+        <div class="prog-desc">입에 아무것도 넣지 마세요. 기도로 넘어갈 수 있습니다. 바로 병원으로 오시거나 연락 주세요.</div>
       </div>
       <div class="prog-card s1">
         <div class="prog-stage">그다음</div>
         <div class="prog-survival">기록 후 연락</div>
-        <div class="prog-desc">시간·용량·증상을 적어 두고 담당 수의사와 상의합니다. 다음 인슐린은 임의로 건너뛰거나 줄이지 마세요.</div>
+        <div class="prog-desc">시간, 용량, 증상을 적어 두고 담당 수의사와 상의해 주세요. 다음 인슐린을 마음대로 건너뛰거나 줄이지 마세요.</div>
       </div>
     </div>
-    <div class="callout danger"><span class="ci">🚨</span><span><strong>발작, 의식 소실, 몸이 차가워짐</strong>은 심한 저혈당 신호입니다. 집에서 해결하려 하지 말고 즉시 병원으로 오세요. 이동 중에는 아이를 따뜻하게 유지해 주세요.</span></div>
+    <div class="callout danger"><span class="ci">🚨</span><span><strong>경련, 의식을 잃음, 몸이 차가워짐</strong>은 심한 저혈당 신호입니다. 집에서 해결하려 하지 말고 바로 병원으로 오세요. 오는 동안 아이 몸을 따뜻하게 감싸 주세요.</span></div>
   </div>
 
   <!-- ⑥ 정기 모니터링 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-num">6</span><span class="sec-title">정기 모니터링</span><span class="sec-tag">Monitoring</span></div>
     <ul class="gl">
-      <li><strong>혈당 곡선은 시작 후 1~2주에 한 번</strong>, 안정되면 3~6개월마다 확인합니다. 인슐린 용량을 바꾼 뒤에는 다시 곡선을 그립니다.</li>
-      <li><strong>집에서 혈당을 잴 수 있습니다.</strong> 귓가 정맥이나 발바닥에서 소량 채혈하거나, 연속혈당측정기(CGMS)를 붙여 24시간 흐름을 확인하기도 합니다.</li>
-      <li><strong>과당아민·소변 케톤 검사</strong>를 정기적으로 함께 봅니다. 케톤은 집에서 소변 스틱으로 확인할 수도 있습니다.</li>
-      <li><strong>체중과 체형(BCS)을 매달 기록</strong>하세요. 체중이 갑자기 줄면 조절이 나빠졌다는 신호입니다.</li>
-      <li><strong>식사량과 시간을 일정하게</strong> 유지하세요. 사료를 바꾸면 인슐린 요구량도 달라질 수 있어 수의사와 상의가 필요합니다.</li>
-      <li><strong>눈·치아·피부·발바닥</strong>도 함께 확인합니다. 백내장(개), 치주질환, 요로감염은 조절을 방해합니다.</li>
+      <li><strong>치료를 시작하면 1~2주에 한 번 혈당 곡선을 확인하고</strong>, 안정되면 3~6개월마다 확인합니다. 인슐린 용량을 바꾼 뒤에도 다시 곡선을 그립니다.</li>
+      <li><strong>집에서도 혈당을 잴 수 있습니다.</strong> 귀 가장자리 혈관이나 발바닥에서 피 한 방울을 얻어 재거나, 연속혈당측정기(CGMS)를 붙여 하루 동안의 변화를 보기도 합니다.</li>
+      <li><strong>과당아민과 소변 케톤</strong>도 정기적으로 함께 확인합니다. 케톤은 집에서 소변 검사 스틱으로도 볼 수 있습니다.</li>
+      <li><strong>몸무게와 체형(BCS)을 한 달에 한 번 기록</strong>해 주세요. 몸무게가 갑자기 줄면 조절이 나빠졌다는 신호입니다.</li>
+      <li><strong>밥 양과 시간을 늘 같게</strong> 유지해 주세요. 사료를 바꾸면 필요한 인슐린 양도 달라질 수 있어 수의사와 먼저 상의해야 합니다.</li>
+      <li><strong>눈, 치아, 피부, 발바닥</strong>도 함께 살펴봅니다. 백내장(강아지), 잇몸병, 요로감염은 혈당 조절을 방해합니다.</li>
     </ul>
-    <div class="callout info"><span class="ci">🗓️</span><span>조절이 안정된 아이도 <strong>3~6개월마다 혈액·소변 검사</strong>를 받는 것이 원칙입니다. 용량 조절은 검사 결과를 보고 담당 수의사가 결정합니다.</span></div>
+    <div class="callout info"><span class="ci">🗓️</span><span>조절이 잘 되는 아이도 <strong>3~6개월마다 혈액·소변 검사</strong>를 받는 것이 원칙입니다. 용량은 검사 결과를 보고 담당 수의사가 정합니다.</span></div>
   </div>
 
   <!-- ⑦ 동반 내분비 질환 -->
@@ -420,52 +420,52 @@ ul.gl strong{color:var(--text);font-weight:600}
       <div class="dc">
         <div class="dc-badge">개 · 흔함</div>
         <div class="dc-name">쿠싱 (부신피질기능항진)</div>
-        <div class="dc-desc">배가 불룩해지고 물·소변이 늘며, 양쪽 옆구리 탈모·얇아진 피부·헐떡임이 나타납니다. 고혈압·단백뇨를 동반하고 <strong>당뇨 조절을 어렵게 만듭니다.</strong></div>
+        <div class="dc-desc">배가 볼록해지고 물과 소변이 늘며, 양쪽 옆구리 털이 빠지고 피부가 얇아지며 헐떡임이 늘어납니다. 고혈압과 단백뇨가 함께 생기기도 하고 <strong>당뇨 조절을 어렵게 만듭니다.</strong></div>
       </div>
       <div class="dc">
         <div class="dc-badge">개 · 흔함</div>
         <div class="dc-name">갑상선기능저하</div>
-        <div class="dc-desc">잘 안 먹는데 살이 찌고, 무기력·추위 탐·피부 감염이 반복됩니다. 대사가 느려져 인슐린 반응이 달라질 수 있습니다.</div>
+        <div class="dc-desc">잘 먹지 않는데 살이 찌고, 기운이 없고, 추위를 타고, 피부병이 자꾸 생깁니다. 몸의 대사가 느려져 인슐린 반응이 달라질 수 있습니다.</div>
       </div>
       <div class="dc">
         <div class="dc-badge">고양이 · 흔함</div>
         <div class="dc-name">갑상선기능항진</div>
-        <div class="dc-desc">많이 먹는데 마르고, 활동이 늘고, 구토·빈맥·고혈압이 나타납니다. 심장 질환(심근병증)과 함께 오는 경우가 많습니다.</div>
+        <div class="dc-desc">많이 먹는데 마르고, 오히려 활발해지며, 구토, 빠른 심장 박동, 고혈압이 나타납니다. 심장 근육병(심근병증)과 함께 오는 경우가 많습니다.</div>
       </div>
     </div>
     <div class="tbl-wrap">
       <table class="tb">
         <tbody><tr><th>질환</th><th>대표 신호</th><th>확인 검사</th></tr>
-        <tr><td style="font-weight:600;color:var(--text)">쿠싱</td><td>복부 팽만·다음다뇨·다식·대칭 탈모</td><td>부신 기능 검사(LDDST·ACTH 자극), 복부초음파</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">갑상선기능저하(개)</td><td>체중 증가·무기력·피부병·추위 탐</td><td>총 T4 + TSH</td></tr>
-        <tr><td style="font-weight:600;color:var(--text)">갑상선기능항진(고양이)</td><td>체중 감소·다식·활동 항진·빈맥</td><td>총 T4 (필요 시 유리 T4)</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">쿠싱</td><td>배가 불룩함, 물·소변 증가, 식욕 증가, 양쪽 대칭으로 빠지는 털</td><td>부신 기능 검사(LDDST, ACTH 자극 검사), 복부 초음파</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">갑상선기능저하(개)</td><td>살이 찜, 기운 없음, 피부병, 추위를 탐</td><td>총 T4 + TSH</td></tr>
+        <tr><td style="font-weight:600;color:var(--text)">갑상선기능항진(고양이)</td><td>살이 빠짐, 식욕 증가, 지나치게 활발함, 빠른 심장 박동</td><td>총 T4 (필요 시 유리 T4)</td></tr>
       </tbody></table>
     </div>
-    <div class="callout neutral"><span class="ci">🧠</span><span>이 질환들은 <strong>한 번의 검사로 확정되지 않는 경우가 많아</strong> 재검사와 추적 관찰이 필요합니다. 검사 결과가 애매하면 2~4주 뒤 다시 확인합니다.</span></div>
+    <div class="callout neutral"><span class="ci">🧠</span><span>이런 병들은 <strong>검사 한 번으로 확진되지 않는 경우가 많아</strong> 다시 검사하며 지켜봐야 합니다. 결과가 애매하면 2~4주 뒤에 다시 확인합니다.</span></div>
   </div>
 
   <!-- ⑧ 응급 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-num">8</span><span class="sec-title">병원에 바로 오셔야 할 신호</span><span class="sec-tag">Emergency</span></div>
     <div class="emerg-grid">
-      <div class="emerg-card"><span class="emerg-icon">🍬</span><div><div class="emerg-name">저혈당 증상</div><div class="emerg-desc">심한 떨림, 걷지 못함, 발작, 의식 소실</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🤮</span><div><div class="emerg-name">구토가 계속됨</div><div class="emerg-desc">물도 못 마시고 구토하면 케톤산증 가능성이 있습니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🫁</span><div><div class="emerg-name">빠르고 깊은 호흡</div><div class="emerg-desc">케톤산증에서 나타나는 보상성 호흡일 수 있습니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🍽️</span><div><div class="emerg-name">24시간 이상 절식</div><div class="emerg-desc">인슐린을 맞았는데 먹지 못했다면 즉시 연락하세요</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">😵</span><div><div class="emerg-name">심한 무기력·혼수</div><div class="emerg-desc">부르면 반응이 없고 몸에 힘이 없을 때</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">💉</span><div><div class="emerg-name">인슐린 과량·중복 투여</div><div class="emerg-desc">같은 시간에 두 번 놓았거나 다른 농도 주사기를 썼을 때</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🍬</span><div><div class="emerg-name">저혈당 증상</div><div class="emerg-desc">심하게 떨거나, 걷지 못하거나, 경련하거나, 정신을 잃을 때</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🤮</span><div><div class="emerg-name">구토가 계속됨</div><div class="emerg-desc">물도 못 마시고 토한다면 케톤산증일 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🫁</span><div><div class="emerg-name">빠르고 깊은 호흡</div><div class="emerg-desc">케톤산증 때문에 숨을 깊고 빠르게 쉬는 것일 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🍽️</span><div><div class="emerg-name">24시간 이상 절식</div><div class="emerg-desc">인슐린을 맞았는데 밥을 먹지 못했다면 바로 연락 주세요</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">😵</span><div><div class="emerg-name">심한 무기력·혼수</div><div class="emerg-desc">불러도 반응이 없고 몸에 힘이 없을 때</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">💉</span><div><div class="emerg-name">인슐린 과량·중복 투여</div><div class="emerg-desc">같은 시간에 두 번 놓았거나 농도가 다른 주사기를 썼을 때</div></div></div>
     </div>
-    <div class="callout danger" style="margin-top:1rem"><span class="ci">🚨</span><span>위 증상 중 하나라도 보인다면 <strong>지체 없이 연락 주세요.</strong> 케톤산증과 저혈당은 시간이 곧 예후입니다.</span></div>
+    <div class="callout danger" style="margin-top:1rem"><span class="ci">🚨</span><span>이 중 하나라도 보이면 <strong>기다리지 말고 바로 연락 주세요.</strong> 케톤산증과 저혈당은 얼마나 빨리 대처하느냐가 결과를 좌우합니다.</span></div>
   </div>
 
 </div>
 <div class="foot">
   <div class="foot-inner">
     <p class="foot-disc">
-      이 자료는 일반적인 보호자 교육을 위해 제작된 안내문으로, 개별 환자의 진단과 치료를 대신하지 않습니다.<br>
-      약물 조절이나 식이 변경은 반드시 <strong>담당 수의사와 상의</strong> 후 진행해 주세요.<br>
-      <strong>저혈당 증상(발작·의식 소실), 반복되는 구토, 인슐린 과량·중복 투여</strong>이 보이면 즉시 병원으로 연락 주세요.<br>
-      문의사항이 있으시면 언제든지 연락 주세요.<br>
+      보호자님의 이해를 돕기 위해 정리한 일반 안내로, 아이별 진단과 치료를 대신하지는 않습니다.<br>
+      약이나 식단을 바꿀 때는 꼭 <strong>담당 수의사와 먼저 상의</strong>해 주세요.<br>
+      <strong>저혈당 증상(발작·의식 소실), 반복되는 구토, 인슐린 과량·중복 투여</strong> 증상이 보이면 바로 병원에 연락 주세요.<br>
+      궁금한 점은 언제든 편하게 물어봐 주세요.<br>
       진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">

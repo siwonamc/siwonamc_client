@@ -25,14 +25,14 @@
 :root{
   --navy:#0e4f4a;--navy-dark:#08332f;--navy-mid:#1a6b62;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
   --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --ok:#166534;--ok-bg:#eefaf3;--ok-border:#c6e9d5;
   --max:860px;--radius:16px;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;-webkit-font-smoothing:antialiased;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;min-height:100vh;-webkit-font-smoothing:antialiased;word-break:keep-all}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 1.35rem}
 a{color:inherit}
 ::selection{background:var(--accent-light);color:var(--navy)}
@@ -40,15 +40,15 @@ a{color:inherit}
 /* ── TOPBAR ───────────────────────────── */
 .topbar{background:var(--navy);position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.08)}
 .topbar-inner{max-width:var(--max);margin:0 auto;padding:0 1.35rem;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-.logo-text{color:#fff;font-size:13px;font-weight:500;line-height:1.3}
+.logo-text{color:#fff;font-size:14px;font-weight:500;line-height:1.3}
 .logo-group{display:flex;align-items:center;gap:.5rem;min-width:0;text-decoration:none}
 .logo-mark{width:28px;height:28px;border-radius:8px;background:#fff;object-fit:contain;flex-shrink:0;padding:2px;box-shadow:0 1px 3px rgba(0,0,0,.28)}
 @media(max-width:520px){.logo-mark{width:26px;height:26px;padding:1px;border-radius:7px}}
 @media(max-width:420px){.logo-text{display:none}.logo-mark,.logo-mark img{width:24px;height:24px}.logo-group{gap:0}}
-.logo-text small{display:block;font-size:10px;font-weight:300;opacity:.65;letter-spacing:.08em;margin-top:1px}
+.logo-text small{display:block;font-size:11.5px;font-weight:300;opacity:.65;letter-spacing:.08em;margin-top:1px}
 .topbar-btns{display:flex;gap:.45rem;flex-shrink:0}
-.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:8px;font-size:12px;font-weight:500;text-decoration:none;cursor:pointer;transition:background .15s,border-color .15s;white-space:nowrap;border:none;font-family:inherit}
-.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.16);font-size:11.5px}
+.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:8px;font-size:13.5px;font-weight:500;text-decoration:none;cursor:pointer;transition:background .15s,border-color .15s;white-space:nowrap;border:none;font-family:inherit}
+.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.16);font-size:13px}
 .tbtn.back:hover{background:rgba(255,255,255,.16)}
 .tbtn.call{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.22)}
 .tbtn.call:hover{background:rgba(255,255,255,.2)}
@@ -66,12 +66,12 @@ a{color:inherit}
 }
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent)}
 .hero-inner{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:0 1.35rem}
-.hero-badge{display:inline-block;font-size:10.5px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.72);text-transform:uppercase;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:5px 13px;margin-bottom:1.1rem}
+.hero-badge{display:inline-block;font-size:12px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.88);text-transform:uppercase;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:5px 13px;margin-bottom:1.1rem}
 .hero h1{font-size:30px;font-weight:700;color:#fff;line-height:1.42;letter-spacing:-.02em;margin-bottom:.9rem;word-break:keep-all}
 .hero h1 .hl{color:#f4b08f}
-.hero-desc{font-size:13.5px;color:rgba(255,255,255,.72);line-height:1.85}
+.hero-desc{font-size:14.5px;color:rgba(255,255,255,.88);line-height:1.85}
 .hero-actions{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem}
-.pill{display:inline-flex;align-items:center;gap:.4rem;padding:.75rem 1.3rem;border-radius:999px;font-size:13.5px;font-weight:600;text-decoration:none;transition:transform .18s,box-shadow .18s,background .18s}
+.pill{display:inline-flex;align-items:center;gap:.4rem;padding:.75rem 1.3rem;border-radius:999px;font-size:14.5px;font-weight:600;text-decoration:none;transition:transform .18s,box-shadow .18s,background .18s}
 .pill-primary{background:#fff;color:var(--navy);box-shadow:0 10px 24px -12px rgba(0,0,0,.55)}
 .pill-primary:hover{transform:translateY(-2px);background:#f4f8ff}
 .pill-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3)}
@@ -81,16 +81,16 @@ a{color:inherit}
 .main{padding:2.4rem 0 3rem}
 .sect{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem 1.5rem 1.6rem;margin-bottom:1rem;box-shadow:0 1px 2px rgba(14,79,74,.04)}
 .sect-head{display:flex;align-items:flex-start;gap:.7rem;margin-bottom:1.1rem;padding-bottom:.85rem;border-bottom:1px solid var(--navy-xlight)}
-.sect-num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.sect-num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:13.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
 .sect-title{font-size:16px;font-weight:700;color:var(--navy);line-height:1.45;letter-spacing:-.01em}
-.sect-sub{font-size:11.5px;color:var(--text-muted);line-height:1.65;margin-top:2px}
-.sect-note{font-size:12px;color:var(--text-mid);line-height:1.8;margin-top:.9rem}
+.sect-sub{font-size:13px;color:var(--text-muted);line-height:1.65;margin-top:2px}
+.sect-note{font-size:13.5px;color:var(--text-mid);line-height:1.8;margin-top:.9rem}
 
 /* ── CHECKLIST ────────────────────────── */
 .progress{display:flex;align-items:center;gap:.55rem;background:var(--navy-xlight);border:1px solid var(--border);border-radius:10px;padding:.55rem .8rem;margin-bottom:.9rem}
 .progress-bar{flex:1;height:6px;border-radius:999px;background:#d9e8e3;overflow:hidden}
 .progress-fill{height:100%;width:0;background:var(--accent);border-radius:999px;transition:width .25s}
-.progress-text{font-size:11.5px;font-weight:600;color:var(--navy);white-space:nowrap}
+.progress-text{font-size:13px;font-weight:600;color:var(--navy);white-space:nowrap}
 .checks{display:grid;gap:.5rem}
 .check{display:flex;align-items:flex-start;gap:.65rem;background:var(--white);border:1px solid var(--border);border-radius:11px;padding:.75rem .85rem;cursor:pointer;transition:background .15s,border-color .15s}
 .check:hover{border-color:#a8d8cf;background:#fbfaf6}
@@ -101,44 +101,44 @@ a{color:inherit}
 .check input:checked + .box::after{opacity:1}
 .check input:focus-visible + .box{outline:2px solid var(--accent);outline-offset:2px}
 .check-body{min-width:0}
-.check-name{display:block;font-size:13.5px;font-weight:600;color:var(--navy);line-height:1.5}
-.check-desc{display:block;font-size:11.5px;color:var(--text-muted);line-height:1.65;margin-top:2px}
+.check-name{display:block;font-size:14.5px;font-weight:600;color:var(--navy);line-height:1.5}
+.check-desc{display:block;font-size:13px;color:var(--text-muted);line-height:1.65;margin-top:2px}
 .check input:checked ~ .check-body .check-name{color:var(--text-mid)}
 .check-done{background:var(--ok-bg);border-color:var(--ok-border)}
-.checks-note{font-size:11px;color:var(--text-muted);margin-top:.7rem;line-height:1.7}
+.checks-note{font-size:12.5px;color:var(--text-muted);margin-top:.7rem;line-height:1.7}
 
 /* ── TIPS ─────────────────────────────── */
 .tips{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
 .tip{border:1px solid var(--border);border-radius:13px;padding:1.05rem 1.1rem;background:linear-gradient(180deg,#fbfaf6 0%,#fff 100%)}
 .tip-head{display:flex;align-items:center;gap:.5rem;margin-bottom:.7rem;padding-bottom:.6rem;border-bottom:1px solid var(--navy-xlight)}
 .tip-icon{font-size:18px;line-height:1;flex-shrink:0}
-.tip-name{font-size:13.5px;font-weight:700;color:var(--navy)}
+.tip-name{font-size:14.5px;font-weight:700;color:var(--navy)}
 .tip ul{list-style:none;display:grid;gap:.55rem}
-.tip li{position:relative;padding-left:.95rem;font-size:12px;color:var(--text-mid);line-height:1.75}
+.tip li{position:relative;padding-left:.95rem;font-size:13.5px;color:var(--text-mid);line-height:1.75}
 .tip li::before{content:"";position:absolute;left:0;top:.62em;width:4px;height:4px;border-radius:50%;background:var(--accent)}
 .tip li b{color:var(--navy);font-weight:600}
 
 /* ── WAY ──────────────────────────────── */
 .addr-card{background:radial-gradient(120% 120% at 0% 0%,#277268 0%,#0e4f4a 60%,#08332f 100%);color:#fff;border-radius:13px;padding:1.15rem 1.2rem;margin-bottom:.9rem}
-.addr-label{font-size:10px;font-weight:600;letter-spacing:.15em;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:.45rem}
-.addr-main{font-size:15px;font-weight:600;line-height:1.65;color:#fff}
-.addr-sub{font-size:11.5px;color:rgba(255,255,255,.6);line-height:1.7;margin-top:.35rem}
+.addr-label{font-size:11.5px;font-weight:600;letter-spacing:.15em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.45rem}
+.addr-main{font-size:16px;font-weight:600;line-height:1.65;color:#fff}
+.addr-sub{font-size:13px;color:rgba(255,255,255,.88);line-height:1.7;margin-top:.35rem}
 .addr-actions{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.95rem}
-.mini{display:inline-flex;align-items:center;gap:4px;padding:6px 11px;border-radius:8px;font-size:11.5px;font-weight:600;text-decoration:none;cursor:pointer;font-family:inherit;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);color:#fff;transition:background .15s}
+.mini{display:inline-flex;align-items:center;gap:4px;padding:6px 11px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;font-family:inherit;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);color:#fff;transition:background .15s}
 .mini:hover{background:rgba(255,255,255,.22)}
 .mini.solid{background:#fff;color:var(--navy);border-color:#fff}
 .mini.solid:hover{background:#eef5ff}
 
 .info{display:grid;gap:.55rem;margin-bottom:.9rem}
 .irow{display:flex;align-items:flex-start;gap:.7rem;border:1px solid var(--border);border-radius:11px;padding:.75rem .85rem;background:#fff}
-.irow-k{flex-shrink:0;width:74px;font-size:11.5px;font-weight:700;color:var(--text-muted);letter-spacing:.02em;padding-top:1px}
-.irow-v{font-size:12.5px;color:var(--text-mid);line-height:1.75;min-width:0;flex:1}
+.irow-k{flex-shrink:0;width:74px;font-size:13px;font-weight:700;color:var(--text-muted);letter-spacing:.02em;padding-top:1px}
+.irow-v{font-size:13.5px;color:var(--text-mid);line-height:1.75;min-width:0;flex:1}
 .irow-v b{color:var(--navy);font-weight:600}
 .irow-v a{color:var(--accent);text-decoration:none;font-weight:600}
 .irow-v a:hover{text-decoration:underline}
 
 .cta-row{display:flex;gap:.55rem;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.8rem 1.15rem;border-radius:11px;font-size:13px;font-weight:600;text-decoration:none;font-family:inherit;cursor:pointer;border:1px solid transparent;transition:background .15s,transform .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.8rem 1.15rem;border-radius:11px;font-size:14px;font-weight:600;text-decoration:none;font-family:inherit;cursor:pointer;border:1px solid transparent;transition:background .15s,transform .15s}
 .btn.navy{background:var(--navy);color:#fff}
 .btn.navy:hover{background:var(--accent)}
 .btn.line{background:#fff;color:var(--navy);border-color:var(--border)}
@@ -147,33 +147,33 @@ a{color:inherit}
 .btn.kako:hover{background:#f0d800}
 
 /* ── NOTICE ───────────────────────────── */
-.notice{display:flex;gap:.65rem;background:var(--navy-xlight);border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;font-size:11.5px;color:var(--text-mid);line-height:1.8;margin-top:1rem}
+.notice{display:flex;gap:.65rem;background:var(--navy-xlight);border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;font-size:13px;color:var(--text-mid);line-height:1.8;margin-top:1rem}
 .notice strong{color:var(--navy);font-weight:600}
 
 /* ── FOOT ─────────────────────────────── */
 .foot{background:var(--navy);padding:2.3rem 0}
 .foot-inner{max-width:var(--max);margin:0 auto;padding:0 1.35rem}
 .foot-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.foot-name{font-size:13.5px;font-weight:600;color:#fff}
-.foot-sub{font-size:10.5px;color:rgba(255,255,255,.45);margin-top:3px;letter-spacing:.04em}
+.foot-name{font-size:14.5px;font-weight:600;color:#fff}
+.foot-sub{font-size:12px;color:rgba(255,255,255,.88);margin-top:3px;letter-spacing:.04em}
 .foot-btns{display:flex;gap:.45rem;flex-wrap:wrap}
-.foot-disc{font-size:11.5px;color:rgba(255,255,255,.5);line-height:1.9;margin-top:1.3rem}
-.foot-disc strong{color:rgba(255,255,255,.78);font-weight:500}
-.foot-ref{margin-top:1rem;font-size:10.5px;color:rgba(255,255,255,.28);letter-spacing:.03em}
+.foot-disc{font-size:13px;color:rgba(255,255,255,.88);line-height:1.9;margin-top:1.3rem}
+.foot-disc strong{color:rgba(255,255,255,.88);font-weight:500}
+.foot-ref{margin-top:1rem;font-size:12px;color:rgba(255,255,255,.88);letter-spacing:.03em}
 
 @media(max-width:720px){
   .tips{grid-template-columns:1fr}
   .hero h1{font-size:23px}
   .hero{padding:2.5rem 0 3rem}
   .sect{padding:1.25rem 1.1rem 1.35rem}
-  .sect-title{font-size:15px}
+  .sect-title{font-size:16px}
   .irow{flex-direction:column;gap:.2rem}
   .irow-k{width:auto}
   .topbar-btns .tbtn.call span{display:none}
   .foot-top{flex-direction:column}
 }
 @media(max-width:420px){
-  .logo-text{font-size:12px;white-space:nowrap}
+  .logo-text{font-size:13.5px;white-space:nowrap}
   .logo-text small{display:none}
   .hero-actions{flex-direction:column}
   .pill,.btn{justify-content:center}
@@ -190,7 +190,7 @@ a{color:inherit}
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원 동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
     <div class="topbar-btns">
       <a class="tbtn back" href="index.html">← 전체 안내</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
@@ -203,7 +203,7 @@ a{color:inherit}
   <div class="hero-inner">
     <span class="hero-badge">SIWON · 초진 · 내원 전 준비</span>
     <h1>처음 오신다면,<br><span class="hl">이것만 챙겨 오세요</span></h1>
-    <p class="hero-desc">챙겨야 할 것과 이동 팁, 주소·주차를 한 장에 정리했습니다.<br>오시기 전에 한 번만 확인해 주세요.</p>
+    <p class="hero-desc">꼭 챙길 것, 데려오는 방법, 주소와 주차를 한곳에 모았습니다.<br>출발하기 전에 한 번 훑어봐 주세요.</p>
     <div class="hero-actions">
       <a class="pill pill-primary" href="intake.html">📝 사전 문진표 작성</a>
       <a class="pill pill-ghost" href="#way">🚗 오시는 길 · 주차</a>
@@ -220,7 +220,7 @@ a{color:inherit}
         <span class="sect-num">1</span>
         <div>
           <div class="sect-title">내원 전 준비물 체크리스트</div>
-          <div class="sect-sub">아래 항목을 챙겨 오시면 진단이 훨씬 빨라집니다. 눌러서 하나씩 확인해 보세요.</div>
+          <div class="sect-sub">아래 것들을 챙겨 오시면 진단이 훨씬 빨라집니다. 하나씩 눌러 체크해 보세요.</div>
         </div>
       </div>
 
@@ -234,24 +234,24 @@ a{color:inherit}
           <input type="checkbox" data-ck="paper">
           <span class="box" aria-hidden="true"></span>
           <span class="check-body">
-            <span class="check-name">기존 타 병원 검사결과지 · 영상</span>
-            <span class="check-desc">혈액검사 결과지, 방사선·초음파 사진이나 CD/USB, 수술 기록까지. 없으면 휴대폰 사진도 좋습니다.</span>
+            <span class="check-name">다른 병원에서 받은 검사 결과 · 영상</span>
+            <span class="check-desc">혈액검사 결과지, 방사선·초음파 사진이나 CD/USB, 수술 기록 등. 원본이 없다면 휴대폰으로 찍은 사진도 괜찮습니다.</span>
           </span>
         </label>
         <label class="check">
           <input type="checkbox" data-ck="drug">
           <span class="box" aria-hidden="true"></span>
           <span class="check-body">
-            <span class="check-name">현재 복용 중인 약 · 영양제 (이름과 사진)</span>
-            <span class="check-desc">처방약·심장약·항경련제·유산균·영양제까지. 약 봉투나 알약 사진을 찍어 오시면 가장 정확합니다.</span>
+            <span class="check-name">지금 먹고 있는 약 · 영양제 (이름이나 사진)</span>
+            <span class="check-desc">처방약, 심장약, 항경련제, 유산균, 영양제 모두요. 약 봉투나 알약을 사진으로 찍어 오시면 가장 정확합니다.</span>
           </span>
         </label>
         <label class="check">
           <input type="checkbox" data-ck="sign">
           <span class="box" aria-hidden="true"></span>
           <span class="check-body">
-            <span class="check-name">증상 사진 · 영상 (구토 · 설사 · 기침 · 발작 등)</span>
-            <span class="check-desc">진료실에서 말로 설명하기 어려운 증상은 영상이 가장 도움이 됩니다. 언제 찍었는지도 함께 알려주세요.</span>
+            <span class="check-name">증상 사진 · 영상 (구토, 설사, 기침, 발작 등)</span>
+            <span class="check-desc">말로 설명하기 어려운 증상은 영상이 가장 큰 도움이 됩니다. 언제 찍었는지도 함께 알려 주세요.</span>
           </span>
         </label>
         <label class="check">
@@ -259,7 +259,7 @@ a{color:inherit}
           <span class="box" aria-hidden="true"></span>
           <span class="check-body">
             <span class="check-name">최근 식이 · 배변 변화 메모</span>
-            <span class="check-desc">사료·간식을 바꾼 시점, 물 마시는 양, 배변 횟수와 색·무름 정도를 간단히 적어 오세요.</span>
+            <span class="check-desc">사료나 간식을 바꾼 날, 물 마시는 양, 변 횟수와 색, 묽기를 간단히 적어 오세요.</span>
           </span>
         </label>
         <label class="check">
@@ -267,12 +267,12 @@ a{color:inherit}
           <span class="box" aria-hidden="true"></span>
           <span class="check-body">
             <span class="check-name">예방접종 기록 (다니던 병원이 있다면)</span>
-            <span class="check-desc">접종 시기와 백신 종류를 알면 다음 접종 일정을 바로 잡아 드릴 수 있습니다.</span>
+            <span class="check-desc">언제 어떤 백신을 맞았는지 알면 다음 접종 일정을 바로 잡아 드릴 수 있습니다.</span>
           </span>
         </label>
       </div>
 
-      <p class="checks-note">💡 체크한 내용은 이 휴대폰에만 저장됩니다. 접수처에서 화면을 보여주셔도 좋아요.</p>
+      <p class="checks-note">💡 체크한 내용은 이 휴대폰에만 저장됩니다. 접수할 때 화면을 보여 주셔도 좋아요.</p>
     </section>
 
     <!-- 2. 이동 팁 -->
@@ -281,7 +281,7 @@ a{color:inherit}
         <span class="sect-num">2</span>
         <div>
           <div class="sect-title">강아지 · 고양이 이동 팁</div>
-          <div class="sect-sub">이동 스트레스가 줄면 진료 때 혈압·심박·호흡 수치도 훨씬 정확해집니다.</div>
+          <div class="sect-sub">오는 길 스트레스가 줄면 진료할 때 혈압, 심박수, 호흡수도 더 정확하게 나옵니다.</div>
         </div>
       </div>
 
@@ -289,19 +289,19 @@ a{color:inherit}
         <div class="tip">
           <div class="tip-head"><span class="tip-icon" aria-hidden="true">🐱</span><span class="tip-name">고양이</span></div>
           <ul>
-            <li><b>평소 쓰던 담요</b>를 이동장에 깔고, 이동장 위에 <b>덮개</b>를 씌워 주세요. 낯선 풍경이 보이지 않는 것만으로도 안정됩니다.</li>
-            <li>이동장은 <b>수직으로 흔들리지 않게</b>, 두 손으로 받치거나 무릎에 수평으로 안고 이동해 주세요. 한 손으로 들고 흔들면 공포가 커집니다.</li>
-            <li>대기 중에는 <b>바닥보다 높은 곳</b>(의자·무릎 위)에 이동장을 두세요. 바닥의 개 냄새와 소리가 고양이에게는 가장 큰 스트레스입니다.</li>
-            <li>가능하면 <b>전날부터 이동장을 방 안에 꺼내</b> 두어 냄새에 익숙해지게 해 주세요.</li>
+            <li><b>평소 쓰던 담요</b>를 이동장에 깔고, 이동장 위에 <b>천을 덮어</b> 주세요. 낯선 풍경이 안 보이기만 해도 훨씬 차분해집니다.</li>
+            <li>이동장은 <b>위아래로 흔들리지 않게</b> 두 손으로 받치거나 무릎 위에 수평으로 올려 주세요. 한 손으로 들고 흔들면 더 무서워합니다.</li>
+            <li>기다리는 동안에는 이동장을 <b>바닥보다 높은 곳</b>(의자나 무릎 위)에 두세요. 바닥에서 나는 강아지 냄새와 소리가 고양이에게는 가장 큰 스트레스입니다.</li>
+            <li>가능하면 <b>전날부터 이동장을 방에 꺼내</b> 두어 냄새에 익숙해지게 해 주세요.</li>
           </ul>
         </div>
         <div class="tip">
           <div class="tip-head"><span class="tip-icon" aria-hidden="true">🐶</span><span class="tip-name">강아지</span></div>
           <ul>
-            <li><b>목줄과 하네스</b>를 착용하고, 리드줄은 <b>짧게</b> 잡아 주세요. 진료실에서 갑자기 튀어나가는 사고를 막는 가장 확실한 방법입니다.</li>
-            <li>이동 중 <b>마킹(소변)</b>에 대비해 <b>배변패드와 물티슈</b>를 한 장 챙겨 주세요. 낯선 곳에서는 표시 행동이 늘어납니다.</li>
-            <li>다른 아이와 마주치면 <b>거리를 두고</b> 한쪽으로 비켜 서 주세요. 흥분하거나 짖는 아이는 조금 떨어진 자리에서 기다리는 편이 서로 편합니다.</li>
-            <li>대기 중에는 <b>무릎 위나 의자 옆</b>에 앉아 있어 주세요. 바닥을 서성이는 것보다 안정에 도움이 됩니다.</li>
+            <li><b>목줄과 하네스</b>를 채우고 리드줄은 <b>짧게</b> 잡아 주세요. 진료실에서 갑자기 뛰쳐나가는 사고를 막는 가장 확실한 방법입니다.</li>
+            <li>오는 길에 <b>마킹(소변)</b>을 할 수 있으니 <b>배변패드와 물티슈</b>를 챙겨 주세요. 낯선 곳에서는 영역 표시가 늘어납니다.</li>
+            <li>다른 아이와 마주치면 <b>거리를 두고</b> 한쪽으로 비켜 주세요. 흥분하거나 짖는 아이는 조금 떨어진 곳에서 기다리는 편이 서로 편합니다.</li>
+            <li>기다리는 동안에는 <b>무릎 위나 의자 옆</b>에 앉혀 주세요. 바닥을 돌아다니는 것보다 훨씬 안정됩니다.</li>
           </ul>
         </div>
       </div>
@@ -313,13 +313,13 @@ a{color:inherit}
         <span class="sect-num">3</span>
         <div>
           <div class="sect-title">오시는 길 · 주차 안내</div>
-          <div class="sect-sub">건물 안내를 따라 병원으로 올라오시면 됩니다.</div>
+          <div class="sect-sub">건물 안내를 따라 214호로 올라오시면 됩니다.</div>
         </div>
       </div>
 
       <div class="addr-card">
         <div class="addr-label">ADDRESS</div>
-        <div class="addr-main">부산광역시 해운대구 센텀동로 25 대우월드마크센텀 214호<br><span style="font-weight:500;font-size:13.5px;color:rgba(255,255,255,.85)">(302 · 303 · 303A · 304호)</span></div>
+        <div class="addr-main">부산광역시 해운대구 센텀동로 25 대우월드마크센텀 214호<br><span style="font-weight:500;font-size:14.5px;color:rgba(255,255,255,.85)">(302 · 303 · 303A · 304호)</span></div>
         <div class="addr-sub">대우월드마크센텀 214호</div>
         <div class="addr-actions">
           <button type="button" class="mini solid" id="copyAddr">📋 주소 복사</button>
@@ -331,19 +331,19 @@ a{color:inherit}
       <div class="info">
         <div class="irow">
           <span class="irow-k">전화</span>
-          <span class="irow-v"><a href="tel:000-0000-0000">000-0000-0000</a> — 내원 전 문의나 상태 변화가 있으면 먼저 연락 주세요.</span>
+          <span class="irow-v"><a href="tel:000-0000-0000">000-0000-0000</a> — 오시기 전에 궁금한 점이나 상태 변화가 있으면 먼저 연락 주세요.</span>
         </div>
         <div class="irow">
           <span class="irow-k">카카오톡</span>
-          <span class="irow-v">채널 <b>시원동물의료센터</b>로 사진·검사지 전송과 예약 문의가 가능합니다. <a href="#kakao">채널 열기 →</a></span>
+          <span class="irow-v">카카오톡 채널 <b>시원동물의료센터</b>로 사진, 검사지를 보내고 예약을 문의하실 수 있습니다. <a href="#kakao">채널 열기 →</a></span>
         </div>
         <div class="irow">
           <span class="irow-k">주차</span>
-          <span class="irow-v">주차 안내는 곧 업데이트할 예정입니다.</span>
+          <span class="irow-v">주차 안내는 곧 올려 드릴 예정입니다.</span>
         </div>
         <div class="irow">
           <span class="irow-k">층 안내</span>
-          <span class="irow-v">병원 입구에 도착하시면 진료실 입구에서 접수 후 대기해 주세요.</span>
+          <span class="irow-v">병원에 도착하시면 접수처에서 접수한 뒤 기다려 주세요.</span>
         </div>
       </div>
 
@@ -355,7 +355,7 @@ a{color:inherit}
 
       <div class="notice">
         <span style="font-size:16px;flex-shrink:0;line-height:1.5" aria-hidden="true">🚨</span>
-        <span><strong>호흡 곤란, 소변 불통, 경련, 실신, 대량 출혈</strong> 같은 응급 상황은 준비물보다 먼저 병원으로 전화 주세요. 이동 중에는 이동장에 고정하고 목줄을 당기지 마세요.</span>
+        <span><strong>숨쉬기 힘들어함, 소변을 못 봄, 경련, 쓰러짐, 많은 출혈</strong> 같은 응급 상황이라면 준비물보다 전화가 먼저입니다. 오는 동안에는 이동장에 넣어 고정하고 목줄을 당기지 마세요.</span>
       </div>
     </section>
 
@@ -375,9 +375,7 @@ a{color:inherit}
       </div>
     </div>
     <p class="foot-disc">
-      이 안내는 <strong>내원 준비를 돕기 위한 자료</strong>이며, 진단·치료를 대신하지 않습니다.<br>
-      아이 상태에 따라 필요한 준비물과 검사가 달라질 수 있으니, 담당 수의사 안내를 함께 따라 주세요.<br>
-      문의사항이 있으시면 언제든지 연락 주세요.
+      이 안내는 <strong>병원 방문 준비를 돕기 위한 자료</strong>이며, 진단이나 치료를 대신하지 않습니다.<br> 아이 상태에 따라 챙길 것과 검사가 달라질 수 있으니 담당 수의사 안내도 함께 따라 주세요.<br> 궁금한 점은 언제든 편하게 물어봐 주세요.
     </p>
     <p class="foot-ref">SIWON Animal Medical Center</p>
   </div>

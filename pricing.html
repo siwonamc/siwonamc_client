@@ -24,36 +24,36 @@
 <style>
 :root{
   --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
-  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;word-break:keep-all}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-.logo-text{color:#fff;font-size:13px;font-weight:500;line-height:1.3}
+.logo-text{color:#fff;font-size:14px;font-weight:500;line-height:1.3}
 .logo-group{display:flex;align-items:center;gap:.5rem;min-width:0;text-decoration:none}
 .logo-mark{width:28px;height:28px;border-radius:8px;background:#fff;object-fit:contain;flex-shrink:0;padding:2px;box-shadow:0 1px 3px rgba(0,0,0,.28)}
 @media(max-width:520px){.logo-mark{width:26px;height:26px;padding:1px;border-radius:7px}}
 @media(max-width:420px){.logo-text{display:none}.logo-mark,.logo-mark img{width:24px;height:24px}.logo-group{gap:0}}
-.logo-text small{display:block;font-size:10px;font-weight:300;opacity:.7;letter-spacing:.08em}
+.logo-text small{display:block;font-size:11.5px;font-weight:300;opacity:.7;letter-spacing:.08em}
 .topbar-btns{display:flex;gap:.5rem;flex-shrink:0}
-.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
+.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:13.5px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
 .tbtn.call{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
 .tbtn.call:hover{background:rgba(255,255,255,.22)}
 .tbtn.kako{background:#FEE500;color:#1a1a1a;border:1px solid #FEE500}
 .tbtn.kako:hover{background:#f0d800}
-.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15);font-size:11px}
+.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.15);font-size:12.5px}
 
 .hero{background:var(--navy);padding:2.5rem 1.5rem 2rem;text-align:center}
 .hero-inner{max-width:900px;margin:0 auto}
-.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
+.hero-eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:24px;font-weight:700;color:#fff;margin-bottom:.6rem}
-.hero-desc{font-size:13px;color:rgba(255,255,255,.55);line-height:1.75}
+.hero-desc{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75}
 
-.notice-bar{background:var(--navy-xlight);border-bottom:1px solid var(--border);padding:.875rem 1.5rem;text-align:center;font-size:12px;color:var(--text-mid)}
+.notice-bar{background:var(--navy-xlight);border-bottom:1px solid var(--border);padding:.875rem 1.5rem;text-align:center;font-size:13.5px;color:var(--text-mid)}
 .notice-bar strong{color:var(--navy);font-weight:600}
 
 .main{max-width:900px;margin:0 auto;padding:2rem 1.5rem 3rem}
@@ -64,30 +64,30 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 /* PRICE CARD */
 .pcard{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden}
-.pcard-head{background:var(--navy);color:#fff;padding:.75rem 1.25rem;font-size:13px;font-weight:700;letter-spacing:.04em;text-align:center}
+.pcard-head{background:var(--navy);color:#fff;padding:.75rem 1.25rem;font-size:14px;font-weight:700;letter-spacing:.04em;text-align:center}
 .pcard-body{padding:.25rem 0}
 
 /* PRICE ROW */
-.prow{display:flex;align-items:center;justify-content:space-between;padding:.55rem 1.25rem;border-bottom:1px solid var(--navy-xlight);font-size:13px}
+.prow{display:flex;align-items:center;justify-content:space-between;padding:.55rem 1.25rem;border-bottom:1px solid var(--navy-xlight);font-size:14px}
 .prow:last-child{border-bottom:none}
 .prow:hover{background:var(--navy-xlight)}
 .prow-label{color:var(--text-mid);flex:1}
-.prow-sub{font-size:11px;color:var(--text-muted);margin-left:.5rem}
+.prow-sub{font-size:12.5px;color:var(--text-muted);margin-left:.5rem}
 .prow-price{font-weight:600;color:var(--navy);white-space:nowrap;margin-left:1rem}
-.prow-range{font-weight:600;color:var(--navy);white-space:nowrap;margin-left:1rem;font-size:12px}
+.prow-range{font-weight:600;color:var(--navy);white-space:nowrap;margin-left:1rem;font-size:13.5px}
 
 /* SECTION DIVIDER inside card */
-.psec{padding:.5rem 1.25rem .25rem;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--text-muted);text-transform:uppercase;border-bottom:1px solid var(--border);background:var(--navy-xlight)}
+.psec{padding:.5rem 1.25rem .25rem;font-size:12.5px;font-weight:700;letter-spacing:.08em;color:var(--text-muted);text-transform:uppercase;border-bottom:1px solid var(--border);background:var(--navy-xlight)}
 
 /* NOTE */
-.pnote{font-size:11px;color:var(--text-muted);padding:.5rem 1.25rem .6rem;text-align:right;font-style:italic}
+.pnote{font-size:12.5px;color:var(--text-muted);padding:.5rem 1.25rem .6rem;text-align:right;font-style:italic}
 .pcard-body.two-col{column-count:2;column-gap:0}
 .pcard-body.two-col .prow,.pcard-body.two-col .pnote{break-inside:avoid}
 @media(max-width:700px){.pcard-body.two-col{column-count:1}}
 
 /* PARASITE TABLE - 3 column */
-.para-table{width:100%;border-collapse:collapse;font-size:12px}
-.para-table th{text-align:left;padding:7px 10px;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border)}
+.para-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.para-table th{text-align:left;padding:7px 10px;font-size:12.5px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border)}
 .para-table td{padding:6px 10px;border-bottom:1px solid var(--navy-xlight);color:var(--text-mid)}
 .para-table tr:last-child td{border-bottom:none}
 .para-table tr:hover td{background:var(--navy-xlight)}
@@ -95,15 +95,15 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 .para-name{font-weight:600;color:var(--text)}
 
 /* CALCULATOR */
-.calc-intro{font-size:13px;color:var(--text-mid);line-height:1.75;margin-bottom:1.2rem}
-.calc-intro span{display:block;font-size:12px;color:var(--text-muted);margin-top:2px}
+.calc-intro{font-size:14px;color:var(--text-mid);line-height:1.75;margin-bottom:1.2rem}
+.calc-intro span{display:block;font-size:13.5px;color:var(--text-muted);margin-top:2px}
 .calc-weight{display:flex;align-items:center;gap:.75rem;margin-bottom:1.4rem;flex-wrap:wrap}
-.calc-weight > label{font-size:13px;font-weight:600;color:var(--navy);white-space:nowrap}
+.calc-weight > label{font-size:14px;font-weight:600;color:var(--navy);white-space:nowrap}
 .calc-input-wrap{display:flex;align-items:center;gap:.5rem}
-.calc-input{width:110px;padding:9px 12px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;font-family:inherit;color:var(--navy);outline:none;transition:border-color .15s}
+.calc-input{width:110px;padding:9px 12px;border:1.5px solid var(--border);border-radius:9px;font-size:15px;font-family:inherit;color:var(--navy);outline:none;transition:border-color .15s}
 .calc-input:focus{border-color:var(--navy)}
-.calc-unit{font-size:13px;color:var(--text-mid)}
-.calc-badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:600;white-space:nowrap}
+.calc-unit{font-size:14px;color:var(--text-mid)}
+.calc-badge{font-size:12.5px;padding:4px 10px;border-radius:999px;font-weight:600;white-space:nowrap}
 .calc-badge.base{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
 .calc-badge.over{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
 .calc-sheet{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white)}
@@ -112,17 +112,17 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
   .calc-group{break-inside:avoid;page-break-inside:avoid}
 }
 .calc-sheet .psec{background:var(--navy-xlight)}
-.calc-sheet .prow{font-size:12.5px;padding:.5rem 1rem}
-.calc-sheet .prow-price{font-size:13px}
-.surcharge{margin-top:.875rem;background:#fff8e0;border:1px solid #e8d48a;border-radius:8px;padding:.75rem 1rem;font-size:12px;color:#5a3e00;line-height:1.7}
-.calc-note{font-size:11px;color:var(--text-muted);margin-top:.75rem;text-align:center}
+.calc-sheet .prow{font-size:13.5px;padding:.5rem 1rem}
+.calc-sheet .prow-price{font-size:14px}
+.surcharge{margin-top:.875rem;background:#fff8e0;border:1px solid #e8d48a;border-radius:8px;padding:.75rem 1rem;font-size:13.5px;color:#5a3e00;line-height:1.7}
+.calc-note{font-size:12.5px;color:var(--text-muted);margin-top:.75rem;text-align:center}
 
 /* COLLAPSIBLE FULL TABLE */
 .fold{margin-top:1.5rem}
-.fold summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:.95rem 1.2rem;font-size:13px;font-weight:600;color:var(--navy);box-shadow:0 1px 2px rgba(14,79,74,.04);transition:background .15s,border-color .15s}
+.fold summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:.95rem 1.2rem;font-size:14px;font-weight:600;color:var(--navy);box-shadow:0 1px 2px rgba(14,79,74,.04);transition:background .15s,border-color .15s}
 .fold summary::-webkit-details-marker{display:none}
 .fold summary:hover{background:var(--navy-xlight);border-color:#a8d8cf}
-.fold summary .chev{font-size:10px;color:var(--accent);transition:transform .2s}
+.fold summary .chev{font-size:11.5px;color:var(--accent);transition:transform .2s}
 .fold[open] summary{border-radius:12px 12px 0 0;border-color:var(--border);background:var(--navy-xlight)}
 .fold[open] summary .chev{transform:rotate(180deg)}
 .fold-body{padding-top:1.25rem;display:grid;gap:1.25rem}
@@ -130,17 +130,17 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 .foot{background:var(--navy);padding:2rem 1.5rem;margin-top:1rem}
 .foot-inner{max-width:900px;margin:0 auto}
-.foot-disc{font-size:12px;color:rgba(255,255,255,.45);line-height:1.9;margin-bottom:1.25rem}
-.foot-disc strong{color:rgba(255,255,255,.7);font-weight:500}
+.foot-disc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.9;margin-bottom:1.25rem}
+.foot-disc strong{color:rgba(255,255,255,.88);font-weight:500}
 .foot-btns{display:flex;gap:.6rem;flex-wrap:wrap}
 
 @media(max-width:600px){
   .price-grid{grid-template-columns:1fr}
   .hero h1{font-size:20px}
   .topbar-btns .tbtn.call span{display:none}
-  .logo-text{white-space:nowrap;font-size:12px}
+  .logo-text{white-space:nowrap;font-size:13.5px}
   .logo-text small{display:none}
-  .tbtn.back{padding:6px 9px;font-size:10.5px}
+  .tbtn.back{padding:6px 9px;font-size:12px}
 }
 </style>
 <link rel="stylesheet" href="siwon-theme.css">
@@ -149,7 +149,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원 동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
     <div class="topbar-btns">
       <a class="tbtn back" href="index.html">← 전체 안내</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
@@ -162,12 +162,12 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
   <div class="hero-inner">
     <div class="hero-eyebrow">시원동물의료센터 · 진료비용 안내</div>
     <h1>시원동물의료센터 진료비 안내</h1>
-    <p class="hero-desc">수의사법 제13조의2에 따라 주요 진료항목의 비용을 게시합니다.<br>표시된 금액은 부가세 포함 기준이며, 동물의 상태에 따라 달라질 수 있습니다.</p>
+    <p class="hero-desc">수의사법 제13조의2에 따라 주요 진료 항목의 비용을 안내합니다.<br>모든 금액은 부가세가 포함된 금액이며, 아이 상태에 따라 달라질 수 있습니다.</p>
   </div>
 </div>
 
 <div class="notice-bar">
-  <strong>※ 안내</strong> · 표시 금액은 <strong>7kg 이하 기준</strong>이며, 체중·상태에 따라 변동될 수 있습니다. 정확한 비용은 내원 후 상담 시 안내드립니다.
+  <strong>※ 참고</strong> · 표시된 금액은 <strong>체중 7kg 이하 기준</strong>이고, 몸무게와 상태에 따라 달라질 수 있습니다. 정확한 비용은 진료 상담 때 말씀드립니다.
 </div>
 
 <div class="main">
@@ -177,7 +177,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
     <div class="pcard">
       <div class="pcard-head">💊 체중별 비용 계산기</div>
       <div class="pcard-body" style="padding:1.25rem">
-        <p class="calc-intro">아이의 체중을 입력하시면 항목별 예상 비용을 자동으로 계산해드립니다.<br>
+        <p class="calc-intro">아이 몸무게를 넣으면 항목별 예상 비용을 바로 계산해 드립니다.<br>
         <span>아래 금액은 입력 전까지 <strong>7kg 이하 기준</strong>입니다. · 중성화·스케일링·건강검진 항목은 7kg 초과 시 kg당 10,000원이 추가됩니다.</span></p>
 
         <div class="calc-weight">
@@ -228,7 +228,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
             (7kg 초과 <span id="surcharge-kg"></span>kg × 10,000원)
           </div>
 
-          <p class="calc-note">위 금액은 예상 금액이며, 실제 비용은 진료 후 안내드립니다.</p>
+          <p class="calc-note">위 금액은 예상 금액이며, 실제 비용은 진료 후 알려 드립니다.</p>
         </div>
       </div>
     </div>
@@ -366,11 +366,7 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 <div class="foot">
   <div class="foot-inner">
     <p class="foot-disc">
-      본 비용 안내는 수의사법 제13조의2에 따른 진료비용 게시 의무에 따라 작성되었습니다.<br>
-      표시된 금액은 <strong>부가세 포함 기준</strong>이며, 동물의 체중·상태·진행 항목에 따라 실제 비용은 달라질 수 있습니다.<br>
-      자세한 비용은 내원 후 진료 전 안내드립니다.<br>
-      문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
+      이 비용 안내는 수의사법 제13조의2의 진료비 게시 의무에 따라 작성했습니다.<br> 모든 금액은 <strong>부가세 포함</strong>이며, 아이의 몸무게, 상태, 진행하는 항목에 따라 실제 비용은 달라질 수 있습니다.<br> 자세한 비용은 진료 전에 먼저 안내해 드립니다.<br> 궁금한 점은 언제든 편하게 물어봐 주세요.<br> 진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

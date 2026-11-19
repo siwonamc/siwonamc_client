@@ -22,7 +22,7 @@
 :root{
   --navy:#0e4f4a;--navy-dark:#08332f;--navy-mid:#1a6b62;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
   --accent:#c4572f;--accent-light:#fbe6dc;
-  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --text:#1f2a28;--text-mid:#37443f;--text-muted:#66726f;
   --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
@@ -30,47 +30,47 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;word-break:keep-all}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
-.logo-text{color:#fff;font-size:13px;font-weight:500;line-height:1.3}
+.logo-text{color:#fff;font-size:14px;font-weight:500;line-height:1.3}
 .logo-group{display:flex;align-items:center;gap:.5rem;min-width:0;text-decoration:none}
 .logo-mark{width:28px;height:28px;border-radius:8px;background:#fff;object-fit:contain;flex-shrink:0;padding:2px;box-shadow:0 1px 3px rgba(0,0,0,.28)}
 @media(max-width:520px){.logo-mark{width:26px;height:26px;padding:1px;border-radius:7px}}
 @media(max-width:420px){.logo-text{display:none}.logo-mark,.logo-mark img{width:24px;height:24px}.logo-group{gap:0}}
-.logo-text small{display:block;font-size:10px;font-weight:300;opacity:.7;letter-spacing:.08em}
+.logo-text small{display:block;font-size:11.5px;font-weight:300;opacity:.7;letter-spacing:.08em}
 .topbar-btns{display:flex;gap:.5rem;flex-shrink:0}
-.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
+.tbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:6px;font-size:13.5px;font-weight:500;text-decoration:none;cursor:pointer;transition:all .15s;white-space:nowrap}
 .tbtn.call{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
 .tbtn.call:hover{background:rgba(255,255,255,.22)}
 .tbtn.kako{background:#FEE500;color:#1a1a1a;border:1px solid #FEE500}
 .tbtn.kako:hover{background:#f0d800}
-.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15);font-size:11px}
+.tbtn.back{background:rgba(255,255,255,.08);color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.15);font-size:12.5px}
 .tbtn.back:hover{background:rgba(255,255,255,.15)}
 
 .doctor{background:var(--navy-dark);padding:2rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .doctor-inner{max-width:760px;margin:0 auto}
-.doctor-quote{font-size:15px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
+.doctor-quote{font-size:16px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
 .doctor-quote em{font-style:normal;color:#f4b08f}
-.doctor-bio{font-size:12px;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:1.25rem}
+.doctor-bio{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.85;margin-bottom:1.25rem}
 .doctor-bio strong{color:rgba(255,255,255,.8);font-weight:500}
 .doctor-tags{display:flex;flex-wrap:wrap;gap:.4rem}
-.dtag{font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);background:rgba(255,255,255,.06)}
+.dtag{font-size:12.5px;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.88);background:rgba(255,255,255,.06)}
 
 .hero{background:var(--navy);padding:2.25rem 1.5rem 0}
 .hero-inner{max-width:760px;margin:0 auto}
-.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
+.hero-eyebrow{font-size:12.5px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.88);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
 .hero h1 span{color:#f4b08f}
-.hero-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:2rem}
+.hero-desc{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75;margin-bottom:2rem}
 
 .sel-bar{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,.1);padding:1.25rem 1.5rem}
 .sel-inner{max-width:760px;margin:0 auto}
 .sel-row{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
-.sel-lbl{font-size:11px;font-weight:500;letter-spacing:.1em;color:rgba(255,255,255,.4);text-transform:uppercase;min-width:56px;flex-shrink:0}
+.sel-lbl{font-size:12.5px;font-weight:500;letter-spacing:.1em;color:rgba(255,255,255,.88);text-transform:uppercase;min-width:56px;flex-shrink:0}
 .pill-group{display:flex;gap:.4rem;flex-wrap:wrap}
-.pill{padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:12px;font-weight:500;cursor:pointer;background:transparent;color:rgba(255,255,255,.6);transition:all .15s}
+.pill{padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:13.5px;font-weight:500;cursor:pointer;background:transparent;color:rgba(255,255,255,.88);transition:all .15s}
 .pill:hover{border-color:rgba(255,255,255,.5);color:#fff}
 .pill.active{background:#fff;border-color:#fff;color:var(--navy)}
 
@@ -78,31 +78,31 @@ body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);
 
 .sec{margin-bottom:2.5rem}
 .sec-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1.1rem;padding-bottom:.75rem;border-bottom:2px solid var(--navy-light)}
-.sec-num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.sec-num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
 .sec-title{font-size:16px;font-weight:700;color:var(--navy)}
-.sec-tag{margin-left:auto;font-size:10px;letter-spacing:.12em;color:var(--text-muted);font-weight:500;text-transform:uppercase}
+.sec-tag{margin-left:auto;font-size:11.5px;letter-spacing:.12em;color:var(--text-muted);font-weight:500;text-transform:uppercase}
 
-.ov-text{font-size:13px;line-height:1.85;color:var(--text-mid);margin-bottom:1rem;padding:1rem 1.1rem;background:var(--navy-xlight);border-left:3px solid var(--navy);border-radius:0 8px 8px 0}
+.ov-text{font-size:14px;line-height:1.85;color:var(--text-mid);margin-bottom:1rem;padding:1rem 1.1rem;background:var(--navy-xlight);border-left:3px solid var(--navy);border-radius:0 8px 8px 0}
 .ov-text strong{color:var(--navy);font-weight:600}
 
 .disease-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin-bottom:1rem}
 .dc{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem}
-.dc-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-bottom:.5rem;background:var(--navy-light);color:var(--navy)}
-.dc-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.3rem}
-.dc-desc{font-size:12px;color:var(--text-muted);line-height:1.6}
+.dc-badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:4px;margin-bottom:.5rem;background:var(--navy-light);color:var(--navy)}
+.dc-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+.dc-desc{font-size:13.5px;color:var(--text-muted);line-height:1.6}
 
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin-bottom:1rem}
 .stat-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem}
-.stat-card .s-lbl{font-size:11px;color:var(--text-muted);font-weight:500;margin-bottom:.3rem}
-.stat-card .s-val{font-size:13px;font-weight:700;color:var(--navy);line-height:1.5}
+.stat-card .s-lbl{font-size:12.5px;color:var(--text-muted);font-weight:500;margin-bottom:.3rem}
+.stat-card .s-val{font-size:14px;font-weight:700;color:var(--navy);line-height:1.5}
 
 /* TABLE */
 .tbl-wrap{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem;overflow-x:auto}
-table.tb{width:100%;border-collapse:collapse;font-size:12px;background:var(--white)}
-table.tb th{text-align:left;padding:8px 10px;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border);white-space:nowrap}
+table.tb{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--white)}
+table.tb th{text-align:left;padding:8px 10px;font-size:12.5px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border);white-space:nowrap}
 table.tb td{padding:8px 10px;border-bottom:1px solid #edf4f1;color:var(--text-mid);vertical-align:middle;line-height:1.6}
 table.tb tr:last-child td{border-bottom:none}
-.tb-badge{display:inline-block;font-size:11px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:28px;text-align:center;white-space:nowrap}
+.tb-badge{display:inline-block;font-size:12.5px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:28px;text-align:center;white-space:nowrap}
 .b1{background:#f0f8f0;color:#1a6a1a;border:1px solid #aad8aa}
 .b2{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
 .b3{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
@@ -115,15 +115,15 @@ table.tb tr:last-child td{border-bottom:none}
 .prog-card.s2{background:#e6f4f1;border-color:#a8d8cf}
 .prog-card.s3{background:#fff8e0;border-color:#e8d48a}
 .prog-card.s4{background:#fdf0f0;border-color:#e8aaaa}
-.prog-stage{font-size:11px;font-weight:700;letter-spacing:.06em;margin-bottom:.3rem}
+.prog-stage{font-size:12.5px;font-weight:700;letter-spacing:.06em;margin-bottom:.3rem}
 .prog-card.s1 .prog-stage{color:#1a6a1a}
 .prog-card.s2 .prog-stage{color:#1a6b62}
 .prog-card.s3 .prog-stage{color:#7a5500}
 .prog-card.s4 .prog-stage{color:#8a1010}
-.prog-survival{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.25rem;line-height:1.35}
-.prog-desc{font-size:11px;color:var(--text-muted);line-height:1.55}
+.prog-survival{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.25rem;line-height:1.35}
+.prog-desc{font-size:12.5px;color:var(--text-muted);line-height:1.55}
 
-.callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:13px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
+.callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:14px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
 .callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
@@ -131,7 +131,7 @@ table.tb tr:last-child td{border-bottom:none}
 .callout.neutral{background:var(--navy-xlight);color:var(--text-mid);border:1px solid var(--border)}
 .callout strong{font-weight:600}
 
-ul.gl{list-style:none;padding:0;font-size:13px;line-height:1.85;color:var(--text-mid)}
+ul.gl{list-style:none;padding:0;font-size:14px;line-height:1.85;color:var(--text-mid)}
 ul.gl li{padding:.3rem 0 .3rem 1.2rem;position:relative;border-bottom:1px solid var(--navy-xlight)}
 ul.gl li:last-child{border-bottom:none}
 ul.gl li::before{content:'';position:absolute;left:0;top:.75rem;width:5px;height:5px;border-radius:50%;background:var(--navy);opacity:.35}
@@ -140,29 +140,29 @@ ul.gl strong{color:var(--text);font-weight:600}
 .symptom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-bottom:1rem}
 .sym-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem;display:flex;align-items:flex-start;gap:.6rem}
 .sym-icon{font-size:20px;flex-shrink:0}
-.sym-name{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:.2rem}
-.sym-desc{font-size:12px;color:var(--text-muted);line-height:1.55}
+.sym-name{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:.2rem}
+.sym-desc{font-size:13.5px;color:var(--text-muted);line-height:1.55}
 
 /* DARK HIGHLIGHT BOX */
 .hl-box{background:var(--navy);border-radius:14px;padding:1.75rem;margin-bottom:1rem;color:#fff}
 .fb-top{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
 .fb-icon{font-size:28px}
 .fb-title{font-size:16px;font-weight:700;color:#fff}
-.fb-title small{display:block;font-size:11px;font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.06em;margin-top:2px}
-.fb-lead{font-size:12px;color:rgba(255,255,255,.62);margin-bottom:1rem;line-height:1.75}
+.fb-title small{display:block;font-size:12.5px;font-weight:400;color:rgba(255,255,255,.88);letter-spacing:.06em;margin-top:2px}
+.fb-lead{font-size:13.5px;color:rgba(255,255,255,.88);margin-bottom:1rem;line-height:1.75}
 .hl-num{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.9rem}
 .hl-num .n{font-size:46px;font-weight:700;color:#f4b08f;line-height:1}
-.hl-num .u{font-size:13px;color:rgba(255,255,255,.6)}
+.hl-num .u{font-size:14px;color:rgba(255,255,255,.88)}
 .fb-when{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-bottom:1rem}
-.fb-when-card{background:rgba(255,255,255,.08);border-radius:8px;padding:.7rem .875rem;font-size:12px;color:rgba(255,255,255,.75);line-height:1.55}
-.fb-when-card strong{color:#fff;display:block;margin-bottom:2px;font-size:11px;letter-spacing:.04em}
-.fb-caution{background:rgba(231,76,60,.15);border:1px solid rgba(231,76,60,.4);border-radius:8px;padding:.7rem 1rem;font-size:12px;color:#ffb3b3;margin-top:.875rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.65}
+.fb-when-card{background:rgba(255,255,255,.08);border-radius:8px;padding:.7rem .875rem;font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.55}
+.fb-when-card strong{color:#fff;display:block;margin-bottom:2px;font-size:12.5px;letter-spacing:.04em}
+.fb-caution{background:rgba(231,76,60,.15);border:1px solid rgba(231,76,60,.4);border-radius:8px;padding:.7rem 1rem;font-size:13.5px;color:#ffb3b3;margin-top:.875rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.65}
 
 .drug-cards{display:flex;flex-direction:column;gap:.6rem}
 .drug-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:.875rem 1rem}
-.drug-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.4rem}
-.drug-desc{font-size:12px;color:var(--text-mid);line-height:1.7}
-.drug-note{display:inline-flex;align-items:center;gap:4px;font-size:11px;margin-top:.4rem;padding:3px 9px;border-radius:999px;font-weight:500}
+.drug-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.drug-desc{font-size:13.5px;color:var(--text-mid);line-height:1.7}
+.drug-note{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;margin-top:.4rem;padding:3px 9px;border-radius:999px;font-weight:500}
 .drug-note.ok{color:var(--ok-text);background:var(--ok-bg);border:1px solid var(--ok-border)}
 .drug-note.opt{color:#7a5500;background:#fff8e0;border:1px solid #e8d48a}
 .drug-note.no{color:#8a1010;background:var(--danger-bg);border:1px solid var(--danger-border)}
@@ -170,15 +170,15 @@ ul.gl strong{color:var(--text);font-weight:600}
 .emerg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.6rem}
 .emerg-card{background:var(--danger-bg);border:1px solid var(--danger-border);border-radius:10px;padding:.875rem 1rem;display:flex;align-items:flex-start;gap:.6rem}
 .emerg-icon{font-size:20px;flex-shrink:0}
-.emerg-name{font-size:13px;font-weight:600;color:var(--danger-text);margin-bottom:.2rem}
-.emerg-desc{font-size:12px;color:#8a3030;line-height:1.5}
+.emerg-name{font-size:14px;font-weight:600;color:var(--danger-text);margin-bottom:.2rem}
+.emerg-desc{font-size:13.5px;color:#8a3030;line-height:1.5}
 
 .foot{background:var(--navy);padding:2.5rem 1.5rem}
 .foot-inner{max-width:760px;margin:0 auto}
-.foot-disc{font-size:12px;color:rgba(255,255,255,.5);line-height:1.9;margin-bottom:1.25rem}
+.foot-disc{font-size:13.5px;color:rgba(255,255,255,.88);line-height:1.9;margin-bottom:1.25rem}
 .foot-disc strong{color:rgba(255,255,255,.8);font-weight:500}
 .foot-btns{display:flex;gap:.6rem;flex-wrap:wrap}
-.foot-ref{margin-top:1.25rem;font-size:11px;color:rgba(255,255,255,.25);line-height:1.7}
+.foot-ref{margin-top:1.25rem;font-size:12.5px;color:rgba(255,255,255,.88);line-height:1.7}
 
 .hidden{display:none!important}
 @media(max-width:480px){
@@ -195,7 +195,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원 동물의료센터<small>SIWON Animal Medical Center</small></div></a>
+    <a class="logo-group" href="index.html" aria-label="시원동물의료센터 홈"><img class="logo-mark" src="logo-mark.png" width="28" height="28" alt=""><div class="logo-text">시원동물의료센터<small>SIWON Animal Medical Center</small></div></a>
     <div class="topbar-btns">
       <a class="tbtn back" href="index.html">← 전체 안내</a>
       <a class="tbtn call" href="tel:000-0000-0000">📞 <span>000-0000-0000</span></a>
@@ -228,7 +228,7 @@ ul.gl strong{color:var(--text);font-weight:600}
   <div class="hero-inner">
     <div class="hero-eyebrow">시원동물의료센터 · 췌장염 보호자 안내</div>
     <h1>구토와 복통이 갑자기 왔다면<br><span>췌장염을 의심해 보세요</span></h1>
-    <p class="hero-desc">췌장염은 "급성 구토와 복통"의 대표 원인입니다. 초기 대처가 회복 속도와 재발을 크게 바꿉니다.<br>아래에서 아이의 종을 선택하시면 맞춤 정보를 보여드립니다.</p>
+    <p class="hero-desc">갑작스러운 구토와 배 통증의 흔한 원인 중 하나가 췌장염입니다. 처음에 어떻게 대처하느냐가 회복 속도와 재발에 큰 영향을 줍니다.<br>아래에서 강아지 또는 고양이를 고르면 해당 내용만 볼 수 있어요.</p>
   </div>
 </div>
 
@@ -251,9 +251,9 @@ ul.gl strong{color:var(--text);font-weight:600}
     <div class="sec-head"><span class="sec-num">1</span><span class="sec-title">췌장염이란?</span><span class="sec-tag">Overview</span></div>
 
     <div id="ov-dog">
-      <div class="ov-text">췌장은 소화효소와 인슐린을 만드는 기관입니다. 췌장염은 이 <strong>소화효소가 췌장 안에서 먼저 활성화되어 자기 조직을 소화하는 염증</strong>으로, 경증부터 전신 염증·다발장기부전까지 진행할 수 있습니다.</div>
+      <div class="ov-text">췌장은 음식을 소화시키는 효소와 인슐린을 만드는 장기입니다. 췌장염은 <strong>이 소화효소가 췌장 안에서 너무 일찍 작동해 췌장 자신을 손상시키면서 생기는 염증</strong>으로, 가볍게 지나가기도 하지만 온몸의 염증이나 여러 장기 손상으로 이어질 수도 있습니다.</div>
       <div class="stat-grid">
-        <div class="stat-card"><div class="s-lbl">흔한 계기</div><div class="s-val">기름진 음식·갑작스러운 식이 변화</div></div>
+        <div class="stat-card"><div class="s-lbl">흔한 계기</div><div class="s-val">기름진 음식, 갑자기 바꾼 사료</div></div>
         <div class="stat-card"><div class="s-lbl">호발 대상</div><div class="s-val">중년~노령, 비만견, 일부 견종</div></div>
         <div class="stat-card"><div class="s-lbl">핵심 검사</div><div class="s-val">췌장 리파아제(cPL) · 복부초음파</div></div>
       </div>
@@ -261,24 +261,24 @@ ul.gl strong{color:var(--text);font-weight:600}
         <div class="dc">
           <div class="dc-badge">급성</div>
           <div class="dc-name">급성 췌장염</div>
-          <div class="dc-desc">갑작스러운 구토·복통·식욕 소실로 시작합니다. 적절한 초기 치료로 회복되는 경우가 많지만, 중증에서는 집중 치료가 필요합니다.</div>
+          <div class="dc-desc">갑자기 토하고, 배를 아파하고, 밥을 먹지 않는 것으로 시작합니다. 초기에 적절히 치료하면 대부분 회복하지만, 심한 경우에는 집중 치료가 필요합니다.</div>
         </div>
         <div class="dc">
           <div class="dc-badge">반복·지속</div>
           <div class="dc-name">만성 췌장염</div>
-          <div class="dc-desc">증상이 오르내리며 서서히 췌장 기능이 떨어집니다. 반복되는 식욕 부진·구토·체중 감소의 원인이 됩니다.</div>
+          <div class="dc-desc">좋아졌다 나빠졌다를 반복하면서 췌장 기능이 조금씩 떨어집니다. 입맛이 없거나, 토하거나, 살이 빠지는 일이 반복될 때 원인이 됩니다.</div>
         </div>
         <div class="dc">
           <div class="dc-badge">합병증</div>
           <div class="dc-name">췌장액 누출 · 가성낭종</div>
-          <div class="dc-desc">염증이 심하면 주변에 염증성 액체가 고입니다. 복부 팽만·구토가 계속되면 초음파로 확인해야 합니다.</div>
+          <div class="dc-desc">염증이 심하면 췌장 주변에 염증 물이 고입니다. 배가 부풀거나 구토가 이어지면 초음파로 확인이 필요합니다.</div>
         </div>
       </div>
-      <div class="callout info"><span class="ci">🍖</span><span>삼겹살·족발·치킨 껍질 같은 <strong>기름진 사람 음식, 쓰레기통 뒤지기, 갑작스러운 사료 교체</strong>가 대표적인 계기입니다. 아무 계기 없이 생기는 경우(특발성)도 적지 않습니다.</span></div>
+      <div class="callout info"><span class="ci">🍖</span><span>삼겹살, 족발, 치킨 껍질처럼 <strong>기름진 사람 음식을 먹었을 때, 쓰레기통을 뒤졌을 때, 사료를 갑자기 바꿨을 때</strong> 많이 생깁니다. 뚜렷한 이유 없이 생기는 경우(특발성)도 꽤 있습니다.</span></div>
     </div>
 
     <div id="ov-cat" class="hidden">
-      <div class="ov-text">고양이 췌장염은 <strong>개의 급성 췌장염과 모습이 다릅니다.</strong> 심한 구토보다 <strong>식욕 부진·무기력·체중 감소</strong>로 조용히 나타나며, 만성 형태와 삼출성(복수·흉수) 형태가 흔합니다.</div>
+      <div class="ov-text">고양이 췌장염은 <strong>강아지와 양상이 다릅니다.</strong> 심하게 토하기보다는 <strong>입맛이 없고, 기운이 없고, 살이 빠지는 모습</strong>으로 조용히 나타나며, 오래가는 형태나 배·가슴에 물이 차는 형태가 흔합니다.</div>
       <div class="stat-grid">
         <div class="stat-card"><div class="s-lbl">가장 흔한 신호</div><div class="s-val">밥을 안 먹음 · 숨기 · 무기력</div></div>
         <div class="stat-card"><div class="s-lbl">동반 질환</div><div class="s-val">염증성 장질환 · 담관염 · 당뇨</div></div>
@@ -288,20 +288,20 @@ ul.gl strong{color:var(--text);font-weight:600}
         <div class="dc">
           <div class="dc-badge">급성</div>
           <div class="dc-name">급성 췌장염</div>
-          <div class="dc-desc">갑자기 식욕을 잃고 웅크려 지냅니다. 구토가 없어도 췌장염일 수 있어 놓치기 쉽습니다.</div>
+          <div class="dc-desc">갑자기 밥을 먹지 않고 웅크리고만 있습니다. 토하지 않아도 췌장염일 수 있어 놓치기 쉽습니다.</div>
         </div>
         <div class="dc">
           <div class="dc-badge">흔한 형태</div>
           <div class="dc-name">만성 췌장염</div>
-          <div class="dc-desc">오랜 기간 낮은 강도의 염증이 반복되어 췌장이 섬유화됩니다. 체중 감소와 간헐적 구토로 나타납니다.</div>
+          <div class="dc-desc">약한 염증이 오랫동안 반복되면서 췌장이 딱딱하게 변합니다(섬유화). 살이 빠지고 가끔 토하는 모습으로 나타납니다.</div>
         </div>
         <div class="dc">
           <div class="dc-badge">합병증</div>
           <div class="dc-name">삼출성 췌장염</div>
-          <div class="dc-desc">복강이나 가슴에 염증성 액체가 고입니다. 배가 불러오거나 호흡이 빨라지면 응급입니다.</div>
+          <div class="dc-desc">배나 가슴에 염증 물이 찹니다. 배가 불러오거나 숨이 빨라지면 응급입니다.</div>
         </div>
       </div>
-      <div class="callout info"><span class="ci">🧩</span><span>고양이는 <strong>췌장·장·담도의 만성 염증이 함께 오는 경우(흔히 '삼장염')</strong>가 많고, 당뇨와도 서로 영향을 줍니다. 한 곳만 치료하면 재발이 반복되므로 함께 평가하는 것이 중요합니다.</span></div>
+      <div class="callout info"><span class="ci">🧩</span><span>고양이는 <strong>췌장, 장, 담도에 오래가는 염증이 한꺼번에 생기는 경우(흔히 '삼장염'이라고 부름)</strong>가 많고, 당뇨와도 서로 영향을 주고받습니다. 한 곳만 치료하면 자꾸 재발하기 때문에 세 곳을 함께 살펴보는 것이 중요합니다.</span></div>
     </div>
   </div>
 
@@ -311,24 +311,24 @@ ul.gl strong{color:var(--text);font-weight:600}
 
     <div id="sym-dog">
       <div class="symptom-grid">
-        <div class="sym-card"><span class="sym-icon">🤮</span><div><div class="sym-name">반복되는 구토</div><div class="sym-desc">먹은 것을 토하고, 이후에는 거품이나 노란 액체를 토합니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">😖</span><div><div class="sym-name">복통</div><div class="sym-desc">등을 굽히고 앉아 있거나, 배를 만지면 아파하며 자세를 바꾸기 싫어합니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">🍽️</span><div><div class="sym-name">식욕 소실</div><div class="sym-desc">평소 좋아하던 간식도 거부하고 물만 조금 마십니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">😴</span><div><div class="sym-name">무기력·움츠림</div><div class="sym-desc">누워만 있고 부르면 반응이 느립니다. 통증 때문에 자세를 바꾸지 못하기도 합니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">💩</span><div><div class="sym-name">설사</div><div class="sym-desc">묽은 변이나 혈변이 동반될 수 있습니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">🌡️</span><div><div class="sym-name">발열·빠른 호흡</div><div class="sym-desc">몸이 뜨겁거나 숨이 빨라지면 전신 염증이 진행된 신호입니다</div></div></div>
+        <div class="sym-card"><span class="sym-icon">🤮</span><div><div class="sym-name">반복되는 구토</div><div class="sym-desc">먹은 것을 토하다가, 나중에는 거품이나 노란 물을 토합니다</div></div></div>
+        <div class="sym-card"><span class="sym-icon">😖</span><div><div class="sym-name">복통</div><div class="sym-desc">등을 구부리고 앉아 있거나, 배를 만지면 아파하고 자세를 바꾸려 하지 않습니다</div></div></div>
+        <div class="sym-card"><span class="sym-icon">🍽️</span><div><div class="sym-name">식욕 소실</div><div class="sym-desc">좋아하던 간식도 먹지 않고 물만 조금 마십니다</div></div></div>
+        <div class="sym-card"><span class="sym-icon">😴</span><div><div class="sym-name">무기력·움츠림</div><div class="sym-desc">누워만 있고 불러도 반응이 느립니다. 아파서 자세를 바꾸지 못하기도 합니다</div></div></div>
+        <div class="sym-card"><span class="sym-icon">💩</span><div><div class="sym-name">설사</div><div class="sym-desc">묽은 변이나 피가 섞인 변을 볼 수 있습니다</div></div></div>
+        <div class="sym-card"><span class="sym-icon">🌡️</span><div><div class="sym-name">발열·빠른 호흡</div><div class="sym-desc">몸이 뜨겁거나 숨이 빨라지면 염증이 온몸으로 번지고 있다는 신호입니다</div></div></div>
       </div>
     </div>
 
     <div id="sym-cat" class="hidden">
-      <div class="callout neutral"><span class="ci">ℹ️</span><span>고양이는 <strong>아픈 것을 숨기고, 구토도 자주 하지 않습니다.</strong> "이틀째 밥을 조금씩만 먹는다" 같은 변화가 췌장염의 유일한 신호일 수 있습니다.</span></div>
+      <div class="callout neutral"><span class="ci">ℹ️</span><span>고양이는 <strong>아픈 것을 잘 숨기고, 토하는 일도 많지 않습니다.</strong> "이틀째 밥을 조금만 먹는다" 정도의 변화가 췌장염의 유일한 신호일 수 있어요.</span></div>
       <div class="symptom-grid">
-        <div class="sym-card"><span class="sym-icon">🍽️</span><div><div class="sym-name">식욕 부진</div><div class="sym-desc">가장 흔한 신호입니다. 좋아하던 캔을 한두 번 핥고 떠납니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">🙈</span><div><div class="sym-name">숨기·웅크림</div><div class="sym-desc">구석에 숨거나 몸을 낮게 웅크리고 지냅니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">⚖️</span><div><div class="sym-name">체중 감소</div><div class="sym-desc">몇 주에 걸쳐 서서히 빠지고 등뼈가 드러납니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">🤢</span><div><div class="sym-name">간헐적 구토</div><div class="sym-desc">매일은 아니지만 반복되는 구토, 헤어볼과 구분이 필요합니다</div></div></div>
-        <div class="sym-card"><span class="sym-icon">😾</span><div><div class="sym-name">만지면 싫어함</div><div class="sym-desc">배를 만지려 하면 피하거나 하악질합니다(복통 신호)</div></div></div>
-        <div class="sym-card"><span class="sym-icon">💧</span><div><div class="sym-name">물·소변 변화</div><div class="sym-desc">동반된 당뇨가 있으면 다음·다뇨가 함께 나타납니다</div></div></div>
+        <div class="sym-card"><span class="sym-icon">🍽️</span><div><div class="sym-name">식욕 부진</div><div class="sym-desc">가장 흔한 신호예요. 좋아하던 캔을 한두 번 핥고 그냥 가요</div></div></div>
+        <div class="sym-card"><span class="sym-icon">🙈</span><div><div class="sym-name">숨기·웅크림</div><div class="sym-desc">구석에 숨거나 몸을 낮추고 웅크린 채 지내요</div></div></div>
+        <div class="sym-card"><span class="sym-icon">⚖️</span><div><div class="sym-name">체중 감소</div><div class="sym-desc">몇 주에 걸쳐 조금씩 살이 빠지고 등뼈가 만져져요</div></div></div>
+        <div class="sym-card"><span class="sym-icon">🤢</span><div><div class="sym-name">간헐적 구토</div><div class="sym-desc">매일은 아니어도 토하는 일이 반복돼요. 헤어볼 때문인지 구분이 필요해요</div></div></div>
+        <div class="sym-card"><span class="sym-icon">😾</span><div><div class="sym-name">만지면 싫어함</div><div class="sym-desc">배를 만지려 하면 피하거나 하악질을 해요(배가 아프다는 신호)</div></div></div>
+        <div class="sym-card"><span class="sym-icon">💧</span><div><div class="sym-name">물·소변 변화</div><div class="sym-desc">당뇨가 함께 있으면 물을 많이 마시고 소변도 많이 봐요</div></div></div>
       </div>
     </div>
   </div>
@@ -336,39 +336,39 @@ ul.gl strong{color:var(--text);font-weight:600}
   <!-- ③ 진단 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-num">3</span><span class="sec-title">진단 검사 — cPL/fPL · 초음파</span><span class="sec-tag">Diagnosis</span></div>
-    <div class="ov-text">췌장염은 <strong>한 가지 검사로 확정되지 않습니다.</strong> 증상·혈액검사·췌장 리파아제·초음파를 함께 보고 판단합니다. 그래서 내원 시에는 <strong>언제부터, 무엇을 먹고, 몇 번 토했는지</strong>를 정리해 오시면 큰 도움이 됩니다.</div>
+    <div class="ov-text">췌장염은 <strong>검사 하나만으로 확진하기 어렵습니다.</strong> 증상, 혈액검사, 췌장 리파아제, 초음파를 모두 함께 보고 판단합니다. 그래서 오실 때 <strong>언제부터 증상이 있었는지, 무엇을 먹었는지, 몇 번 토했는지</strong>를 정리해 오시면 진료에 큰 도움이 됩니다.</div>
     <div class="tbl-wrap">
       <table class="tb">
         <tbody><tr><th>검사</th><th>무엇을 보나요</th><th>보호자가 알아두실 점</th></tr>
         <tr>
           <td><span class="tb-badge b2">cPL</span> 개 췌장 리파아제</td>
-          <td>췌장에서 유래한 효소 농도(정량)</td>
-          <td>개에서 가장 널리 쓰입니다. 수치가 높으면 췌장염과 일치하는 소견으로 봅니다.</td>
+          <td>췌장에서 나오는 효소의 양(수치 측정)</td>
+          <td>강아지에서 가장 많이 쓰는 검사입니다. 수치가 높으면 췌장염 가능성이 높다고 봅니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b2">fPL</span> 고양이 췌장 리파아제</td>
           <td>고양이 췌장 특이 효소 농도</td>
-          <td>고양이는 증상만으로 판단이 어려워 이 검사가 특히 중요합니다.</td>
+          <td>고양이는 증상만으로 알기 어려워 이 검사가 특히 중요합니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b1">US</span> 복부초음파</td>
-          <td>췌장의 크기·에코·주변 염증, 담낭, 복수</td>
-          <td>장폐색·이물·담관 질환을 함께 감별합니다. 정상처럼 보여도 췌장염을 완전히 배제하지는 못합니다.</td>
+          <td>췌장의 크기와 모양, 주변 염증, 담낭, 복수</td>
+          <td>장이 막혔는지, 이물이 있는지, 담관에 문제가 있는지도 함께 확인합니다. 초음파가 정상으로 보여도 췌장염이 아니라고 단정할 수는 없습니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b3">CBC</span> 혈액·생화학</td>
-          <td>탈수, 전해질, 간효소, 칼슘, 혈당</td>
-          <td>중증도와 전신 상태를 판단합니다. 저칼슘·고혈당은 집중 치료가 필요한 신호입니다.</td>
+          <td>탈수 정도, 전해질, 간 수치, 칼슘, 혈당</td>
+          <td>얼마나 심한지와 몸 전체 상태를 확인합니다. 칼슘이 낮거나 혈당이 높으면 집중 치료가 필요하다는 신호입니다.</td>
         </tr>
         <tr>
           <td><span class="tb-badge b4">XR</span> X-ray · 복수 분석</td>
           <td>장폐색·이물, 복수 성상</td>
-          <td>구토의 다른 원인을 배제하고 합병증(삼출) 여부를 확인합니다.</td>
+          <td>구토의 다른 원인이 없는지 확인하고, 배나 가슴에 물이 찼는지 봅니다.</td>
         </tr>
       </tbody></table>
     </div>
-    <div class="callout warn"><span class="ci">⚠️</span><span>췌장 리파아제 수치는 <strong>중증도나 예후와 반드시 비례하지 않습니다.</strong> 신장·간·위장 질환이나 다른 염증 상태에서도 올라갈 수 있어, 수치 하나로 치료 방향을 정하지 않습니다.</span></div>
-    <div class="callout neutral"><span class="ci">💬</span><span>검사 결과가 애매한 경우 <strong>12~24시간 후 재검</strong>하거나, 초음파를 반복해 변화를 확인하기도 합니다. 첫 검사에서 정상 범위라고 해서 췌장염이 아니라고 단정하지 않는 이유입니다.</span></div>
+    <div class="callout warn"><span class="ci">⚠️</span><span>췌장 리파아제 수치가 높다고 <strong>꼭 더 심하거나 예후가 나쁜 것은 아닙니다.</strong> 신장, 간, 위장 질환이나 다른 염증이 있을 때도 올라갈 수 있어서 이 수치 하나만 보고 치료를 정하지 않습니다.</span></div>
+    <div class="callout neutral"><span class="ci">💬</span><span>결과가 애매하면 <strong>12~24시간 뒤에 다시 검사</strong>하거나 초음파를 다시 보며 변화를 확인하기도 합니다. 첫 검사가 정상이어도 췌장염이 아니라고 바로 결론 내리지 않는 이유입니다.</span></div>
   </div>
 
   <!-- ④ 치료 -->
@@ -381,33 +381,33 @@ ul.gl strong{color:var(--text);font-weight:600}
           <div class="fb-title">췌장염 치료의 3가지 축<small>FLUID · PAIN · NUTRITION</small></div>
         </div>
       </div>
-      <p class="fb-lead">췌장염 치료의 목표는 <strong style="color:#fff">염증을 멈추고, 통증을 없애고, 장을 다시 먹이는 것</strong>입니다. 예전처럼 "며칠 굶기고 물만 주는" 치료는 이제 권하지 않습니다.</p>
+      <p class="fb-lead">췌장염 치료의 목표는 <strong style="color:#fff">염증을 가라앉히고, 통증을 없애고, 다시 먹을 수 있게 하는 것</strong>입니다. 예전처럼 "며칠 굶기고 물만 주는" 방법은 지금은 권하지 않습니다.</p>
       <div class="fb-when">
-        <div class="fb-when-card"><strong>① 수액</strong>구토와 식욕 부진으로 생긴 탈수·전해질 불균형을 교정합니다. 쇼크가 있으면 응급 수액 소생이 먼저입니다.</div>
-        <div class="fb-when-card"><strong>② 통증 관리</strong>췌장염은 통증이 큰 질환입니다. 오피오이드 계열 진통제를 증상에 맞춰 사용합니다.</div>
-        <div class="fb-when-card"><strong>③ 영양</strong>구토가 조절되면 24~48시간 안에 가능한 빨리 먹이기 시작합니다. 장 점막 회복에 도움이 됩니다.</div>
+        <div class="fb-when-card"><strong>① 수액</strong>구토와 식욕 저하로 생긴 탈수와 전해질 이상을 바로잡습니다. 쇼크 상태라면 응급 수액 처치를 가장 먼저 합니다.</div>
+        <div class="fb-when-card"><strong>② 통증 조절</strong>췌장염은 많이 아픈 병입니다. 증상에 맞춰 마약성(오피오이드) 진통제를 사용합니다.</div>
+        <div class="fb-when-card"><strong>③ 영양 공급</strong>구토가 잡히면 24~48시간 안에 되도록 빨리 먹이기 시작합니다. 장 점막이 회복되는 데 도움이 됩니다.</div>
       </div>
-      <div class="fb-caution">⚠️ <span><strong>고양이는 절식이 특히 위험합니다.</strong> 2~3일 이상 거의 먹지 않으면 간에 지방이 쌓이는 간지질증이 올 수 있어, 식욕이 돌아오지 않으면 영양 지원을 서두릅니다.</span></div>
+      <div class="fb-caution">⚠️ <span><strong>고양이는 굶는 것이 특히 위험합니다.</strong> 2~3일 넘게 거의 먹지 않으면 간에 지방이 쌓이는 지방간(간지질증)이 생길 수 있어, 입맛이 돌아오지 않으면 서둘러 영양을 공급합니다.</span></div>
     </div>
     <div class="drug-cards">
       <div class="drug-card">
         <div class="drug-name">수액 · 전해질 · 진통</div>
-        <div class="drug-desc">탈수 교정과 함께 칼륨·칼슘 같은 전해질을 맞춰줍니다. 통증이 심하면 오피오이드(뷰프레노르핀·메타돈 등)를 주사하거나 지속 주입합니다. <strong>아이가 조용히 누워 있다고 아프지 않은 것이 아닙니다</strong> — 웅크림, 자세 회피, 반응 저하는 통증 신호입니다.</div>
+        <div class="drug-desc">탈수를 바로잡으면서 칼륨, 칼슘 같은 전해질을 맞춰 줍니다. 통증이 심하면 부프레노르핀, 메타돈 같은 오피오이드 진통제를 주사하거나 계속 흘려 넣습니다. <strong>조용히 누워 있다고 아프지 않은 것은 아닙니다</strong> — 웅크리고, 자세를 바꾸지 않고, 반응이 줄어드는 것도 통증 신호입니다.</div>
         <span class="drug-note ok">✓ 입원 중 집중 관리</span>
       </div>
       <div class="drug-card">
         <div class="drug-name">구토 조절 · 위장 보호</div>
-        <div class="drug-desc">마로피탄트·온단세트론 등으로 구토를 줄이고, 위산 억제제로 위 점막을 보호합니다. 구토가 멈춰야 먹이기를 시작할 수 있습니다.</div>
+        <div class="drug-desc">마로피탄트, 온단세트론 같은 약으로 구토를 줄이고, 위산을 줄이는 약으로 위 점막을 보호합니다. 구토가 멈춰야 먹이기를 시작할 수 있습니다.</div>
         <span class="drug-note ok">✓ 증상에 따라 처방</span>
       </div>
       <div class="drug-card">
         <div class="drug-name">영양 지원</div>
-        <div class="drug-desc">스스로 먹지 못하면 비위관·식도관·위루관을 통해 열량을 공급합니다. <strong>영양을 빨리 시작할수록 회복이 빠르고 입원 기간도 짧아집니다.</strong> 회복 후에는 저지방 처방식으로 전환합니다.</div>
+        <div class="drug-desc">스스로 먹지 못하면 코, 식도, 위에 넣은 관으로 영양을 공급합니다. <strong>영양을 빨리 시작할수록 회복이 빠르고 입원 기간도 줄어듭니다.</strong> 회복 뒤에는 지방이 적은 처방식으로 바꿉니다.</div>
         <span class="drug-note ok">✓ 조기 영양이 원칙</span>
       </div>
       <div class="drug-card">
         <div class="drug-name">항생제 · 합병증 관리</div>
-        <div class="drug-desc">췌장염 자체는 무균성 염증이라 <strong>모든 환자에게 항생제를 쓰지는 않습니다.</strong> 감염 근거가 있을 때만 사용하고, 저칼슘·고혈당·전신 염증(SIRS)이 있으면 그에 맞는 치료를 병행합니다.</div>
+        <div class="drug-desc">췌장염은 세균 감염이 아닌 염증이라서 <strong>모든 아이에게 항생제를 쓰지는 않습니다.</strong> 감염이 의심될 때만 사용하고, 칼슘이 낮거나 혈당이 높거나 온몸 염증(SIRS)이 있으면 그에 맞는 치료를 함께 합니다.</div>
         <span class="drug-note opt">△ 필요할 때만</span>
       </div>
     </div>
@@ -418,55 +418,55 @@ ul.gl strong{color:var(--text);font-weight:600}
     <div class="sec-head"><span class="sec-num">5</span><span class="sec-title">식이 관리 — 저지방 · 재발 예방</span><span class="sec-tag">Diet</span></div>
 
     <div id="diet-dog">
-      <div class="callout info"><span class="ci">🥣</span><span>회복기에는 <strong>저지방·고소화성 처방식</strong>이 기본입니다. 최소 4~8주는 유지하고, 재발한 아이는 장기간 또는 평생 유지하기도 합니다.</span></div>
+      <div class="callout info"><span class="ci">🥣</span><span>회복하는 동안에는 <strong>지방이 적고 소화가 잘 되는 처방식</strong>을 먹이는 것이 기본입니다. 적어도 4~8주는 유지하고, 재발했던 아이는 오래 또는 평생 먹이기도 합니다.</span></div>
       <ul class="gl">
-        <li><strong>기름진 음식은 완전히 끊어주세요.</strong> 삼겹살, 족발, 치킨 껍질, 버터·치즈, 마요네즈, 기름진 통조림은 재발의 가장 큰 원인입니다.</li>
-        <li><strong>사람 음식과 식탁 음식은 금지입니다.</strong> "조금만" 주는 습관이 반복되면 재발 위험이 커집니다. 가족 모두 같은 규칙을 지켜주세요.</li>
-        <li><strong>쓰레기통·음식물 쓰레기·반려동물 간식 서랍을 잠가주세요.</strong> 몰래 먹은 한 번이 입원으로 이어질 수 있습니다.</li>
-        <li><strong>사료는 1~2주에 걸쳐 서서히 바꿔주세요.</strong> 갑작스러운 교체 자체가 췌장과 장에 부담이 됩니다.</li>
-        <li><strong>소량씩 여러 번 나눠 급여해 주세요.</strong> 한 번에 많이 먹는 것이 부담이 될 수 있습니다.</li>
-        <li><strong>적정 체중을 유지해 주세요.</strong> 비만은 췌장염 재발의 위험 요인입니다.</li>
+        <li><strong>기름진 음식은 아예 주지 마세요.</strong> 삼겹살, 족발, 치킨 껍질, 버터, 치즈, 마요네즈, 기름진 통조림은 재발의 가장 큰 원인입니다.</li>
+        <li><strong>사람 음식이나 식탁 음식은 주지 마세요.</strong> "조금은 괜찮겠지" 하고 주는 일이 반복되면 재발 위험이 커집니다. 가족 모두 같은 규칙을 지켜 주세요.</li>
+        <li><strong>쓰레기통, 음식물 쓰레기, 간식 서랍은 아이가 열지 못하게 해 주세요.</strong> 몰래 먹은 한 번이 입원으로 이어질 수 있습니다.</li>
+        <li><strong>사료는 1~2주 동안 조금씩 섞어서 바꿔 주세요.</strong> 갑자기 바꾸는 것만으로도 췌장과 장에 부담이 됩니다.</li>
+        <li><strong>조금씩 여러 번 나눠 주세요.</strong> 한 번에 많이 먹으면 부담이 될 수 있습니다.</li>
+        <li><strong>알맞은 몸무게를 유지해 주세요.</strong> 비만은 췌장염이 다시 생기는 위험 요인입니다.</li>
       </ul>
     </div>
 
     <div id="diet-cat" class="hidden">
-      <div class="callout info"><span class="ci">🥣</span><span>고양이는 <strong>개처럼 지방을 극단적으로 줄이는 것이 정답이 아닙니다.</strong> 열량과 단백질을 충분히 확보하면서 소화가 편한 처방식을 고르는 것이 핵심입니다.</span></div>
+      <div class="callout info"><span class="ci">🥣</span><span>고양이는 <strong>강아지처럼 지방을 아주 많이 줄이는 것이 정답은 아닙니다.</strong> 열량과 단백질은 충분히 주면서 소화가 잘 되는 처방식을 고르는 것이 중요합니다.</span></div>
       <ul class="gl">
-        <li><strong>먼저 "먹게 하는 것"이 목표입니다.</strong> 식욕이 없으면 기호성이 높은 습식·처방식부터 시작합니다. 굶기는 것이 가장 위험합니다.</li>
-        <li><strong>급격한 단백질·지방 제한은 피해주세요.</strong> 고양이는 단백질 요구량이 높습니다. 담당 수의사가 정한 처방식 범위 안에서 조절합니다.</li>
-        <li><strong>동반 질환을 함께 관리해 주세요.</strong> 염증성 장질환·담관염·당뇨가 있으면 함께 조절해야 췌장염 재발이 줄어듭니다.</li>
-        <li><strong>체중 감소를 막아주세요.</strong> 2~3일 이상 거의 먹지 않으면 간지질증 위험이 커집니다. 억지로라도 조금씩 자주 급여합니다.</li>
-        <li><strong>습식 위주로 수분을 늘려주세요.</strong> 물그릇 여러 개, 분수형 급수기를 함께 활용해 주세요.</li>
-        <li><strong>간식은 처방식 범위 안에서만.</strong> 참치·닭가슴살을 임의로 급여하면 균형이 깨집니다.</li>
+        <li><strong>무엇보다 "먹게 하는 것"이 먼저입니다.</strong> 입맛이 없으면 맛있게 먹는 습식이나 처방식부터 시작합니다. 굶기는 것이 가장 위험해요.</li>
+        <li><strong>단백질과 지방을 갑자기 확 줄이지 마세요.</strong> 고양이는 단백질이 많이 필요한 동물입니다. 담당 수의사가 정한 처방식 안에서 조절해 주세요.</li>
+        <li><strong>함께 있는 병도 같이 관리해 주세요.</strong> 염증성 장질환, 담관염, 당뇨가 있다면 함께 조절해야 췌장염 재발이 줄어듭니다.</li>
+        <li><strong>살이 빠지지 않게 해 주세요.</strong> 2~3일 넘게 거의 먹지 않으면 지방간 위험이 커집니다. 조금씩이라도 자주 먹여 주세요.</li>
+        <li><strong>습식 위주로 먹여 물을 더 먹게 해 주세요.</strong> 물그릇을 여러 곳에 두거나 흐르는 물 급수기를 함께 써 보세요.</li>
+        <li><strong>간식은 처방식 범위 안에서만 주세요.</strong> 참치나 닭가슴살을 따로 주면 영양 균형이 깨질 수 있습니다.</li>
       </ul>
     </div>
-    <div class="callout warn" style="margin-top:.75rem"><span class="ci">⚠️</span><span>식이를 바꾸는 시점과 종류는 <strong>반드시 담당 수의사와 상의</strong>해 주세요. 회복 초기에는 소화성과 열량이 저지방보다 우선인 경우도 있습니다.</span></div>
+    <div class="callout warn" style="margin-top:.75rem"><span class="ci">⚠️</span><span>사료를 언제, 무엇으로 바꿀지는 <strong>꼭 담당 수의사와 상의</strong>해 주세요. 회복 초기에는 지방을 줄이는 것보다 소화와 열량을 먼저 챙겨야 할 때도 있습니다.</span></div>
   </div>
 
   <!-- ⑥ 응급 -->
   <div class="sec">
     <div class="sec-head"><span class="sec-num">6</span><span class="sec-title">병원에 바로 오셔야 할 신호</span><span class="sec-tag">Emergency</span></div>
     <div class="emerg-grid">
-      <div class="emerg-card"><span class="emerg-icon">🤮</span><div><div class="emerg-name">구토가 멈추지 않음</div><div class="emerg-desc">하루 3회 이상이거나 물도 마시면 토하는 경우</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">😖</span><div><div class="emerg-name">심한 복통</div><div class="emerg-desc">배를 만지지 못하게 하거나 자세를 바꾸지 못할 때</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🩸</span><div><div class="emerg-name">혈변·검은 변</div><div class="emerg-desc">출혈이나 장 점막 손상을 의미할 수 있습니다</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">😵</span><div><div class="emerg-name">무기력·허탈</div><div class="emerg-desc">일어나지 못하거나 반응이 없고 잇몸이 창백할 때</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🟡</span><div><div class="emerg-name">황달</div><div class="emerg-desc">눈·잇몸·귀 안쪽이 노랗게 보이면 담도 합병증 가능</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🫁</span><div><div class="emerg-name">호흡 곤란</div><div class="emerg-desc">숨이 빠르고 배를 써서 숨쉬면 흉수·폐 문제 동반 가능</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🍽️</span><div><div class="emerg-name">24시간 이상 완전 절식</div><div class="emerg-desc">고양이는 2일 이상 먹지 못하면 바로 내원해 주세요</div></div></div>
-      <div class="emerg-card"><span class="emerg-icon">🐾</span><div><div class="emerg-name">경련·근육 떨림</div><div class="emerg-desc">저칼슘으로 인한 신경 증상일 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🤮</span><div><div class="emerg-name">구토가 멈추지 않음</div><div class="emerg-desc">하루 3번 넘게 토하거나 물만 마셔도 토할 때</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">😖</span><div><div class="emerg-name">심한 복통</div><div class="emerg-desc">배를 못 만지게 하거나 아파서 자세를 바꾸지 못할 때</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🩸</span><div><div class="emerg-name">혈변·검은 변</div><div class="emerg-desc">출혈이나 장 점막 손상의 신호일 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">😵</span><div><div class="emerg-name">무기력·허탈</div><div class="emerg-desc">일어나지 못하거나 반응이 없고 잇몸이 하얗게 질렸을 때</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🟡</span><div><div class="emerg-name">황달</div><div class="emerg-desc">눈, 잇몸, 귀 안쪽이 노랗게 보이면 담도 합병증일 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🫁</span><div><div class="emerg-name">호흡 곤란</div><div class="emerg-desc">숨이 빠르고 배로 숨을 쉬면 가슴에 물이 차거나 폐에 문제가 생겼을 수 있습니다</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🍽️</span><div><div class="emerg-name">24시간 이상 완전 절식</div><div class="emerg-desc">고양이가 이틀 넘게 먹지 못하면 바로 내원해 주세요</div></div></div>
+      <div class="emerg-card"><span class="emerg-icon">🐾</span><div><div class="emerg-name">경련·근육 떨림</div><div class="emerg-desc">칼슘이 낮아져서 생기는 신경 증상일 수 있습니다</div></div></div>
     </div>
-    <div class="callout danger" style="margin-top:1rem"><span class="ci">🚨</span><span>위 증상 중 하나라도 보인다면 <strong>지체 없이 연락 주세요.</strong> 췌장염은 초기 24~48시간의 대처가 회복과 합병증 발생을 크게 좌우합니다.</span></div>
+    <div class="callout danger" style="margin-top:1rem"><span class="ci">🚨</span><span>이 중 하나라도 보이면 <strong>기다리지 말고 바로 연락 주세요.</strong> 췌장염은 처음 24~48시간에 어떻게 대처하느냐가 회복과 합병증에 큰 영향을 줍니다.</span></div>
   </div>
 
 </div>
 <div class="foot">
   <div class="foot-inner">
     <p class="foot-disc">
-      이 자료는 일반적인 보호자 교육을 위해 제작된 안내문으로, 개별 환자의 진단과 치료를 대신하지 않습니다.<br>
-      약물 조절이나 식이 변경은 반드시 <strong>담당 수의사와 상의</strong> 후 진행해 주세요.<br>
-      <strong>구토가 멈추지 않음, 심한 복통, 24시간 이상 절식</strong>이 보이면 즉시 병원으로 연락 주세요.<br>
-      문의사항이 있으시면 언제든지 연락 주세요.<br>
+      보호자님의 이해를 돕기 위해 정리한 일반 안내로, 아이별 진단과 치료를 대신하지는 않습니다.<br>
+      약이나 식단을 바꿀 때는 꼭 <strong>담당 수의사와 먼저 상의</strong>해 주세요.<br>
+      <strong>구토가 멈추지 않음, 심한 복통, 24시간 이상 절식</strong> 증상이 보이면 바로 병원에 연락 주세요.<br>
+      궁금한 점은 언제든 편하게 물어봐 주세요.<br>
       진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
