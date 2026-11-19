@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#10335E">
+<meta name="theme-color" content="#0e4f4a">
 <meta name="description" content="시원동물의료센터 강아지·고양이 비만도(BCS 9점) 자가진단 · 사람 나이 환산 · 하루 권장 칼로리(RER·DER) 계산기. 갈비뼈·허리선·복부선으로 체형을 확인하고 목표 체중과 급여량을 계산합니다.">
 <title>비만도(BCS)·사람 나이·하루 칼로리 계산기 · 시원동물의료센터</title>
 <link rel="icon" type="image/png" href="favicon.png">
@@ -20,20 +20,20 @@
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --red:#b3261e;--red-bg:#fdf0ef;--red-border:#f0c8c4;
   --amber:#9a6207;--amber-bg:#fff8e6;--amber-border:#f0dcae;
   --green:#166534;--green-bg:#eefaf3;--green-border:#c6e9d5;
   --max:760px;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;word-break:keep-all;-webkit-font-smoothing:antialiased}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;word-break:keep-all;-webkit-font-smoothing:antialiased}
 
 /* TOPBAR */
 .topbar{background:var(--navy);padding:0 1.25rem;position:sticky;top:0;z-index:200}
@@ -56,7 +56,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:var(--max);margin:0 auto;text-align:center}
 .hero-eyebrow{font-size:10.5px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.7rem}
 .hero h1{font-size:21px;font-weight:700;color:#fff;line-height:1.45;margin-bottom:.6rem}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:12.5px;color:rgba(255,255,255,.58);line-height:1.8}
 
 /* SPECIES BAR */
@@ -96,7 +96,7 @@ input[type=text],input[type=number],input[type=date],select,textarea{
   -webkit-appearance:none;appearance:none;
 }
 input:focus,select:focus,textarea:focus{border-color:var(--accent);background:#fff}
-input::placeholder{color:#a9b7c5;font-size:13.5px}
+input::placeholder{color:#a8b3b0;font-size:13.5px}
 input[type=date]{min-height:44px}
 select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 50%),linear-gradient(135deg,var(--text-muted) 50%,transparent 50%);background-position:calc(100% - 18px) 21px,calc(100% - 13px) 21px;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:34px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
@@ -124,29 +124,29 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
 .q-sub{font-size:10.5px;color:var(--text-muted);line-height:1.6;margin-left:auto;flex-shrink:0}
 .bopts{display:grid;gap:.3rem}
 .bopt{position:relative;display:flex;align-items:flex-start;gap:.5rem;border:1.5px solid var(--border);border-radius:8px;padding:.5rem .6rem;font-size:11.8px;color:var(--text-mid);line-height:1.6;background:#fff;cursor:pointer;transition:border-color .15s,background .15s,color .15s}
-.bopt:hover{border-color:#b7d0ee}
+.bopt:hover{border-color:#a8d8cf}
 .bopt input{position:absolute;opacity:0;width:0;height:0}
-.bopt .dot{flex-shrink:0;width:14px;height:14px;border-radius:50%;border:1.5px solid #c3d2e2;background:#fff;margin-top:3px;transition:all .15s}
+.bopt .dot{flex-shrink:0;width:14px;height:14px;border-radius:50%;border:1.5px solid #c7dedb;background:#fff;margin-top:3px;transition:all .15s}
 .bopt input:checked + .dot{border-color:var(--accent);background:var(--accent);box-shadow:inset 0 0 0 3px #fff}
-.bopt:has(input:checked){border-color:var(--accent);background:#f6faff;color:var(--navy);font-weight:500}
+.bopt:has(input:checked){border-color:var(--accent);background:#fbfaf6;color:var(--navy);font-weight:500}
 .bopt input:focus-visible + .dot{outline:2px solid var(--accent);outline-offset:2px}
 
 /* 5 STEP CARDS */
 .b5{display:grid;gap:.4rem}
 .b5c{display:flex;align-items:flex-start;gap:.6rem;text-align:left;font-family:inherit;border:1.5px solid var(--border);border-radius:10px;background:#fff;padding:.6rem .7rem;cursor:pointer;transition:all .15s;width:100%}
-.b5c:hover{border-color:#b7d0ee}
+.b5c:hover{border-color:#a8d8cf}
 .b5c .b5e{font-size:17px;line-height:1.3;flex-shrink:0}
 .b5c .b5n{font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.5}
 .b5c .b5d{font-size:10.8px;color:var(--text-muted);line-height:1.6;margin-top:1px}
-.b5c.sel{border-color:var(--accent);background:#f6faff;box-shadow:0 0 0 2px rgba(45,108,192,.12)}
+.b5c.sel{border-color:var(--accent);background:#fbfaf6;box-shadow:0 0 0 2px rgba(196,87,47,.12)}
 
 /* RESULT */
 #res{margin-bottom:1rem}
-.stage{background:linear-gradient(165deg,#123A6B 0%,var(--navy) 60%,#0b2242 100%);border-radius:14px;padding:1.1rem 1.15rem;color:#fff;margin-bottom:.8rem}
+.stage{background:linear-gradient(165deg,#136159 0%,var(--navy) 60%,#08332f 100%);border-radius:14px;padding:1.1rem 1.15rem;color:#fff;margin-bottom:.8rem}
 .stage-top{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.35rem}
 .stage-k{font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(255,255,255,.5);text-transform:uppercase}
 .stage-n{font-size:20px;font-weight:700;line-height:1.35;letter-spacing:-.01em}
-.stage-n em{font-style:normal;color:#8ec2f8}
+.stage-n em{font-style:normal;color:#f4b08f}
 .stage-age{font-size:12px;color:rgba(255,255,255,.62);line-height:1.7;margin-top:.15rem}
 .stage-age b{color:#fff;font-weight:600}
 .stage-wait{font-size:12.5px;color:rgba(255,255,255,.55);line-height:1.7;margin-top:.2rem}
@@ -168,7 +168,7 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
 .badge.warn{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-border)}
 .badge.bad{background:var(--red-bg);color:var(--red);border:1px solid var(--red-border)}
 .badge.none{background:var(--navy-xlight);color:var(--text-muted);border:1px solid var(--border)}
-.badge.blue{background:var(--accent-light);color:var(--accent);border:1px solid #c5dbf3}
+.badge.blue{background:var(--accent-light);color:var(--accent);border:1px solid #cbede9}
 .stage .badge{margin-left:0}
 
 /* 9 SCALE */
@@ -180,9 +180,9 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
 .sg.s4,.sg.s5{background:#d8ecdf}
 .sg.s6,.sg.s7{background:#f7ecc9}
 .sg.s8,.sg.s9{background:#f8dedb}
-.sg.s1.on{background:#6f9ccb}
-.sg.s2.on{background:#4f86bd}
-.sg.s3.on{background:#3a76b3}
+.sg.s1.on{background:#7bc0b6}
+.sg.s2.on{background:#5dafa4}
+.sg.s3.on{background:#49a498}
 .sg.s4.on,.sg.s5.on{background:#2f8f5b}
 .sg.s6.on,.sg.s7.on{background:#c08a1e}
 .sg.s8.on,.sg.s9.on{background:#b3261e}
@@ -196,13 +196,13 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
 .flag.ok{background:var(--green-bg);border-color:var(--green-border);color:#155e3a}
 .flag.info{background:var(--navy-xlight);border-color:var(--border);color:var(--text-mid)}
 .flag b{font-weight:700}
-.flag a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(45,108,192,.3)}
+.flag a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(196,87,47,.3)}
 
 /* LINK CARDS */
 .lnks{display:grid;gap:.4rem;margin-top:.7rem}
 @media(min-width:560px){.lnks{grid-template-columns:1fr 1fr}}
 .lnk{display:flex;align-items:flex-start;gap:.5rem;background:#fff;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:9px;padding:.55rem .7rem;text-decoration:none;transition:all .15s}
-.lnk:hover{border-color:#b7d0ee;border-left-color:var(--accent);background:#f9fcff}
+.lnk:hover{border-color:#a8d8cf;border-left-color:var(--accent);background:#f9fcff}
 .lnk .lk-e{font-size:15px;line-height:1.4;flex-shrink:0}
 .lnk .lk-n{display:block;font-size:12px;font-weight:700;color:var(--navy);line-height:1.5}
 .lnk .lk-d{display:block;font-size:10.5px;color:var(--text-muted);line-height:1.6;margin-top:1px}
@@ -248,7 +248,7 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
 /* TOAST */
 .toast{position:fixed;left:50%;bottom:1.6rem;transform:translate(-50%,14px);z-index:500;
   background:var(--navy-dark);color:#fff;font-size:12.5px;font-weight:500;padding:11px 18px;border-radius:999px;
-  box-shadow:0 8px 28px rgba(10,34,64,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
+  box-shadow:0 8px 28px rgba(8,51,47,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 
 /* FOOT */
@@ -280,6 +280,7 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
   .sect{break-inside:avoid}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -296,8 +297,8 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 체형 · 나이 · 칼로리</div>
-    <h1>지금 우리 아이,<br><span>적정 체형일까요?</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 체형 · 나이 · 칼로리</div>
+    <h1>우리 아이 몸무게,<br><span>지금 딱 좋을까요?</span></h1>
     <p class="hero-desc">갈비뼈·허리선·복부선 세 가지만 확인하면 체형(BCS)을 알 수 있습니다.<br>사람 나이 환산과 목표 체중, 하루 권장 칼로리까지 한 번에 계산해 드립니다.</p>
   </div>
 </div>
@@ -603,9 +604,9 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
     </div>
 
     <div class="hours">
-      <div class="hrow"><span class="hd">월 · 화 · 목 · 토 · 일</span><span class="ht">10:00 – 20:00</span></div>
-      <div class="hrow"><span class="hd">금요일</span><span class="ht">10:00 – 16:00</span></div>
-      <div class="hrow closed"><span class="hd">수요일</span><span class="ht">정기휴무</span></div>
+      <div class="hrow"><span class="hd">매일 (월–일)</span><span class="ht">09:00 – 21:00</span></div>
+      <div class="hrow"><span class="hd">점심시간</span><span class="ht">13:00 – 14:00</span></div>
+      <div class="hrow"><span class="hd">저녁시간</span><span class="ht">18:00 – 19:00</span></div>
     </div>
 
     <div class="acts">
@@ -626,7 +627,7 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
     <p class="foot-disc">
       <strong>시원동물의료센터</strong> · SIWON Animal Medical Center<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

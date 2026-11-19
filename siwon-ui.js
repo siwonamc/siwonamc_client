@@ -2,7 +2,7 @@
    1) 상단 실시간 진료 상태 배지 (Asia/Seoul, UTC+9 기준)
    2) 모바일 하단 고정 액션바 (전화 · 카톡 상담 · 오시는 길)
    - 진료시간은 faq.html / index.html의 실제 진료시간과 동일하게 유지할 것
-     월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무 / 점심 13:00–14:00
+     매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00 / 점심 13:00–14:00
 */
 (function () {
   'use strict';
@@ -16,17 +16,20 @@
   })();
   var VISIT = (page === 'visit.html') ? '#way' : 'visit.html';
 
-  /* 0=일 1=월 2=화 3=수 4=목 5=금 6=토  (3=수요일 정기휴무) */
+  /* 0=일 1=월 2=화 3=수 4=목 5=금 6=토  (매일 진료) */
   var SCHEDULE = {
-    0: ['10:00', '20:00'],
-    1: ['10:00', '20:00'],
-    2: ['10:00', '20:00'],
-    4: ['10:00', '20:00'],
-    5: ['10:00', '16:00'],
-    6: ['10:00', '20:00']
+    0: ['09:00', '21:00'],
+    1: ['09:00', '21:00'],
+    2: ['09:00', '21:00'],
+    3: ['09:00', '21:00'],
+    4: ['09:00', '21:00'],
+    5: ['09:00', '21:00'],
+    6: ['09:00', '21:00']
   };
   var LUNCH_START = 13 * 60;
   var LUNCH_END = 14 * 60;
+  var DINNER_START = 18 * 60;
+  var DINNER_END = 19 * 60;
   var DAY_KO = ['일', '월', '화', '수', '목', '금', '토'];
 
   function toMin(hhmm) {
@@ -70,7 +73,7 @@
       n = nextOpen(now.dow);
       return {
         state: 'closed',
-        main: '수요일 정기휴무',
+        main: '휴진',
         sub: '다음 진료 ' + gapLabel(n.gap, n.dow) + ' ' + SCHEDULE[n.dow][0] + ' 시작'
       };
     }
@@ -83,6 +86,9 @@
     }
     if (t >= LUNCH_START && t < LUNCH_END) {
       return { state: 'break', main: '점심시간', sub: '14:00 진료 재개' };
+    }
+    if (t >= DINNER_START && t < DINNER_END) {
+      return { state: 'break', main: '저녁시간', sub: '19:00 진료 재개' };
     }
     if (t < close) {
       return { state: 'open', main: '지금 진료 중', sub: '오늘 ' + openText(now.dow) };
@@ -102,25 +108,25 @@
   }
 
   var CSS = [
-    '.wc-status{background:#eef4fb;border-bottom:1px solid #dbe5f0;color:#2c4a6b;font-family:\'Noto Sans KR\',sans-serif;-webkit-font-smoothing:antialiased}',
+    '.wc-status{background:#eef6f3;border-bottom:1px solid #d9e8e3;color:#2b4f49;font-family:\'Pretendard\',sans-serif;-webkit-font-smoothing:antialiased}',
     '.wc-status-in{max-width:var(--max,860px);margin:0 auto;padding:.4rem 1.35rem;display:flex;align-items:center;gap:.5rem;line-height:1.5;word-break:keep-all}',
     '.wc-status-main{font-size:12px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}',
     '.wc-status[data-state="open"] .wc-status-main{color:#156f3d}',
     '.wc-status[data-state="break"] .wc-status-main{color:#8a6100}',
-    '.wc-status[data-state="soon"] .wc-status-main,.wc-status[data-state="closed"] .wc-status-main{color:#5d6f82}',
-    '.wc-status-sub{font-size:11px;color:#7b8ea3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
-    '.wc-status-link{margin-left:auto;font-size:11px;font-weight:500;color:#2d6cc0;text-decoration:none;white-space:nowrap}',
+    '.wc-status[data-state="soon"] .wc-status-main,.wc-status[data-state="closed"] .wc-status-main{color:#5b6e6a}',
+    '.wc-status-sub{font-size:11px;color:#7d8f8b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
+    '.wc-status-link{margin-left:auto;font-size:11px;font-weight:500;color:#c4572f;text-decoration:none;white-space:nowrap}',
     '.wc-status-link:hover{text-decoration:underline}',
     '.wc-bar{display:none}',
     '.wc-spacer{display:none}',
     '@media(max-width:820px){',
-    '.wc-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:400;background:rgba(255,255,255,.97);border-top:1px solid #d7e2ef;box-shadow:0 -6px 20px -12px rgba(16,51,94,.45);padding-bottom:env(safe-area-inset-bottom,0px);font-family:\'Noto Sans KR\',sans-serif}',
-    '.wc-bar-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:58px;padding:.45rem .15rem;text-decoration:none;color:#10335E;font-size:11.5px;font-weight:700;line-height:1.25;border-right:1px solid #eaf0f7;-webkit-tap-highlight-color:transparent}',
+    '.wc-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:400;background:rgba(255,255,255,.97);border-top:1px solid #dfe8e4;box-shadow:0 -6px 20px -12px rgba(14,79,74,.45);padding-bottom:env(safe-area-inset-bottom,0px);font-family:\'Pretendard\',sans-serif}',
+    '.wc-bar-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:58px;padding:.45rem .15rem;text-decoration:none;color:#0e4f4a;font-size:11.5px;font-weight:700;line-height:1.25;border-right:1px solid #eaf0f7;-webkit-tap-highlight-color:transparent}',
     '.wc-bar-btn:last-child{border-right:0}',
-    '.wc-bar-btn:active{background:#f2f6fb}',
+    '.wc-bar-btn:active{background:#f3f8f6}',
     '.wc-bar-btn.kako{background:#fffbdd}',
     '.wc-bar-ico{font-size:17px;line-height:1}',
-    '.wc-bar-num{font-size:9.5px;font-weight:500;color:#7b8ea3;letter-spacing:.02em}',
+    '.wc-bar-num{font-size:9.5px;font-weight:500;color:#7d8f8b;letter-spacing:.02em}',
     '.wc-spacer{display:block;height:calc(62px + env(safe-area-inset-bottom,0px))}',
     'body.wc-has-bar .actionbar{bottom:calc(62px + env(safe-area-inset-bottom,0px))}',
     'body.wc-has-bar .toast{bottom:calc(78px + env(safe-area-inset-bottom,0px))}',

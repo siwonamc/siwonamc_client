@@ -17,20 +17,20 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
   --ok-bg:#f0f8f0;--ok-border:#aad8aa;--ok-text:#1a5a1a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
@@ -53,7 +53,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:760px;margin:0 auto}
 .hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:2rem}
 
 .sel-bar{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,.1);padding:1.25rem 1.5rem}
@@ -72,7 +72,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 .callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:13px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
-.callout.info{background:var(--accent-light);color:#1a3a6a;border:1px solid #b0ccee}
+.callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
 .callout.danger{background:var(--danger-bg);color:var(--danger-text);border:1px solid var(--danger-border)}
 .callout.neutral{background:var(--navy-xlight);color:var(--text-mid);border:1px solid var(--border)}
@@ -91,20 +91,20 @@ ul.gl strong{color:var(--text);font-weight:600}
 .cup-label{font-size:11px;color:rgba(255,255,255,.5);letter-spacing:.06em}
 .cup{width:80px;height:120px;border:2px solid rgba(255,255,255,.3);border-top:none;border-radius:0 0 12px 12px;position:relative;overflow:hidden;background:rgba(255,255,255,.05)}
 .cup-fill{position:absolute;bottom:0;left:0;right:0;border-radius:0 0 10px 10px;transition:height .3s}
-.cup-fill.low{height:35%;background:linear-gradient(to top,#2d6cc0,#4a90d9)}
+.cup-fill.low{height:35%;background:linear-gradient(to top,#c4572f,#5cc7b9)}
 .cup-fill.mid{height:65%;background:linear-gradient(to top,#e8a020,#f0c040)}
 .cup-fill.over{height:100%;background:linear-gradient(to top,#c0392b,#e74c3c)}
 .cup-overflow{position:absolute;top:-8px;left:-4px;right:-4px;height:8px;background:#e74c3c;border-radius:4px;display:none}
 .cup-fill.over ~ .cup-overflow{display:block}
 .cup-items{display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center;max-width:200px}
 .cup-item{font-size:11px;padding:3px 8px;border-radius:999px;font-weight:500}
-.cup-item.food{background:rgba(52,152,219,.25);color:#7eb8f7;border:1px solid rgba(52,152,219,.4)}
+.cup-item.food{background:rgba(73,198,181,.25);color:#f4b08f;border:1px solid rgba(73,198,181,.4)}
 .cup-item.env{background:rgba(46,204,113,.2);color:#7ed8a0;border:1px solid rgba(46,204,113,.35)}
 .cup-item.stress{background:rgba(231,76,60,.2);color:#f0a090;border:1px solid rgba(231,76,60,.35)}
 .cup-item.infect{background:rgba(230,126,34,.2);color:#f0c080;border:1px solid rgba(230,126,34,.35)}
 .cup-arrow{font-size:24px;color:rgba(255,255,255,.3);margin-bottom:40px}
 .cup-desc{font-size:12px;color:rgba(255,255,255,.55);line-height:1.75;text-align:center;margin-top:.5rem}
-.cup-desc strong{color:#7eb8f7}
+.cup-desc strong{color:#f4b08f}
 
 /* ALLERGY TYPE CARDS */
 .atype-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin-bottom:1rem}
@@ -125,7 +125,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 .cb-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:.3rem}
 .cb-title small{display:block;font-size:11px;font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.06em;margin-top:2px;margin-bottom:1rem}
 .cb-period{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.08);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.25rem}
-.cb-period-num{font-size:42px;font-weight:700;color:#7eb8f7;line-height:1}
+.cb-period-num{font-size:42px;font-weight:700;color:#f4b08f;line-height:1}
 .cb-period-text{font-size:13px;color:rgba(255,255,255,.7);line-height:1.5}
 .cb-period-text strong{color:#fff;display:block}
 .feed-examples{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1.25rem}
@@ -190,6 +190,7 @@ ul.gl strong{color:var(--text);font-weight:600}
   .cup{width:60px;height:90px}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -206,8 +207,8 @@ ul.gl strong{color:var(--text);font-weight:600}
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 피부 질환 보호자 안내</div>
-    <h1>아토피·알레르기,<br><span>원인부터 제대로 알아봐요</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 피부 질환 보호자 안내</div>
+    <h1>긁고 핥는 아이,<br><span>원인을 하나씩 줄여가요</span></h1>
     <p class="hero-desc">알레르기는 단 하나의 원인이 아닌, 여러 자극이 쌓여 나타납니다.<br>원인을 이해하고 관리하면 증상을 훨씬 줄일 수 있어요.</p>
   </div>
 </div>
@@ -485,7 +486,7 @@ ul.gl strong{color:var(--text);font-weight:600}
       이 자료는 일반적인 보호자 교육을 위해 제작된 안내문으로, 개별 환자의 진단과 치료를 대신하지 않습니다.<br>
       푸드 챌린지 사료 선택 및 약물 조절은 반드시 <strong>담당 수의사와 상의</strong> 후 진행해 주세요.<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

@@ -1,0 +1,23 @@
+/* 시원동물의료센터 테마 — 모든 페이지 공통 덮어쓰기 */
+:root{--siwon:#0e4f4a;--siwon-deep:#08332f;--siwon-peach:#f4b08f;--siwon-coral:#c4572f;--siwon-cream:#faf7f2;--siwon-line:#e9e4da}
+body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif!important;letter-spacing:-.012em}
+/* 상단바: 흰 바탕 + 진녹색 글씨 */
+.topbar{background:#fff!important;border-bottom:1px solid var(--siwon-line)!important;box-shadow:0 2px 14px -10px rgba(8,51,47,.35)}
+.topbar .logo-text{color:var(--siwon)!important;font-weight:700}
+.topbar .logo-text small{color:#7d8f8b;opacity:1}
+.topbar .logo-mark{box-shadow:none;background:transparent;padding:0;border-radius:10px}
+.topbar .tbtn{border-radius:999px!important}
+.topbar .tbtn.call{background:#eef6f3!important;color:var(--siwon)!important;border:1px solid #cfe3dd!important}
+.topbar .tbtn.call:hover{background:#e0efea!important}
+.topbar .tbtn.back{background:transparent!important;color:#5b6e6a!important;border:1px solid var(--siwon-line)!important}
+/* 상단 히어로: 아래쪽을 둥글게 */
+.hero:has(.hero-grid){border-radius:0 0 36px 36px}
+.hero h1{font-family:'Pretendard',sans-serif!important;font-weight:800!important;letter-spacing:-.03em!important}
+/* 제목 */
+.sec-title,h2{font-family:'Pretendard',sans-serif!important;font-weight:800;letter-spacing:-.03em}
+.kicker{color:var(--siwon-coral)!important}
+/* 버튼 */
+.pill{border-radius:999px!important}
+.pill-primary{background:var(--siwon-peach)!important;color:var(--siwon-deep)!important;border-color:var(--siwon-peach)!important}
+/* 카드 모서리 조금 더 둥글게 */
+.doc-card,.hours,.qcard,.gcard,.tool,.note,.card{border-radius:22px!important}

@@ -18,20 +18,20 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --red:#b3261e;--red-bg:#fdf0ef;--red-border:#f0c8c4;
   --amber:#8a5300;--amber-bg:#fff8ea;--amber-border:#f0dcae;
   --green:#166534;--green-bg:#eefaf3;--green-border:#bfe3ce;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh}
 
 /* TOPBAR */
 .topbar{background:var(--navy);padding:0 1.25rem;position:sticky;top:0;z-index:200}
@@ -144,7 +144,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .faq-search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--text-muted)}
 .cats{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:1rem}
 .cat{font-family:inherit;font-size:11.5px;font-weight:600;color:var(--text-mid);background:#fff;border:1.5px solid var(--border);border-radius:999px;padding:6px 13px;cursor:pointer;transition:.15s;line-height:1.4}
-.cat:hover{border-color:#b0ccee}
+.cat:hover{border-color:#a8d8cf}
 .cat.active{background:var(--navy);border-color:var(--navy);color:#fff}
 .faq-count{font-size:11.5px;color:var(--text-muted);margin-bottom:.6rem}
 .faq-item{background:#fff;border:1px solid var(--border);border-radius:11px;margin-bottom:.55rem;overflow:hidden}
@@ -183,6 +183,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
   .topbar-inner{height:56px}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -199,8 +200,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 응급 트리아지 & FAQ</div>
-    <h1>지금 병원에 가야 할까?<br><span>헷갈릴 때 보는 기준</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 응급 트리아지 & FAQ</div>
+    <h1>바로 가야 할까, 지켜봐도 될까?<br><span>증상별 판단 기준</span></h1>
     <p class="hero-desc">증상의 급한 정도를 색으로 나눠 정리했습니다.<br>판단이 어려우면 망설이지 말고 먼저 전화 주세요.</p>
   </div>
 </div>
@@ -228,11 +229,9 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
   <!-- 진료시간 -->
   <div class="hours">
     <div class="hours-t">🕐 진료시간</div>
-    <div class="hours-row"><span>월·화·목·토·일</span><b>10:00 – 20:00</b></div>
-    <div class="hours-row"><span>금요일</span><b>10:00 – 16:00</b></div>
-    <div class="hours-row"><span>수요일</span><span class="closed">정기휴무</span></div>
+    <div class="hours-row"><span>매일 (월–일)</span><b>09:00 – 21:00</b></div>
     <div class="hours-row"><span>점심시간</span><b>13:00 – 14:00</b></div>
-    <div class="hours-row"><span>접수 마감</span><b>평일·주말 19:40 / 금 15:40</b></div>
+    <div class="hours-row"><span>저녁시간</span><b>18:00 – 19:00</b></div>
     <div class="hours-row"><span>공휴일 · 토·일요일</span><b>정상 진료</b></div>
   </div>
 
@@ -440,7 +439,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
   <div class="foot-inner">
     <p class="foot-disc">
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무<br>
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00<br>
       시원동물의료센터는 대학병원급 진단 프로토콜로 심장·신장·내분비·중증 내과 케이스를 진료합니다.
     </p>
     <div class="foot-btns">
@@ -589,8 +588,8 @@ var FAQ = [
     a:'개 <strong>38.0~39.0℃</strong>, 고양이 <strong>38.0~39.2℃</strong>가 정상입니다. 39.5℃ 이상이거나 37.5℃ 이하이면 내원이 필요합니다. 집에서 재는 체온계(직장)는 1~2cm만 넣고 부드럽게, 겁을 먹는 아이는 억지로 재지 말고 병원에서 확인하세요.',
     k:'체온 정상 범위 발열 저체온 측정' },
   { c:'emg', q:'진료시간은 어떻게 되나요? 응급 상황이면 어떻게 하나요?',
-    a:'진료시간은 <strong>월·화·목·토·일 10:00–20:00(접수마감 19:40), 금요일 10:00–16:00(접수마감 15:40)</strong>이고 <strong>매주 수요일은 정기휴무</strong>입니다. 공휴일과 토·일요일은 정상 진료합니다. 호흡 곤란·소변 불통·경련·실신·대량 출혈·중독은 <strong>이동 전에 먼저 전화</strong> 주세요. 이동 중에는 이동장에 고정하고 목줄을 당기지 마세요.',
-    k:'응급실 공휴일 전화 진료시간 수요일' },
+    a:'진료시간은 <strong>매일 09:00–21:00</strong>이고, <strong>점심 13:00–14:00</strong>과 <strong>저녁 18:00–19:00</strong>에는 잠시 쉬어갑니다. 호흡 곤란·소변 불통·경련·실신·대량 출혈·중독은 <strong>이동 전에 먼저 전화</strong> 주세요. 이동 중에는 이동장에 고정하고 목줄을 당기지 마세요.',
+    k:'응급실 공휴일 전화 진료시간 점심 저녁' },
 
   { c:'heart', q:'안정 시 호흡수는 어떻게 재나요?',
     a:'아이가 <strong>잠들었거나 완전히 쉬고 있을 때</strong>, 가슴이 한 번 오르내리는 것을 1회로 셉니다. 30초 동안 세고 ×2 하면 분당 호흡수입니다. 정상은 <strong>30회/분 미만</strong>이며, 30~40회는 다시 측정, <strong>40회 이상</strong>이면 바로 연락 주세요. 하루 중 같은 시간에 재서 기록하면 변화를 빨리 알 수 있습니다.',

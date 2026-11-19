@@ -17,19 +17,19 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="og-image.png">
 <meta name="description" content="시원동물의료센터 진료비용 게시 — 진찰료·접종·검사비용과 체중별 입원비·기생충 예방약·건강검진·중성화 비용 (수의사법 제13조의2)">
-<meta name="theme-color" content="#10335E">
+<meta name="theme-color" content="#0e4f4a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;word-break:keep-all}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
@@ -104,7 +104,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .calc-input:focus{border-color:var(--navy)}
 .calc-unit{font-size:13px;color:var(--text-mid)}
 .calc-badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:600;white-space:nowrap}
-.calc-badge.base{background:#e8f4ff;color:#1a4a8a;border:1px solid #aaccee}
+.calc-badge.base{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
 .calc-badge.over{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
 .calc-sheet{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white)}
 @media(min-width:760px){
@@ -119,9 +119,9 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 /* COLLAPSIBLE FULL TABLE */
 .fold{margin-top:1.5rem}
-.fold summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:.95rem 1.2rem;font-size:13px;font-weight:600;color:var(--navy);box-shadow:0 1px 2px rgba(16,51,94,.04);transition:background .15s,border-color .15s}
+.fold summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:.95rem 1.2rem;font-size:13px;font-weight:600;color:var(--navy);box-shadow:0 1px 2px rgba(14,79,74,.04);transition:background .15s,border-color .15s}
 .fold summary::-webkit-details-marker{display:none}
-.fold summary:hover{background:var(--navy-xlight);border-color:#b7d0ee}
+.fold summary:hover{background:var(--navy-xlight);border-color:#a8d8cf}
 .fold summary .chev{font-size:10px;color:var(--accent);transition:transform .2s}
 .fold[open] summary{border-radius:12px 12px 0 0;border-color:var(--border);background:var(--navy-xlight)}
 .fold[open] summary .chev{transform:rotate(180deg)}
@@ -143,6 +143,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
   .tbtn.back{padding:6px 9px;font-size:10.5px}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -159,8 +160,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 진료비용 안내</div>
-    <h1>진찰 및 검사, 진료비용 게시</h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 진료비용 안내</div>
+    <h1>시원동물의료센터 진료비 안내</h1>
     <p class="hero-desc">수의사법 제13조의2에 따라 주요 진료항목의 비용을 게시합니다.<br>표시된 금액은 부가세 포함 기준이며, 동물의 상태에 따라 달라질 수 있습니다.</p>
   </div>
 </div>
@@ -369,7 +370,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
       표시된 금액은 <strong>부가세 포함 기준</strong>이며, 동물의 체중·상태·진행 항목에 따라 실제 비용은 달라질 수 있습니다.<br>
       자세한 비용은 내원 후 진료 전 안내드립니다.<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

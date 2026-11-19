@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#10335E">
+<meta name="theme-color" content="#0e4f4a">
 <meta name="description" content="시원동물의료센터 심장·신장 아이 하루 음수량·사료량 계산기. 체중과 질환(MMVD·HCM, IRIS 신부전, 결석)에 맞춘 하루 목표 음수량(ml)과 건사료·습식 혼합 급여량(g·캔·계량컵)을 계산하고, 습식 사료로 채워지는 수분까지 반영합니다.">
 <title>심장·신장 아이 하루 음수량·사료량 계산기 · 시원동물의료센터</title>
 <link rel="icon" type="image/png" href="favicon.png">
@@ -20,20 +20,20 @@
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --red:#b3261e;--red-bg:#fdf0ef;--red-border:#f0c8c4;
   --amber:#9a6207;--amber-bg:#fff8e6;--amber-border:#f0dcae;
   --green:#166534;--green-bg:#eefaf3;--green-border:#c6e9d5;
   --max:760px;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;word-break:keep-all;-webkit-font-smoothing:antialiased}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;word-break:keep-all;-webkit-font-smoothing:antialiased}
 
 /* TOPBAR */
 .topbar{background:var(--navy);padding:0 1.25rem;position:sticky;top:0;z-index:200}
@@ -56,7 +56,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:var(--max);margin:0 auto;text-align:center}
 .hero-eyebrow{font-size:10.5px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.7rem}
 .hero h1{font-size:21px;font-weight:700;color:#fff;line-height:1.45;margin-bottom:.6rem}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:12.5px;color:rgba(255,255,255,.58);line-height:1.8}
 
 /* SPECIES BAR */
@@ -96,7 +96,7 @@ input[type=text],input[type=number],input[type=date],select,textarea{
   -webkit-appearance:none;appearance:none;
 }
 input:focus,select:focus,textarea:focus{border-color:var(--accent);background:#fff}
-input::placeholder{color:#a9b7c5;font-size:13.5px}
+input::placeholder{color:#a8b3b0;font-size:13.5px}
 select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 50%),linear-gradient(135deg,var(--text-muted) 50%,transparent 50%);background-position:calc(100% - 18px) 21px,calc(100% - 13px) 21px;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:34px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
 .unit-wrap{position:relative}
@@ -118,10 +118,10 @@ select{background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 
 /* DISEASE CARDS */
 .dz{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
 .dzc{display:flex;flex-direction:column;gap:1px;text-align:left;font-family:inherit;border:1.5px solid var(--border);border-radius:10px;background:#fff;padding:.6rem .7rem;cursor:pointer;transition:all .15s;width:100%}
-.dzc:hover{border-color:#b7d0ee}
+.dzc:hover{border-color:#a8d8cf}
 .dzc .dzc-n{font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.5}
 .dzc .dzc-d{font-size:10.5px;color:var(--text-muted);line-height:1.55}
-.dzc.sel{border-color:var(--accent);background:#f6faff;box-shadow:0 0 0 2px rgba(45,108,192,.12)}
+.dzc.sel{border-color:var(--accent);background:#fbfaf6;box-shadow:0 0 0 2px rgba(196,87,47,.12)}
 .dzc.sel .dzc-d{color:var(--accent)}
 @media(max-width:400px){.dz{grid-template-columns:1fr}}
 
@@ -139,10 +139,10 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 
 /* RESULT */
 #resEmpty{display:flex;gap:.6rem;align-items:center;background:var(--navy-xlight);border:1px dashed var(--border);border-radius:12px;padding:1rem .95rem;font-size:12px;color:var(--text-muted);line-height:1.7}
-.stage{background:linear-gradient(165deg,#123A6B 0%,var(--navy) 60%,#0b2242 100%);border-radius:14px;padding:1.1rem 1.15rem;color:#fff;margin-bottom:.8rem}
+.stage{background:linear-gradient(165deg,#136159 0%,var(--navy) 60%,#08332f 100%);border-radius:14px;padding:1.1rem 1.15rem;color:#fff;margin-bottom:.8rem}
 .stage-k{font-size:10px;font-weight:600;letter-spacing:.14em;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:.2rem}
 .stage-n{font-size:26px;font-weight:700;line-height:1.28;letter-spacing:-.02em}
-.stage-n em{font-style:normal;color:#8ec2f8}
+.stage-n em{font-style:normal;color:#f4b08f}
 .stage-n small{font-size:14px;font-weight:600;color:rgba(255,255,255,.75);margin-left:2px}
 .stage-meta{font-size:11.5px;color:rgba(255,255,255,.55);line-height:1.7;margin-top:.3rem}
 .stage-wait{font-size:12.5px;color:rgba(255,255,255,.78);line-height:1.7;margin-top:.45rem;padding-top:.5rem;border-top:1px solid rgba(255,255,255,.12)}
@@ -159,12 +159,12 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 .rc-date small{font-size:12.5px;font-weight:600;color:var(--text-muted);margin-left:2px;letter-spacing:0}
 .rc-note{font-size:11px;color:var(--text-muted);line-height:1.65;margin-top:.35rem}
 .rc-note b{color:var(--text-mid);font-weight:600}
-.rc-note a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(45,108,192,.3)}
+.rc-note a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(196,87,47,.3)}
 .badge{display:inline-flex;align-items:center;gap:3px;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:5px;line-height:1.7;white-space:nowrap;margin-left:auto;flex-shrink:0}
 .badge.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
 .badge.warn{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-border)}
 .badge.bad{background:var(--red-bg);color:var(--red);border:1px solid var(--red-border)}
-.badge.blue{background:var(--accent-light);color:var(--accent);border:1px solid #c5dbf3}
+.badge.blue{background:var(--accent-light);color:var(--accent);border:1px solid #cbede9}
 
 /* PLAN ROWS */
 .plan{display:grid;gap:.3rem;margin-top:.15rem}
@@ -177,14 +177,14 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 
 /* WATER GAUGE */
 .gauge{margin-top:.2rem}
-.gbar{display:flex;height:14px;border-radius:999px;overflow:hidden;background:#e3ebf5;border:1px solid #dbe5f0}
+.gbar{display:flex;height:14px;border-radius:999px;overflow:hidden;background:#e3ebf5;border:1px solid #d9e8e3}
 .gbar span{display:block;height:100%;transition:width .2s}
-.gbar .g-food{background:#9cc6f2}
+.gbar .g-food{background:#a7e7df}
 .gbar .g-drink{background:var(--accent)}
 .gbar .g-rest{background:#e9eff7}
 .glegend{display:flex;flex-wrap:wrap;gap:.35rem .9rem;font-size:10.5px;color:var(--text-muted);margin-top:5px}
 .glegend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px;vertical-align:middle}
-.glegend i.food{background:#9cc6f2}
+.glegend i.food{background:#a7e7df}
 .glegend i.drink{background:var(--accent)}
 .glegend b{color:var(--text-mid);font-weight:600}
 
@@ -196,7 +196,7 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 .flag.ok{background:var(--green-bg);border-color:var(--green-border);color:#155e3a}
 .flag.info{background:var(--navy-xlight);border-color:var(--border);color:var(--text-mid)}
 .flag b{font-weight:700}
-.flag a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(45,108,192,.3)}
+.flag a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(196,87,47,.3)}
 
 /* EMERG */
 .egrid{display:grid;gap:.45rem}
@@ -214,7 +214,7 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 .tb tr:last-child td{border-bottom:none}
 .tb td:first-child{font-weight:600;color:var(--text);white-space:nowrap}
 .tb td b{color:var(--navy);font-weight:600}
-.tb tr.hi td{background:#f6faff}
+.tb tr.hi td{background:#fbfaf6}
 
 /* LIST */
 .ulst{list-style:none;margin:.1rem 0 0}
@@ -227,7 +227,7 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 .lnks{display:grid;gap:.4rem;margin-top:.7rem}
 @media(min-width:560px){.lnks{grid-template-columns:1fr 1fr}}
 .lnk{display:flex;align-items:flex-start;gap:.5rem;background:#fff;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:9px;padding:.55rem .7rem;text-decoration:none;transition:all .15s}
-.lnk:hover{border-color:#b7d0ee;border-left-color:var(--accent);background:#f9fcff}
+.lnk:hover{border-color:#a8d8cf;border-left-color:var(--accent);background:#f9fcff}
 .lnk .lk-e{font-size:15px;line-height:1.4;flex-shrink:0}
 .lnk .lk-n{display:block;font-size:12px;font-weight:700;color:var(--navy);line-height:1.5}
 .lnk .lk-d{display:block;font-size:10.5px;color:var(--text-muted);line-height:1.6;margin-top:1px}
@@ -255,7 +255,7 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 /* TOAST */
 .toast{position:fixed;left:50%;bottom:1.6rem;transform:translate(-50%,14px);z-index:500;
   background:var(--navy-dark);color:#fff;font-size:12.5px;font-weight:500;padding:11px 18px;border-radius:999px;
-  box-shadow:0 8px 28px rgba(10,34,64,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
+  box-shadow:0 8px 28px rgba(8,51,47,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 
 /* FOOT */
@@ -285,6 +285,7 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
   .sect{break-inside:avoid}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -301,8 +302,8 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 심장 · 신장 · 수분</div>
-    <h1>심장·신장 아이,<br><span>하루에 물 얼마나 마셔야 할까요?</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 심장 · 신장 · 수분</div>
+    <h1>하루 물과 사료,<br><span>얼마나 주면 될까요?</span></h1>
     <p class="hero-desc">체중과 질환, 먹이는 사료의 열량·수분만 넣으면<br>하루 목표 음수량과 건사료·습식 급여량을 함께 계산해 드립니다.</p>
   </div>
 </div>
@@ -604,11 +605,11 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
     </div>
 
     <div class="hours" style="margin-top:.9rem">
-      <div class="hrow"><span class="hd">월 · 화 · 목 · 토 · 일</span><span class="ht">10:00 – 20:00</span></div>
-      <div class="hrow"><span class="hd">금요일</span><span class="ht">10:00 – 16:00</span></div>
-      <div class="hrow closed"><span class="hd">수요일</span><span class="ht">정기휴무</span></div>
+      <div class="hrow"><span class="hd">매일 (월–일)</span><span class="ht">09:00 – 21:00</span></div>
+      <div class="hrow"><span class="hd">점심시간</span><span class="ht">13:00 – 14:00</span></div>
+      <div class="hrow"><span class="hd">저녁시간</span><span class="ht">18:00 – 19:00</span></div>
     </div>
-    <p class="hint" style="margin-top:.45rem">접수 마감 · 평일·주말 19:40 / 금요일 15:40 · 점심 13:00–14:00</p>
+    <p class="hint" style="margin-top:.45rem">점심 13:00–14:00 · 저녁 18:00–19:00에는 잠시 쉬어갑니다</p>
 
     <div class="acts">
       <a class="btn kako" href="#kakao">💬 카카오톡 상담</a>
@@ -634,7 +635,7 @@ input[type=range]{width:100%;height:26px;accent-color:var(--accent);background:t
     <p class="foot-disc">
       <strong>시원동물의료센터</strong> · SIWON Animal Medical Center<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

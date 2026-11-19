@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#10335E">
+<meta name="theme-color" content="#0e4f4a">
 <meta name="description" content="시원동물의료센터 만성질환 홈 케어 기록지 · 안정 시 호흡수(SRR)·음수량·식욕·구토·체중·투약을 매일 기록하고 진료실에서 그대로 보여주세요.">
 <title>만성질환 홈 케어 기록지 · 시원동물의료센터</title>
 <link rel="icon" type="image/png" href="favicon.png">
@@ -20,20 +20,20 @@
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --red:#b3261e;--red-bg:#fdf0ef;--red-border:#f0c8c4;
   --amber:#9a6207;--amber-bg:#fff8e6;--amber-border:#f0dcae;
   --green:#166534;--green-bg:#eefaf3;--green-border:#c6e9d5;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;scroll-padding-bottom:180px}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;padding-bottom:calc(150px + env(safe-area-inset-bottom))}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;padding-bottom:calc(150px + env(safe-area-inset-bottom))}
 
 /* TOPBAR */
 .topbar{background:var(--navy);padding:0 1.25rem;position:sticky;top:0;z-index:200}
@@ -56,7 +56,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:680px;margin:0 auto;text-align:center}
 .hero-eyebrow{font-size:10.5px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.7rem}
 .hero h1{font-size:21px;font-weight:700;color:#fff;line-height:1.45;margin-bottom:.6rem}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:12.5px;color:rgba(255,255,255,.58);line-height:1.8}
 
 /* WRAP */
@@ -80,7 +80,7 @@ input[type=text],input[type=number],input[type=datetime-local],select,textarea{
   padding:10px 12px;outline:none;transition:border-color .15s,background .15s;line-height:1.5;
 }
 input:focus,select:focus,textarea:focus{border-color:var(--accent);background:#fff}
-input::placeholder,textarea::placeholder{color:#a9b7c5;font-size:13.5px}
+input::placeholder,textarea::placeholder{color:#a8b3b0;font-size:13.5px}
 textarea{resize:vertical;min-height:62px}
 select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%238a9aaa' d='M6 8 0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
@@ -152,7 +152,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
 .cbar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;position:relative}
 .cbar-v{font-size:9.5px;font-weight:600;color:var(--text-mid);margin-bottom:2px;line-height:1}
 .cbar-in{width:100%;max-width:34px;border-radius:4px 4px 0 0;background:var(--accent);min-height:3px;transition:height .3s}
-.cbar-in.ok{background:#6f9fd8}
+.cbar-in.ok{background:#7ccbc0}
 .cbar-in.warn{background:#e0a323}
 .cbar-in.bad{background:#c94236}
 .cbar-in.none{background:#e3eaf3;min-height:3px}
@@ -199,7 +199,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
 .flag li{margin-bottom:1px}
 
 /* ACTION BAR */
-.actionbar{position:fixed;left:0;right:0;bottom:0;z-index:300;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(16,51,94,.08)}
+.actionbar{position:fixed;left:0;right:0;bottom:0;z-index:300;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(14,79,74,.08)}
 .actionbar-inner{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:.5rem}
 .actions{display:flex;gap:.5rem}
 .btn{flex:1;font-family:inherit;font-size:14px;font-weight:600;border-radius:10px;padding:13px 10px;border:1.5px solid transparent;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;line-height:1.3}
@@ -212,7 +212,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
 /* TOAST */
 .toast{position:fixed;left:50%;bottom:calc(150px + env(safe-area-inset-bottom));transform:translate(-50%,14px);z-index:500;
   background:var(--navy-dark);color:#fff;font-size:13px;font-weight:500;padding:11px 18px;border-radius:999px;
-  box-shadow:0 8px 28px rgba(10,34,64,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
+  box-shadow:0 8px 28px rgba(8,51,47,.3);opacity:0;pointer-events:none;transition:all .25s;max-width:88vw;text-align:center;line-height:1.5}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .toast.warn{background:var(--red)}
 
@@ -240,6 +240,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
   body{padding-bottom:0}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -256,8 +257,8 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 만성질환 홈 케어</div>
-    <h1>집에서 매일 숫자로 남기면,<br><span>진료가 훨씬 정확해집니다</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 만성질환 홈 케어</div>
+    <h1>하루 1분 기록이<br><span>다음 진료를 바꿉니다</span></h1>
     <p class="hero-desc">심장병 · 신부전 · 아토피 · 만성장병증 아이의 하루를<br>1분 안에 기록하고, 내원할 때 요약본을 그대로 보여주세요.</p>
   </div>
 </div>
@@ -485,7 +486,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
     <div class="chart" id="srrChart"></div>
     <div class="chart-days" id="srrDays"></div>
     <div class="clegend">
-      <span><i style="background:#6f9fd8"></i>정상 &lt;30</span>
+      <span><i style="background:#7ccbc0"></i>정상 &lt;30</span>
       <span><i style="background:#e0a323"></i>주의 30~39</span>
       <span><i style="background:#c94236"></i>위험 ≥40</span>
       <span><i style="background:#e3eaf3"></i>기록 없음</span>
@@ -521,7 +522,7 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
     <p class="foot-disc">
       문의사항이 있으시면 언제든지 연락 주세요.<br>
       이 기록지는 보호자 관찰을 정리하는 도구이며, 진단이나 약물 조절을 대신하지 않습니다.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>
@@ -1147,7 +1148,7 @@ function legacyCopy(text, onDone){
   else {
     var w = window.open('', '_blank');
     if (w){
-      w.document.write('<meta name="viewport" content="width=device-width,initial-scale=1"><pre style="white-space:pre-wrap;font-family:-apple-system,\'Noto Sans KR\',sans-serif;font-size:14px;padding:18px;line-height:1.75">' +
+      w.document.write('<meta name="viewport" content="width=device-width,initial-scale=1"><pre style="white-space:pre-wrap;font-family:-apple-system,\'Pretendard\',sans-serif;font-size:14px;padding:18px;line-height:1.75">' +
         escapeHtml(text) + '</pre>');
       w.document.title = '홈 케어 요약';
     }

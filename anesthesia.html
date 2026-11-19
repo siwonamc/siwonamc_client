@@ -17,20 +17,20 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
   --ok-bg:#f0f8f0;--ok-border:#aad8aa;--ok-text:#1a5a1a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
@@ -53,7 +53,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:760px;margin:0 auto}
 .hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75}
 
 .main{max-width:760px;margin:0 auto;padding:2rem 1.5rem 3rem}
@@ -69,7 +69,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 .callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:13px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
-.callout.info{background:var(--accent-light);color:#1a3a6a;border:1px solid #b0ccee}
+.callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
 .callout.danger{background:var(--danger-bg);color:var(--danger-text);border:1px solid var(--danger-border)}
 .callout.neutral{background:var(--navy-xlight);color:var(--text-mid);border:1px solid var(--border)}
@@ -127,7 +127,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 .risk-wrap{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem}
 table.risk{width:100%;border-collapse:collapse;font-size:13px;background:var(--white)}
 table.risk th{text-align:left;padding:9px 12px;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border)}
-table.risk td{padding:9px 12px;border-bottom:1px solid #eef2f8;color:var(--text-mid);vertical-align:middle}
+table.risk td{padding:9px 12px;border-bottom:1px solid #edf4f1;color:var(--text-mid);vertical-align:middle}
 table.risk tr:last-child td{border-bottom:none}
 .rb{display:inline-block;font-size:11px;padding:3px 9px;border-radius:999px;font-weight:600}
 .rb.low{background:var(--ok-bg);color:#1a6a1a;border:1px solid var(--ok-border)}
@@ -206,6 +206,7 @@ table.risk tr:last-child td{border-bottom:none}
   .fast-grid{grid-template-columns:1fr 1fr}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -222,8 +223,8 @@ table.risk tr:last-child td{border-bottom:none}
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 고위험군 안전 마취 · 치과</div>
-    <h1>심장병·노령 아이도<br><span>포기하지 마세요</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 고위험군 안전 마취 · 치과</div>
+    <h1>나이가 많거나 지병이 있어도<br><span>안전하게 준비할 수 있어요</span></h1>
     <p class="hero-desc">치석과 치주염을 그냥 두면 심장과 신장에 더 큰 부담이 됩니다.<br>시원은 마취 전 정밀 평가부터 회복까지 <strong style="color:rgba(255,255,255,.88);font-weight:500">4단계 프로토콜</strong>로 준비합니다.</p>
   </div>
 </div>
@@ -625,7 +626,7 @@ table.risk tr:last-child td{border-bottom:none}
       <strong>사료·간식 금식을 못 지키셨거나 기저 질환이 있으시면 반드시 미리 연락 주세요.</strong><br>
       물(음수)은 마취·수술 당일에도 마셔도 됩니다.<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

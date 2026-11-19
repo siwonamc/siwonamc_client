@@ -17,20 +17,20 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-mid:#1a4a7a;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-mid:#1a6b62;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
   --ok-bg:#f0f8f0;--ok-border:#aad8aa;--ok-text:#1a5a1a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;word-break:keep-all}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
@@ -51,8 +51,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 .doctor{background:var(--navy-dark);padding:2rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .doctor-inner{max-width:760px;margin:0 auto}
-.doctor-quote{font-size:15px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #7eb8f7}
-.doctor-quote em{font-style:normal;color:#7eb8f7}
+.doctor-quote{font-size:15px;font-weight:500;color:#fff;line-height:1.6;margin-bottom:1.25rem;padding-left:1rem;border-left:3px solid #f4b08f}
+.doctor-quote em{font-style:normal;color:#f4b08f}
 .doctor-bio{font-size:12px;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:1.25rem}
 .doctor-bio strong{color:rgba(255,255,255,.8);font-weight:500}
 .doctor-tags{display:flex;flex-wrap:wrap;gap:.4rem}
@@ -62,7 +62,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:760px;margin:0 auto}
 .hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:2rem}
 
 .sel-bar{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,.1);padding:1.25rem 1.5rem}
@@ -100,11 +100,11 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .tbl-wrap{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem;overflow-x:auto}
 table.tb{width:100%;border-collapse:collapse;font-size:12px;background:var(--white)}
 table.tb th{text-align:left;padding:8px 10px;font-size:11px;font-weight:600;letter-spacing:.05em;color:var(--text-muted);background:var(--navy-xlight);border-bottom:1px solid var(--border);white-space:nowrap}
-table.tb td{padding:8px 10px;border-bottom:1px solid #eef2f8;color:var(--text-mid);vertical-align:middle;line-height:1.6}
+table.tb td{padding:8px 10px;border-bottom:1px solid #edf4f1;color:var(--text-mid);vertical-align:middle;line-height:1.6}
 table.tb tr:last-child td{border-bottom:none}
 .tb-badge{display:inline-block;font-size:11px;padding:3px 9px;border-radius:5px;font-weight:700;min-width:28px;text-align:center;white-space:nowrap}
 .b1{background:#f0f8f0;color:#1a6a1a;border:1px solid #aad8aa}
-.b2{background:#e8f4ff;color:#1a4a8a;border:1px solid #aaccee}
+.b2{background:#e6f4f1;color:#1a6b62;border:1px solid #a8d8cf}
 .b3{background:#fff8e0;color:#7a5500;border:1px solid #e8d48a}
 .b4{background:#fdf0f0;color:#8a1010;border:1px solid #e8aaaa}
 
@@ -112,12 +112,12 @@ table.tb tr:last-child td{border-bottom:none}
 .prog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem;margin-bottom:1rem}
 .prog-card{border-radius:10px;padding:.875rem 1rem;border:1px solid var(--border)}
 .prog-card.s1{background:#f0f8f0;border-color:#aad8aa}
-.prog-card.s2{background:#e8f4ff;border-color:#aaccee}
+.prog-card.s2{background:#e6f4f1;border-color:#a8d8cf}
 .prog-card.s3{background:#fff8e0;border-color:#e8d48a}
 .prog-card.s4{background:#fdf0f0;border-color:#e8aaaa}
 .prog-stage{font-size:11px;font-weight:700;letter-spacing:.06em;margin-bottom:.3rem}
 .prog-card.s1 .prog-stage{color:#1a6a1a}
-.prog-card.s2 .prog-stage{color:#1a4a8a}
+.prog-card.s2 .prog-stage{color:#1a6b62}
 .prog-card.s3 .prog-stage{color:#7a5500}
 .prog-card.s4 .prog-stage{color:#8a1010}
 .prog-survival{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.25rem;line-height:1.35}
@@ -125,7 +125,7 @@ table.tb tr:last-child td{border-bottom:none}
 
 .callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:13px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
-.callout.info{background:var(--accent-light);color:#1a3a6a;border:1px solid #b0ccee}
+.callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
 .callout.danger{background:var(--danger-bg);color:var(--danger-text);border:1px solid var(--danger-border)}
 .callout.neutral{background:var(--navy-xlight);color:var(--text-mid);border:1px solid var(--border)}
@@ -151,7 +151,7 @@ ul.gl strong{color:var(--text);font-weight:600}
 .fb-title small{display:block;font-size:11px;font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.06em;margin-top:2px}
 .fb-lead{font-size:12px;color:rgba(255,255,255,.62);margin-bottom:1rem;line-height:1.75}
 .hl-num{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.9rem}
-.hl-num .n{font-size:46px;font-weight:700;color:#7eb8f7;line-height:1}
+.hl-num .n{font-size:46px;font-weight:700;color:#f4b08f;line-height:1}
 .hl-num .u{font-size:13px;color:rgba(255,255,255,.6)}
 .fb-when{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-bottom:1rem}
 .fb-when-card{background:rgba(255,255,255,.08);border-radius:8px;padding:.7rem .875rem;font-size:12px;color:rgba(255,255,255,.75);line-height:1.55}
@@ -188,6 +188,7 @@ ul.gl strong{color:var(--text);font-weight:600}
   .fb-when{grid-template-columns:1fr}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -207,26 +208,26 @@ ul.gl strong{color:var(--text);font-weight:600}
 <div class="doctor">
   <div class="doctor-inner">
     <div class="doctor-quote">
-      정확한 진단과 책임 있는 치료, 그리고<br>
-      <em>아이를 진심으로 아끼는 마음을 최우선 가치로 삼습니다.</em>
+      보호자님이 이해하실 때까지 설명하는 것,<br>
+      <em>그것이 시원의 첫 번째 진료 원칙입니다.</em>
     </div>
     <p class="doctor-bio">
-      내과 수의학에서 가장 넓고, 가장 복잡한 분야를 다루며, 가장 까다로운 요구를 받는 분야입니다.<br>
-      시원동물의료센터는 대학병원급 진단 프로토콜을 기반으로 <strong>심장질환, 신장질환, 내분비·면역매개성 난치성 질환, 중증 내과 케이스를 직접 진단하고 치료</strong>하는 동물병원입니다.<br><br>
-      수년간 다양한 중증 환자 케이스를 직접 관리하며 심장초음파, 신장 검사(UPC·SDMA·IRIS), 내분비 평가, 면역질환 감별 그리고 복잡한 환자의 장기별 상호작용 분석까지 한 번에 보고 해석할 수 있는 임상 경험과 내과적 판단 능력을 갖추고 있습니다.
+      시원동물의료센터는 <strong>김시원 · 이애린 두 원장이 함께 진료하는</strong> 해운대 센텀의 동물병원입니다. 심장·신장 질환과 만성 내과 질환을 중심으로, 검사 결과를 보호자님과 함께 보며 지금의 상태와 다음 단계를 차근차근 설명드립니다.<br><br>
+      한 아이의 상태를 두 원장이 함께 검토하고, 병원 밖에서도 관리가 이어지도록 보호자님 눈높이에 맞춘 안내 자료를 직접 정리해 두었습니다.
     </p>
     <div class="doctor-tags">
-      <span class="dtag">심장초음파</span>
-      <span class="dtag">내분비·면역매개 질환</span>
-      <span class="dtag">중증 내과</span>
+      <span class="dtag">내과 진료</span>
+      <span class="dtag">심장·신장 관리</span>
+      <span class="dtag">만성질환 홈케어</span>
+      <span class="dtag">예방의학</span>
     </div>
   </div>
 </div>
 <!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 치과·구강 질환 보호자 안내</div>
-    <h1>입 냄새는<br><span>치과 질환의 첫 신호예요</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 치과·구강 질환 보호자 안내</div>
+    <h1>입 냄새가 심해졌다면<br><span>치아부터 확인해 보세요</span></h1>
     <p class="hero-desc">치주질환은 통증이 있어도 잘 드러나지 않아 늦게 발견됩니다. 치과방사선과 안전한 마취, 그리고 집에서의 칫솔질이 핵심입니다.<br>아래에서 아이의 종을 선택하시면 맞춤 정보를 보여드립니다.</p>
   </div>
 </div>
@@ -353,7 +354,7 @@ ul.gl strong{color:var(--text);font-weight:600}
       <li><strong>수술 전 상태가 안 좋으면 일정을 미루는 것이 안전합니다.</strong> 감기·설사·발열이 있으면 미리 연락해 주세요.</li>
     </ul>
     <div class="callout info"><span class="ci">ℹ️</span><span>마취 위험도는 <strong>ASA 등급(신체 상태 분류)</strong>으로 평가합니다. 건강한 아이는 매우 낮고, 중증 질환이 있으면 등급이 올라가 추가 준비가 필요합니다. 어떤 경우든 마취 전 평가를 생략하지 않습니다.</span></div>
-    <div class="callout neutral"><span class="ci">🦷</span><span>노령·심장병·신장 질환이 있는 아이의 마취는 <a href="anesthesia.html" style="color:#2d6cc0;font-weight:600;text-decoration:underline">고위험군 안전 마취 · 치과 스케일링 프로토콜</a>에서 4단계 준비 과정과 당일 체크리스트를 확인하실 수 있습니다.</span></div>
+    <div class="callout neutral"><span class="ci">🦷</span><span>노령·심장병·신장 질환이 있는 아이의 마취는 <a href="anesthesia.html" style="color:#c4572f;font-weight:600;text-decoration:underline">고위험군 안전 마취 · 치과 스케일링 프로토콜</a>에서 4단계 준비 과정과 당일 체크리스트를 확인하실 수 있습니다.</span></div>
   </div>
 
   <!-- ⑤ 발치 후 관리 -->
@@ -434,7 +435,7 @@ ul.gl strong{color:var(--text);font-weight:600}
       약물 조절이나 식이 변경은 반드시 <strong>담당 수의사와 상의</strong> 후 진행해 주세요.<br>
       <strong>얼굴 부종, 멈추지 않는 출혈, 24시간 이상 절식</strong>이 보이면 즉시 병원으로 연락 주세요.<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

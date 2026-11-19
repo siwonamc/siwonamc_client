@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#10335E">
+<meta name="theme-color" content="#0e4f4a">
 <meta name="description" content="강아지·고양이 금지·주의·급여 가능 음식 빠른 검색 · 포도, 양파, 초콜릿, 자일리톨, 마카다미아, 백합, 사람약까지 위험도와 먹었을 때 대처를 바로 확인하세요. 시원동물의료센터.">
 <title>우리 아이 이거 먹어도 되나요? · 시원동물의료센터</title>
 <link rel="icon" type="image/png" href="favicon.png">
@@ -20,20 +20,20 @@
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --red:#b3261e;--red-bg:#fdf0ef;--red-border:#f0c8c4;
   --amber:#9a6207;--amber-bg:#fff8e6;--amber-border:#f0dcae;
   --green:#166534;--green-bg:#eefaf3;--green-border:#c6e9d5;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;scroll-padding-top:150px}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;-webkit-font-smoothing:antialiased;word-break:keep-all}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;min-height:100vh;-webkit-font-smoothing:antialiased;word-break:keep-all}
 .topbar{background:var(--navy);padding:0 1.25rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;gap:.6rem}
 .logo-text{color:#fff;font-size:12.5px;font-weight:500;line-height:1.3;white-space:nowrap}
@@ -53,14 +53,14 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:760px;margin:0 auto;text-align:center}
 .hero-eyebrow{font-size:10px;font-weight:500;letter-spacing:.16em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.55rem}
 .hero h1{font-size:21px;font-weight:700;color:#fff;line-height:1.45;margin-bottom:.5rem;letter-spacing:-.01em}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:12.5px;color:rgba(255,255,255,.58);line-height:1.8}
 
 /* ── SEARCH / CONTROLS ─────────────────── */
-.controls{position:sticky;top:56px;z-index:150;background:var(--bg);border-bottom:1px solid var(--border);box-shadow:0 8px 18px -18px rgba(16,51,94,.8)}
+.controls{position:sticky;top:56px;z-index:150;background:var(--bg);border-bottom:1px solid var(--border);box-shadow:0 8px 18px -18px rgba(14,79,74,.8)}
 .controls-inner{max-width:760px;margin:0 auto;padding:.75rem 1.25rem .6rem}
 .sbox{display:flex;align-items:center;gap:.5rem;background:var(--white);border:1.5px solid var(--border);border-radius:999px;padding:.6rem .95rem;transition:border-color .15s,box-shadow .15s}
-.sbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(45,108,192,.12)}
+.sbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(196,87,47,.12)}
 .sbox .sic{font-size:15px;line-height:1;flex-shrink:0;opacity:.55}
 .sbox input{flex:1;-webkit-appearance:none;appearance:none;min-width:0;border:none;outline:none;background:transparent;font-family:inherit;font-size:14.5px;color:var(--text);font-weight:500}
 .sbox input::placeholder{color:var(--text-muted);font-weight:400;font-size:13.5px}
@@ -74,7 +74,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
 .sep{width:1px;height:18px;background:var(--border);flex-shrink:0;margin:0 .1rem}
 .chip{flex-shrink:0;border:1px solid var(--border);background:var(--white);color:var(--text-mid);font-family:inherit;font-size:11.5px;font-weight:500;padding:5px 11px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s,border-color .15s}
-.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 8px 16px -12px rgba(16,51,94,.9)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 8px 16px -12px rgba(14,79,74,.9)}
 .chip:focus-visible,.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* ── MAIN ─────────────────────────────── */
@@ -87,7 +87,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .qt{border:1px dashed var(--border);background:var(--white);color:var(--text-mid);font-family:inherit;font-size:11.5px;padding:4px 10px;border-radius:999px;cursor:pointer}
 .qt:active{background:var(--navy-light)}
 
-.alertcard{background:var(--white);border:1px solid var(--red-border);border-radius:14px;padding:1.05rem 1.1rem 1.15rem;margin-bottom:1.1rem;box-shadow:0 10px 26px -24px rgba(16,51,94,.9)}
+.alertcard{background:var(--white);border:1px solid var(--red-border);border-radius:14px;padding:1.05rem 1.1rem 1.15rem;margin-bottom:1.1rem;box-shadow:0 10px 26px -24px rgba(14,79,74,.9)}
 .alertcard h2{font-size:13.5px;font-weight:700;color:var(--red);letter-spacing:-.01em;display:flex;align-items:center;gap:.4rem;margin-bottom:.2rem}
 .alertcard .asub{font-size:11.5px;color:var(--text-muted);margin-bottom:.7rem}
 .alertcard ol{list-style:none;counter-reset:al;display:grid;gap:.45rem}
@@ -100,7 +100,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 /* ── CARD ─────────────────────────────── */
 .list{display:grid;gap:.7rem}
-.card{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--text-muted);border-radius:14px;padding:.95rem 1rem 1rem;box-shadow:0 1px 2px rgba(16,51,94,.04)}
+.card{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--text-muted);border-radius:14px;padding:.95rem 1rem 1rem;box-shadow:0 1px 2px rgba(14,79,74,.04)}
 .card.lv-ban{border-left-color:var(--red)}
 .card.lv-care{border-left-color:#d99a2b}
 .card.lv-ok{border-left-color:#2f9e63}
@@ -123,7 +123,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .wrow p b{color:var(--text);font-weight:600}
 .sym{margin-top:.6rem;font-size:11.8px;color:var(--text-mid);line-height:1.7;background:var(--navy-xlight);border-radius:9px;padding:.45rem .65rem}
 .sym b{color:var(--navy);font-weight:700;margin-right:.25rem}
-.act{margin-top:.6rem;border:1px solid var(--border);border-radius:10px;padding:.6rem .7rem .55rem;background:#fbfdff}
+.act{margin-top:.6rem;border:1px solid var(--border);border-radius:10px;padding:.6rem .7rem .55rem;background:#fbfaf6}
 .act.okbox{background:var(--green-bg);border-color:var(--green-border)}
 .act h4{font-size:11.5px;font-weight:700;color:var(--accent);margin-bottom:.35rem;display:flex;align-items:center;gap:.3rem}
 .act.okbox h4{color:var(--green)}
@@ -166,6 +166,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
   .card{break-inside:avoid}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -183,7 +184,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 <header class="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow">Guardian · Food Safety</p>
-    <h1>우리 아이, 이거 <span>먹어도 되나요?</span></h1>
+    <h1>이 음식, 우리 아이에게 <span>괜찮을까요?</span></h1>
     <p class="hero-desc">포도·양파·초콜릿부터 사람약까지, 강아지와 고양이의 위험도와<br>먹었을 때 대처법을 바로 찾아볼 수 있습니다.</p>
   </div>
 </header>
@@ -246,7 +247,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
       이 안내는 <strong>보호자 교육용 참고 자료</strong>이며, 개별 아이의 진단·치료를 대신하지 않습니다.<br>
       같은 음식도 체중·건강 상태(신장·간·췌장 질환)에 따라 위험도가 달라지니, 섭취량과 시각을 확인해 문의해 주세요.<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>

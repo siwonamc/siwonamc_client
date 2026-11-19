@@ -18,21 +18,21 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --navy:#10335E;--navy-dark:#0a2240;--navy-light:#e8eef6;--navy-xlight:#f2f6fb;
-  --accent:#2d6cc0;--accent-light:#dde9f8;
-  --text:#1a2a3a;--text-mid:#4a5a6a;--text-muted:#8a9aaa;
-  --border:#d0dae6;--bg:#f5f8fc;--white:#ffffff;
+  --navy:#0e4f4a;--navy-dark:#08332f;--navy-light:#e3efec;--navy-xlight:#f3f8f6;
+  --accent:#c4572f;--accent-light:#fbe6dc;
+  --text:#1f2a28;--text-mid:#4c5a57;--text-muted:#8b9693;
+  --border:#e2ddd3;--bg:#faf7f2;--white:#ffffff;
   --warn-bg:#fdf8ee;--warn-border:#e8d48a;--warn-text:#5a3e00;
   --danger-bg:#fdf0f0;--danger-border:#e8aaaa;--danger-text:#6a1010;
   --ok-bg:#f0f8f0;--ok-border:#aad8aa;--ok-text:#1a5a1a;
-  --phase1:#e8f4ff;--phase2:#f0f8f0;--phase3:#fff8e0;--phase4:#f5f0ff;
+  --phase1:#e6f4f1;--phase2:#f0f8f0;--phase3:#fff8e0;--phase4:#f5f0ff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
 
 .topbar{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200}
 .topbar-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
@@ -55,7 +55,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 .hero-inner{max-width:760px;margin:0 auto}
 .hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:.75rem}
 .hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:.75rem}
-.hero h1 span{color:#7eb8f7}
+.hero h1 span{color:#f4b08f}
 .hero-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75}
 
 .main{max-width:760px;margin:0 auto;padding:2rem 1.5rem 3rem}
@@ -71,7 +71,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 
 .callout{border-radius:9px;padding:.875rem 1rem;margin-bottom:.9rem;font-size:13px;line-height:1.75;display:flex;gap:.7rem;align-items:flex-start}
 .callout .ci{font-size:17px;flex-shrink:0;margin-top:1px}
-.callout.info{background:var(--accent-light);color:#1a3a6a;border:1px solid #b0ccee}
+.callout.info{background:var(--accent-light);color:#165c54;border:1px solid #a8d8cf}
 .callout.warn{background:var(--warn-bg);color:var(--warn-text);border:1px solid var(--warn-border)}
 .callout.danger{background:var(--danger-bg);color:var(--danger-text);border:1px solid var(--danger-border)}
 .callout.ok{background:var(--ok-bg);color:#1a4a1a;border:1px solid var(--ok-border)}
@@ -99,28 +99,28 @@ ul.gl strong{color:var(--text);font-weight:600}
 
 /* PHASE BOXES */
 .phase-box{border-radius:14px;padding:1.5rem 1.75rem;margin-bottom:1rem;border:1px solid}
-.phase-box.p1{background:var(--phase1);border-color:#aaccee}
+.phase-box.p1{background:var(--phase1);border-color:#a8d8cf}
 .phase-box.p2{background:var(--phase2);border-color:var(--ok-border)}
 .phase-box.p3{background:var(--phase3);border-color:var(--warn-border)}
 .phase-box.p4{background:var(--phase4);border-color:#c8aaee}
 .phase-header{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem}
 .phase-badge{font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;letter-spacing:.06em}
-.p1 .phase-badge{background:#1a4a8a;color:#fff}
+.p1 .phase-badge{background:#1a6b62;color:#fff}
 .p2 .phase-badge{background:#1a6a1a;color:#fff}
 .p3 .phase-badge{background:#8a6000;color:#fff}
 .p4 .phase-badge{background:#5a1a8a;color:#fff}
 .phase-title{font-size:15px;font-weight:700}
-.p1 .phase-title{color:#1a3a6a}
+.p1 .phase-title{color:#165c54}
 .p2 .phase-title{color:#1a4a1a}
 .p3 .phase-title{color:#5a3e00}
 .p4 .phase-title{color:#3a1a6a}
 .phase-week{font-size:12px;margin-left:auto;font-weight:500}
-.p1 .phase-week{color:#3a6aaa}
+.p1 .phase-week{color:#489c91}
 .p2 .phase-week{color:#3a8a3a}
 .p3 .phase-week{color:#8a6a00}
 .p4 .phase-week{color:#7a3aaa}
 .phase-goal{font-size:12px;margin-bottom:.875rem;padding:.5rem .75rem;border-radius:6px}
-.p1 .phase-goal{background:rgba(26,74,138,.1);color:#1a3a6a}
+.p1 .phase-goal{background:rgba(26,107,98,.1);color:#165c54}
 .p2 .phase-goal{background:rgba(26,106,26,.1);color:#1a4a1a}
 .p3 .phase-goal{background:rgba(138,96,0,.1);color:#5a3e00}
 .p4 .phase-goal{background:rgba(90,26,138,.1);color:#3a1a6a}
@@ -190,6 +190,7 @@ ul.gl strong{color:var(--text);font-weight:600}
   .restriction-grid{grid-template-columns:1fr}
 }
 </style>
+<link rel="stylesheet" href="siwon-theme.css">
 </head>
 <body>
 
@@ -206,8 +207,8 @@ ul.gl strong{color:var(--text);font-weight:600}
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">SIWON · 근골격 재활 안내</div>
-    <h1>장요근 손상 후 재활,<br><span>단계별로 함께 해요</span></h1>
+    <div class="hero-eyebrow">시원동물의료센터 · 근골격 재활 안내</div>
+    <h1>뒷다리를 절뚝인다면,<br><span>장요근 재활을 차근차근</span></h1>
     <p class="hero-desc">장요근은 강아지 뒷다리 기능의 핵심 근육입니다.<br>올바른 단계별 재활과 스트레칭으로 더 빠르고 안전하게 회복할 수 있어요.</p>
   </div>
 </div>
@@ -254,7 +255,7 @@ ul.gl strong{color:var(--text);font-weight:600}
       <div class="sym-card"><div class="sym-icon">😴</div><div class="sym-name">운동 후 악화</div><div class="sym-desc">활동 중에는 괜찮다가 운동 후나 다음날 아침에 더 심해져요</div></div>
     </div>
     <div class="callout info"><span class="ci">▶</span><span>장요근에 대해 더 자세히 알고 싶다면 아래 영상을 참고해 주세요.<br>
-    <a href="https://www.youtube.com/watch?v=2u2ITNj10Is" target="_blank" style="color:#2d6cc0;font-weight:600">📺 Understanding the Iliopsoas Muscle in Dogs (Laurie Edge-Hughes, 한국어 자막 없음)</a></span></div>
+    <a href="https://www.youtube.com/watch?v=2u2ITNj10Is" target="_blank" style="color:#c4572f;font-weight:600">📺 Understanding the Iliopsoas Muscle in Dogs (Laurie Edge-Hughes, 한국어 자막 없음)</a></span></div>
 
     <div class="callout warn"><span class="ci">⚠️</span><span>장요근 손상은 <strong>영상 검사(X-ray)에서 잘 안 보이는 경우가 많습니다.</strong> 초음파 또는 MRI로 확인하는 것이 더 정확하며, 촉진 검사와 함께 종합적으로 판단합니다.</span></div>
   </div>
@@ -341,7 +342,7 @@ ul.gl strong{color:var(--text);font-weight:600}
           <div class="ex-name">Balance Pad / Bosu (밸런스 패드 정적 유지)</div>
           <div class="ex-detail">불안정한 표면 위에 두 앞발 또는 네 발을 올리고 20~30초 × 3회 유지합니다. 코어 근육과 고관절 주변 안정화 근육을 동시에 활성화합니다.</div>
           <a class="ex-video" href="https://www.youtube.com/watch?v=_Ll4snXzIhw" target="_blank">▶ 영상 보기 (FitPaws Balance)</a>
-          <a class="ex-video" href="https://www.youtube.com/watch?v=Qaxc0kPDzwA" target="_blank" style="background:#1a5a9a;margin-left:.4rem">▶ 영상 보기 (Core & Iliopsoas)</a>
+          <a class="ex-video" href="https://www.youtube.com/watch?v=Qaxc0kPDzwA" target="_blank" style="background:#2a8a7d;margin-left:.4rem">▶ 영상 보기 (Core & Iliopsoas)</a>
         </div>
         <div class="ex-card">
           <div class="ex-name">Figure-8 보행</div>
@@ -402,7 +403,7 @@ ul.gl strong{color:var(--text);font-weight:600}
           </ol>
           <div class="stretch-result">✅ 효과: 장요근·고관절 굴근 이완, 허리·골반 유연성 향상, 통증 감소</div>
           <a class="ex-video" href="https://www.youtube.com/watch?v=yFrn2xy9BdI" target="_blank">▶ 영상 보기 (Iliopsoas Stretch)</a>
-          <a class="ex-video" href="https://www.youtube.com/watch?v=o9R1M13fYS8" target="_blank" style="background:#1a5a9a;margin-left:.4rem">▶ 영상 보기 (Cato Platform 활용)</a>
+          <a class="ex-video" href="https://www.youtube.com/watch?v=o9R1M13fYS8" target="_blank" style="background:#2a8a7d;margin-left:.4rem">▶ 영상 보기 (Cato Platform 활용)</a>
         </div>
       </div>
 
@@ -475,7 +476,7 @@ ul.gl strong{color:var(--text);font-weight:600}
       재활 운동 강도와 단계 조절은 반드시 <strong>담당 수의사와 상의</strong> 후 진행해 주세요.<br>
       <strong>운동 후 급격한 악화·다리 힘 빠짐·배변 이상</strong>이 보이면 즉시 연락 주세요.<br>
       문의사항이 있으시면 언제든지 연락 주세요.<br>
-      진료시간 · 월·화·목·토·일 10:00–20:00 / 금 10:00–16:00 / 수요일 정기휴무
+      진료시간 · 매일 09:00–21:00 / 점심 13:00–14:00 / 저녁 18:00–19:00
     </p>
     <div class="foot-btns">
       <a class="tbtn call" href="tel:000-0000-0000">📞 000-0000-0000</a>
