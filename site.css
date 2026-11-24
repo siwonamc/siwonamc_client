@@ -124,3 +124,8 @@ table.t th{font-weight:700;color:var(--ink);background:var(--ivory);font-size:14
 /* 상태 배지 폭 */
 .wc-status-in{max-width:var(--max)!important;padding-left:20px!important;padding-right:20px!important}
 @media(max-width:520px){.hc-num{display:none}.brand b{font-size:17.5px}}
+/* 로고 이미지 */
+.brand img{height:42px;width:auto}
+.foot-logo{height:34px;width:auto;margin-bottom:14px}
+@media(max-width:520px){.brand img{height:30px}}
+:root{--brass-line:#d8b884}

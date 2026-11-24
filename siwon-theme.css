@@ -40,3 +40,5 @@ body{background:#f8f5ef}
 .hero h1,.sec-title,.sect-title,h2{font-family:'Noto Serif KR',serif!important;font-weight:600!important;letter-spacing:-.02em!important}
 .topbar .tbtn.kako{border-radius:4px!important}
 .pill-primary{background:#d9c7a6!important;border-color:#d9c7a6!important;color:#1b1408!important}
+.topbar .logo-full{height:36px;width:auto;display:block}
+@media(max-width:520px){.topbar .logo-full{height:26px}}
